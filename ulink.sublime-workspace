@@ -1,0 +1,1033 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font-s",
+				"font-size-sm"
+			],
+			[
+				"min",
+				"minHeight"
+			],
+			[
+				"logo",
+				"logo-width"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"tr",
+				"translate"
+			],
+			[
+				"br",
+				"brand-secondary"
+			],
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"fon",
+				"font-size-lg"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"clear",
+				"clearfix"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"gr",
+				"grid-gutter-width"
+			],
+			[
+				"font-",
+				"font-size-h4"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"po",
+				"pos:a	position:absolute"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"border",
+				"border-bottom"
+			],
+			[
+				"border-top",
+				"border-top"
+			],
+			[
+				"a",
+				"after"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"lin",
+				"link-hover-color"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"img",
+				"img-path"
+			],
+			[
+				"ps",
+				"pos:r	position:relative"
+			],
+			[
+				"bord",
+				"border-radius"
+			],
+			[
+				"c",
+				"c-indicator"
+			],
+			[
+				"nth",
+				"nth-of-type"
+			],
+			[
+				"margni",
+				"margin-right"
+			],
+			[
+				"log",
+				"logo-spacing"
+			],
+			[
+				"marign",
+				"margin-top"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"content",
+				"content-spacing"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"sidebar",
+				"sidebar-width"
+			],
+			[
+				"input",
+				"input-addon"
+			],
+			[
+				"s",
+				"sidebar-title-height"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"side",
+				"sidebar-width"
+			],
+			[
+				"header",
+				"header-height"
+			],
+			[
+				"tab",
+				"table-condensed"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"margin-",
+				"margin-bottom"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"md",
+				"md-overlay"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"v",
+				"visible"
+			],
+			[
+				"md-",
+				"md-modal"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
+				"f",
+				"fl:l	float:left"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"impo",
+				"important"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"ov",
+				"overflow"
+			],
+			[
+				"font-st",
+				"font-style"
+			],
+			[
+				"form",
+				"form-group"
+			],
+			[
+				"form-con",
+				"form-control-static"
+			],
+			[
+				"fff",
+				"fff"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"max-",
+				"max-width"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"filter",
+				"filter-control"
+			],
+			[
+				"btn",
+				"btn-primary"
+			],
+			[
+				"bra",
+				"brand-primary"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"fw",
+				"fw:b	font-weight:bold"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"col-x",
+				"col-xs-12"
+			],
+			[
+				"ln",
+				"line-height"
+			],
+			[
+				"up",
+				"uppercase"
+			],
+			[
+				"si",
+				"sixteen"
+			],
+			[
+				"cl",
+				"cl:b	clear:both"
+			],
+			[
+				"base",
+				"baseGutterWidth"
+			],
+			[
+				"hd",
+				"hidden"
+			],
+			[
+				"main",
+				"main-bg-light"
+			],
+			[
+				"gray-li",
+				"gray-light"
+			],
+			[
+				"gray",
+				"gray-light"
+			],
+			[
+				"mg",
+				"margin-bottom"
+			],
+			[
+				"h",
+				"hidden"
+			],
+			[
+				"main-",
+				"main-bg-dark"
+			],
+			[
+				"gra",
+				"gray-light"
+			],
+			[
+				"tra",
+				"text-transform"
+			],
+			[
+				"box-sh",
+				"box-shadow"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"li",
+				"li"
+			],
+			[
+				"lo",
+				"link-hover-color"
+			],
+			[
+				"ex",
+				"extend"
+			],
+			[
+				"n",
+				"none"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"last_filter": "Package Control: ins",
+		"selected_items":
+		[
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: list",
+				"Package Control: List Packages"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: re",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"",
+				"Package Control: Remove Package"
+			],
+			[
+				"packa",
+				"Package Control: Remove Package"
+			],
+			[
+				"raz",
+				"Set Syntax: Razor"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Github/C531606_Ulink/Work.WebProj",
+		"/D/Github/C531606_Ulink/Work.WebProj/Views"
+	],
+	"file_history":
+	[
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/index.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Areas/Base/Views/Doc/ListData.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/ckeditor/inlineConfig.js",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/_Code/SysDoc/Doc.xml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/_Code/SysDoc/editor_table.html",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/_Code/SysDoc/editor_text.html",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/_Code/SysDoc/editor_insert.html",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/_web/_layout.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Scripts/src/tsx/w-location.tsx",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/page.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/_web/_editor.scss",
+		"/C/Users/stacey/Desktop/【產品管理-資料】編輯教學.html",
+		"/D/Github/C131305_SWIU/PGCode/Work.WebMvcApp/Views/Shared/Layout.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Scripts/src/tsx/m-location.tsx",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Shared/Layout.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Index/Index.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Map/Map.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/BuyCar/BuyCar_Index.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/_web/_var.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Repair/Repair_sidebar.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/BuyCar/BuyCar_sidebar.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Events/Events_list.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Controllers/AboutUsController.cs",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Controllers/MappController.cs",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Controllers/LocationController.cs",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Location/Location.cshtml",
+		"//192.168.0.241/NetDemo/stacey/sym/_include/footer.html",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/helper/_variables.scss",
+		"//192.168.0.241/NetDemo/stacey/sym/_css/sass/_web/_layout.scss",
+		"//192.168.0.241/NetDemo/stacey/sym/UsedCar/index.html",
+		"//192.168.0.241/NetDemo/stacey/sym/UsedCar/list.html",
+		"//192.168.0.241/NetDemo/stacey/sym/UsedCar/content.html",
+		"//192.168.0.241/NetDemo/stacey/sym/UsedCar/form.html",
+		"//192.168.0.241/NetDemo/stacey/sym/_css/sass/page.scss",
+		"//192.168.0.241/NetDemo/stacey/sym/_include/header.html",
+		"//192.168.0.241/NetDemo/stacey/sym/_css/sass/_web/_var.scss",
+		"//192.168.0.241/NetDemo/stacey/sym/UsedCar/UsedCar_sidebar.cshtml",
+		"//192.168.0.241/NetDemo/stacey/sym/_JScript/include.js",
+		"//192.168.0.241/NetDemo/stacey/sym/UsedCar/UsedCar_content.html",
+		"//192.168.0.241/NetDemo/stacey/sym/UsedCar/UsedCar_list.html",
+		"//192.168.0.241/NetDemo/stacey/sym/UsedCar/UsedCar_Index.html",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/UsedCar/UsedCar_Index.cshtml",
+		"//192.168.0.241/NetDemo/stacey/sym/UsedCar/AboutUs.html",
+		"//192.168.0.241/NetDemo/stacey/sym/UsedCar/UsedCar_Index.cshtml",
+		"//192.168.0.241/NetDemo/stacey/sym/_JScript/BrowerInfo.js",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Products/Products.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/BuyCar/BuyCar_Form.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/js/gmap-custom.js",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/popup.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Products/Album.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Scripts/src/tsx/m-brand.tsx",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/TestDrive/TestDrive.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Products/NoData.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/_web/_element.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/editor.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/_web/_module.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/helper/_classes.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/UsedCar/UsedCar_list.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Shared/Form.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/News/News_list.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/element/_images.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/css/page.css",
+		"/D/Github/C501602_ATEK/Work.WebProj/Content/sass/page.scss",
+		"/D/Github/C501602_ATEK/Work.WebProj/Content/sass/index.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Accessory/Accessory_sidebar.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Eco/Eco.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Events/Events_content.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/FAQ/FAQ_sidebar.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Insurance/Insurance.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Loan/Loan_sidebar.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/News/News_content.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/UsedCar/UsedCar_sidebar.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/AboutUs/AboutUs_sidebar.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/helper/_utilities-spacing.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/element/_tables.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/css/vendor/themify-icons.css",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/helper/mixins/_breakpoints.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Controllers/ProductsController.cs",
+		"//192.168.0.241/NetDemo/Tin/floor/_old/-index.html",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/UsedCar/UsedCar_content.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Products/Loan_sidebar.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Loan/Loan_Form.cshtml",
+		"//192.168.0.241/NetDemo/stacey/taipower/form1_list.html",
+		"//192.168.0.241/NetDemo/stacey/taipower/form1_content.html",
+		"//192.168.0.241/NetDemo/stacey/taipower/form2_list.html",
+		"//192.168.0.241/NetDemo/stacey/taipower/form2_content.html",
+		"//192.168.0.241/NetDemo/stacey/taipower/index.html",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/module/_custom-forms.scss",
+		"/C/Users/stacey/Desktop/bootstrap-4.0.0-alpha.2/scss/_variables.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/AboutUs/AboutUs.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Accessory/Accessory.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/BuyCar/BuyCar_Info.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/FAQ/FAQ.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/FAQ/FAQ_Form.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Loan/Loan.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Offer/Offer_content.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Offer/Offer_list.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Repair/Repair.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/UsedCar/UsedCar_Form.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/layout/_grid.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Controllers/BuyCarController.cs",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Controllers/FAQController.cs",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/FAQ/FAQ_list.cshtml",
+		"/D/1_web/台電/web/form2_list.html",
+		"/D/1_web/台電/web/form1_content.html",
+		"/D/1_web/台電/web/form1_list.html",
+		"/D/1_web/台電/web/form2_content.html",
+		"/D/1_web/台電/web/index.html",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Enterprise/Enterprise.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Careers/Careers.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Controllers/OfferController.cs",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Controllers/LoanController.cs",
+		"//192.168.0.241/NetDemo/johnwu2014/OutWeb/L_CT/Line/Line_content5.asp",
+		"//192.168.0.241/NetDemo/johnwu2014/OutWeb/L_CT/_include/js.asp",
+		"/D/1_web/0_Base/web/dotNet/Views/Shared/sidebar.cshtml",
+		"/D/Github/C441506_ChangYu/Work.WebProj/Views/Products/Products_content.cshtml",
+		"/D/Github/C441506_ChangYu/Work.WebProj/Views/Products/Products_list.cshtml",
+		"/D/Github/C131507_1komo/Work.WebProj/Views/Shared/Layout.cshtml",
+		"/D/Github/C131507_1komo/Work.WebProj/Views/Products/Products_list.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/BuyCar/BuyCar_content.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/BuyCar/BuyCar_list.cshtml",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Controllers/UsedCarController.cs",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/helper/_extend.scss",
+		"/D/1_web/優靈客/webdemo/index.html",
+		"/D/1_web/優靈客/webdemo/images/layout.css",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/element/_buttons.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/helper/mixins/_buttons.scss",
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/_web/_icon.scss"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\Github\\C431603_SymMotorWeb\\Work.WebProj\\Views",
+			"D:\\Github\\C431603_SymMotorWeb\\Work.WebProj\\Content\\sass",
+			"D:\\Github\\C431603_SymMotorWeb\\Work.WebProj\\Views",
+			"D:\\Github\\C431603_SymMotorWeb\\Work.WebProj\\Content\\sass\\module",
+			"D:\\Github\\C431603_SymMotorWeb\\Work.WebProj\\Content\\sass",
+			"D:\\Github\\C431505_Mami520\\Work.WebProj\\Content\\sass\\_admin",
+			"D:\\Github\\SassCore\\sass",
+			"D:\\Github\\C431505_Mami520\\Work.WebProj\\Views",
+			"",
+			"<open files>",
+			"C:\\Users\\stacey\\Desktop\\JCIN\\OutWeb\\L_CT\\_css\\sass",
+			"<open files>",
+			"C:\\Users\\stacey\\Dropbox\\0_public\\_webdev\\php\\USBWebserver\\root\\wp\\wp-content\\themes\\mytheme",
+			"C:\\Dropbox\\0_public\\_webdev\\php\\USBWebserver\\root\\wp\\wp-content\\themes\\mytheme",
+			"E:\\Dropbox\\0_public\\_webdev\\php\\USBWebserver\\root\\wp\\wp-content\\themes\\mytheme"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"試乘條款",
+			"#{$img-path}",
+			"${img-path}",
+			">\n",
+			"var swiper = new Swiper('#banner', {\n            //     effect: 'fade',\n            //     autoplay: 2500,\n            //     speed: 500\n            // });",
+			"~/UsedCar/Form",
+			"~/Content/images/UsedCar/",
+			"~/Content/images/BuyCar/banner1-thumb.jpg",
+			"~/UsedCar/Content",
+			"UsedCar_list",
+			"UsedCar_content",
+			"href=\"/Products",
+			"~/Content/images/BuyCar/banner1-thumb.jpg",
+			"~/UsedCar/Content",
+			"~/Content/images/UsedCar/",
+			"br",
+			"address",
+			"memo",
+			"br",
+			"\";",
+			"padding",
+			"font",
+			"background",
+			"gutter",
+			".thumb",
+			".search",
+			"// ",
+			"@extend",
+			"id=\"sidebar\"",
+			"@extend",
+			"gutter",
+			"grid-search",
+			"length",
+			"<a href=\"~/Products/Album\">",
+			"text-tr",
+			"@extend .row",
+			"galler",
+			"nav",
+			".gallery",
+			"news",
+			".search",
+			"info col-xs-4",
+			"if ($(this).scrollTop() > h)",
+			"if ($(this).scrollTop() > 150)",
+			"form",
+			"#banner",
+			"thu",
+			"logo-w",
+			".container",
+			"text-center",
+			".text-center",
+			"<article class=\"editor\">",
+			"text-tr",
+			"Events/Content",
+			"<a href=\"~/UsedCar/Content\" title=\"SEE MORE\">",
+			" class=\"num\"",
+			"num",
+			"alt=\"\">\n                                ",
+			"<span class=\"label label-danger\">結束時間：2016/1/1 18:00:59</span>",
+			"#banner",
+			"banner-height",
+			"#banner",
+			"#map",
+			"bg4-",
+			"bg4",
+			"bg3",
+			"bg2",
+			"<a href=\"~/UsedCar/Content\" title=\"SEE MORE\">",
+			"8000",
+			"0000",
+			"40萬",
+			"66.8萬",
+			".Used",
+			"$banner-height",
+			"border-radius",
+			"muted",
+			"btn",
+			"danger",
+			"544D48",
+			"../",
+			"attr",
+			"15px",
+			"font-s",
+			"grid-search",
+			"focus",
+			"btn",
+			"each",
+			"sidebar-width",
+			"side",
+			"geo",
+			"c-input",
+			"body-bg",
+			"font-size",
+			"DATA_TOGGLE",
+			"collapse",
+			"$sidebar-spacing",
+			"280px",
+			".png\" alt=\"\"></i>",
+			"<i><img src=\"~/Content/images/Index/car",
+			"hidden",
+			"table-bg",
+			"table",
+			"placeholder",
+			"custom",
+			"border-r",
+			"grid",
+			".png\" alt=\"\">",
+			"<img src=\"~/Content/images/Index/car",
+			"../",
+			"navbar",
+			"hidden",
+			"enable-transitions",
+			"@import \"component/",
+			"Offer",
+			"@import \"",
+			".",
+			"NAV_LINK",
+			"active",
+			"enable-grid-classe",
+			" label\"",
+			"label\"",
+			".label",
+			"label",
+			"spacer",
+			"text-danger",
+			"col-xs",
+			"-sm",
+			"-label"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"http://sym.fly.idv.tw/UsedCar/Form",
+			"images/",
+			"../images/no-pic.gif",
+			"content.html",
+			"list",
+			"content",
+			"href=\"http://sym.fly.idv.tw/Products",
+			"../images/no-pic.gif",
+			"UsedCar_content.html",
+			"images/",
+			"<a class=\"popup\" href=\"~/Products/Album\">",
+			"info",
+			"var h = $('#header').height();\n            if ($(this).scrollTop() > h)",
+			"if ($(this).scrollTop() > h)",
+			"text-xs-center",
+			".text-xs-center",
+			"<div class=\"editor\">",
+			"Offer/Content",
+			"<a href=\"~/Events/Content\" title=\"SEE MORE\">",
+			"",
+			"alt=\"\">",
+			"",
+			"<a class=\"num\" href=\"~/UsedCar/Content\" title=\"SEE MORE\">",
+			"8,000",
+			"0,000",
+			"$400000",
+			"$668000",
+			"$sidebar-spacing",
+			".png\" alt=\"\"></a>",
+			"<a href=\"\" target=\"new\"><img src=\"~/Content/images/Index/car",
+			"sr-only",
+			".png\" alt=\"\"></i>",
+			"<i><img src=\"~/Content/images/Index/car",
+			"",
+			"invisible",
+			"@import \"module/",
+			"BuyCar",
+			"@import \"../",
+			"%",
+			" form-label\"",
+			"text-error",
+			"col",
+			"col-",
+			"form-element",
+			" label",
+			"label",
+			"btn-muted",
+			"",
+			"btn btn-error btn-lg",
+			"btn btn-success btn-lg",
+			"btn-lg",
+			"btn-link",
+			"",
+			"10%",
+			"className=\"form-element input-sm text-center\" style={{\"width\":\"5em\"}} type=\"number\" min=\"1\"",
+			"pager\"",
+			"pager clear\"",
+			"btn-link btn-lg text-",
+			"float-r",
+			"float-l",
+			"text-error",
+			"btn-lg btn-link",
+			"ti-angle-down",
+			"",
+			"Tel2",
+			"<input type=\"checkbox\" disabled checked />",
+			"<input type=\"checkbox\" checked />",
+			"請擇一填寫",
+			"Sell_2",
+			"label-warning",
+			"label-primary",
+			"label-warning",
+			"label-info",
+			"",
+			"<div class=\"meal\">",
+			"<td>",
+			"<th>",
+			"$1月</td>",
+			"<td>",
+			"@*<td></td>*@\n				<td>",
+			"@*<td></td>*@\n				<td>$1",
+			"@*<td>$4</td>*@\n				<td>$1",
+			"$1</td>*@\n				<td>$1",
+			"[^\\x0-\\x7F]</td>\n				@*<td>$1*@",
+			"[^\\x0-\\x7F]</td>\n				@*<td>(\\d)*@",
+			"#11",
+			"#10",
+			"#9",
+			"#8",
+			"#7",
+			"#6",
+			"#5",
+			"#4",
+			"class=\"fancybox\" data-title-id=\"doc1\" rel=\"gallery2\"",
+			"class=\"fancybox\" data-title-id=\"pic6\" rel=\"gallery2\"",
+			"<em id=\"pic1\">",
+			"class=\"fancybox\" data-title-id=\"pic1\" rel=\"gallery\"",
+			"class=\"fancybox\" data-title-id=\"pic1\"",
+			"<em id=\"pic1\">",
+			"",
+			"class=\"fancybox\" rel=\"gallery\"",
+			"Products/p5",
+			"Products/p3/pro",
+			"p2/",
+			"em",
+			"/li",
+			"li",
+			"images/Factory",
+			"優酪乳口味",
+			"綜合口味",
+			"堅果棒",
+			"椰子",
+			"杏桃",
+			"蘋果",
+			"肉桂",
+			"燕麥棒",
+			"span:nth-of-type",
+			"<img src=\"~/Content/",
+			"img:nth-of-",
+			"pic",
+			"<filename>images/pic",
+			"pic_",
+			".jpg\")\">",
+			"data-src=\"@Url.Content(\"~/Content/images/Activities/",
+			"href=\"~/Content/images/Activities/",
+			"\")\">",
+			"Content(\"",
+			"'~/Content/"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 118.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "ulink.sublime-project",
+	"replace":
+	{
+		"height": 64.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\Github\\幸福阿珍.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 254.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
