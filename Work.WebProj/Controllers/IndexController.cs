@@ -12,10 +12,10 @@ namespace DotWeb.Controllers
         {
             return View("Index");
         }
-        public RedirectResult Login()
-        {
-            return Redirect("~/Base/Login");
-        }
+        // public RedirectResult Login()
+        // {
+        //     return Redirect("~/Base/Login");
+        // }
     }
 
 }

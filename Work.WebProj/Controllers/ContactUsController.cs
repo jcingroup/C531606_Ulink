@@ -6,15 +6,11 @@ using System.Linq;
 
 namespace DotWeb.Controllers
 {
-    public class AboutUsController : WebUserController
+    public class ContactUsController : WebUserController
     {
         public ActionResult Index()
         {
-            return View("AboutUs");
-        }
-        public ActionResult p2()
-        {
-            return View("AboutUs2");
+            return View("ContactUs");
         }
     }
 

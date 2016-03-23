@@ -6,15 +6,15 @@ using System.Linq;
 
 namespace DotWeb.Controllers
 {
-    public class AboutUsController : WebUserController
+    public class NewsController : WebUserController
     {
-        public ActionResult Index()
+        public ActionResult List()
         {
-            return View("AboutUs");
+            return View("News_list");
         }
-        public ActionResult p2()
+        public ActionResult Content001()
         {
-            return View("AboutUs2");
+            return View("News_content001");
         }
     }
 
