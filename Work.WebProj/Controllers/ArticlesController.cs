@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace DotWeb.Controllers
 {
-    public class NewsController : WebUserController
+    public class ArticlesController : WebUserController
     {
         public ActionResult List()
         {

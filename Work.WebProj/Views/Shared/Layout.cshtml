@@ -12,14 +12,14 @@
     </script>
     @if (ViewBag.IsFirstPage)
     {
-        <link href="~/Content/css/index.css" rel="stylesheet">
+        <link href="~/Content/css/index.css?v=@CommWebSetup.CacheVer" rel="stylesheet">
     }
     else
     {
-        <link href="~/Content/css/page.css" rel="stylesheet">
+        <link href="~/Content/css/page.css?v=@CommWebSetup.CacheVer" rel="stylesheet">
     }
-    <link href="~/Content/css/vendor/icomoon.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,300italic,600italic' rel='stylesheet' type='text/css'>
+    <link href="~/Content/css/vendor/themify-icons.css" rel="stylesheet">
     @RenderSection("css", false)
 </head>
 
@@ -30,40 +30,38 @@
         <header id="header">
             <div class="wrap">
 
-                <h1 class="logo"><a href="~/Index" title="回首頁">@Resources.Res.System_FrontName</a></h1>
+                <div class="logo"><a href="~/Index" title="回首頁"><img src="~/Content/images/logo.png" alt="@Resources.Res.System_FrontName"></a></div>
+
+                <h1 class="h1">
+                    @Resources.Res.System_FrontName
+                    <small>Taiwan U-Link Association</small>
+                </h1>
+
+                <h2 class="slogan">聚集優質靈感的人，向社會傳達正向的能量與聲音</h2>
 
                 <ul class="topNav list-inline">
-                    <li><a href="~/Shopping"><i class="icon-cart"></i>我要購物</a></li>
+                    <li><a href="" target="new"><i class="ti-facebook"></i><span class="sr-only">Facebook</span></a></li>
+                    <li><a href="" target="new"><i class="ti-twitter-alt"></i><span class="sr-only">Twitter</span></a></li>
+                    <li><a href="" target="new"><i class="ti-google"></i><span class="sr-only">Google+</span></a></li>
                 </ul>
+
+                <form action="" class="search form-inline">
+                    <div class="form-group">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-link"><i class="ti-search"></i></button>
+                    </div>
+                </form>
 
                 <nav id="menu" class="navbar">
                 	<h2 class="sr-only">主選單</h2>
                 	<ul class="nav navbar-nav">
-                		<li>
-                			<a href="~/AboutUs"><i class="icon-members"></i>公司簡介</a>
-                		</li>
-                		<li>
-                			<a href="~/Plan"><i class="icon-money"></i>社區收益型專案</a>
-                		</li>
-                		<li>
-                			<a href="~/Sell"><i class="icon-house"></i>我要買房</a>
-                		</li>
-                		<li>
-                			<a href="~/Rent"><i class="icon-building"></i>我要租房</a>
-                		</li>
-                		<li>
-                			<a href="~/Vendor"><i class="icon-cooperate"></i>協力廠商</a>
-                		</li>
-                		<li>
-                			<a href="~/Neighbor"><i class="icon-diamond"></i>優質社區</a>
-                		</li>
-                		<li>
-                			<a href="~/Partner"><i class="icon-joinus"></i>招賢納士</a>
-                		</li>
-                        <li>
-                            <a href="~/VIP"><i class="icon-vip"></i>幸福房仲VIP</a>
-                        </li>
-                	</ul>
+                		<li><a href="~/Videos/List">觀看演講</a></li>
+                		<li><a href="~/Articles/List">精選文章</a></li>
+                		<li><a href="~/Events">活動參與</a></li>
+                		<li><a href="~/AboutUs">協會簡介</a></li>
+                		<li><a href="~/ContactUs">聯絡我們</a></li>
+                		<li><a href="~/News/List">最新消息</a></li>
+                    </ul>
                 </nav>
 
             </div><!-- wrap //-->
@@ -77,18 +75,45 @@
 
     <footer id="footer">
         <div class="wrap">
+
             <h1 class="logo"><a href="~/Index" title="回首頁">@Resources.Res.System_FrontName</a></h1>
-            <div class="copyright">Happiness Agent &copy; 2016</div>
+
+            <article class="about">
+                <h2 class="h2">關於優靈客</h2>
+                <p>優靈客希望能夠聚集優質靈感的人，向社會傳達正向的能量與聲音。優靈客希望能夠聚集優質靈感的人，向社會傳達正向的能量與聲音。優靈客希望能夠聚集優質靈感的人，向社會傳達正向的能量與聲音。</p>
+            </article>
+
+            <ul class="menu list-unstyled">
+                <li><a href="~/Videos/List">觀看演講</a></li>
+                <li><a href="~/Articles/List">精選文章</a></li>
+                <li class="has-submenu">
+                    <a href="~/Events">活動參與</a>
+                    <ul class="submenu list-inline">
+                        <li><a href="~/Events">活動預告</a></li>
+                        <li><a href="~/Events/p2">加入我們</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu">
+                    <a href="~/AboutUs">協會簡介</a>
+                    <ul class="submenu list-inline">
+                        <li><a href="~/AboutUs">理念說明</a></li>
+                        <li><a href="~/AboutUs/p2">團隊介紹</a></li>
+                    </ul>
+                </li>
+                <li><a href="~/ContactUs">聯絡我們</a></li>
+                <li><a href="~/News/List">最新消息</a></li>
+            </ul>
+
             <ul class="social list-inline">
-                <li><a href="https://www.facebook.com/754952781302809/" target="new"><i class="icon-fb"></i><span class="sr-only">Facebook</span></a></li>
-                <li><a href=""><i class="icon-gplus"></i><span class="sr-only">Google+</span></a></li>
+                <li class="qr"><img src="~/Content/images/qr.png" alt=""></li>
+                <li><a href="" target="new"><i class="ti-facebook"></i><span class="sr-only">Facebook</span></a></li>
+                <li><a href="" target="new"><i class="ti-twitter-alt"></i><span class="sr-only">Twitter</span></a></li>
+                <li><a href="" target="new"><i class="ti-google"></i><span class="sr-only">Google+</span></a></li>
             </ul>
-            <ul class="contact list-inline">
-                <li><i class="icon-home"></i><span class="sr-only">地址</span>新北市樹林區學成路655號9樓</li>
-                <li><i class="icon-mobile"></i><span class="sr-only">電話</span>0983-792-107</li>
-                <li><i class="icon-mail"></i><span class="sr-only">E-mail</span><a href="ahagentcom@gmail.com">ahagentcom@gmail.com</a></li>
-            </ul>
-            <a href="#header" class="goTop scroll"><i class="icon-angle"></i></a>
+
+            <div class="copyright">Taiwan U-Link Association &copy; 2016</div>
+
+            <a href="#header" class="goTop scroll"><i class="icon-angle-up"></i></a>
         </div>
     </footer><!-- footer -->
 

@@ -6,70 +6,137 @@
 }
 
 @section css {
-	<link href="~/Content/css/vendor/animate.css" rel="stylesheet">
+	<link href="~/Content/css/vendor/swiper.min.css" rel="stylesheet">
+}
+
+@section Scripts {
+	<script src="~/Content/js/swiper/swiper.min.js"></script>
+	<script>
+		// var swiper = new Swiper('#banner', {
+  //           effect: 'fade',
+  //           autoplay: 2500,
+  //           speed: 1200
+  //       });
+	</script>
 }
 
 <h1 class="sr-only">@ViewBag.Title</h1>
 
-<div class="wrap">
-
-	<div id="banner">
-		<img class="bg" src="~/Content/images/Index/banner1.jpg">
-		<p class="slogan1">
-			<span class="sr-only">幸福阿珍</span>
-			<img class="slogan1-1 animated fadeInLeft" src="~/Content/images/Index/slogan1-1.svg" alt="">
-			<img class="slogan1-2 animated fadeInDown" src="~/Content/images/Index/slogan1-2.svg" alt="">
-			<img class="slogan1-3 animated fadeInUp" src="~/Content/images/Index/slogan1-3.svg" alt="">
-			<img class="slogan1-4 animated fadeInRight" src="~/Content/images/Index/slogan1-4.svg" alt="">
-		</p>
-		<p class="slogan2 animated bounceIn">
-			<i class="text">加入我們共創幸福！</i>
-			<img class="cloud2" src="~/Content/images/Index/cloud2.svg" alt="">
-			<img class="balloon" src="~/Content/images/Index/balloon.svg" alt="">
-		</p>
-		<img class="cloud" src="~/Content/images/Index/cloud.svg" alt="">
-	</div>
-
-	<section class="intro">
-		<h2 class="h2">We Spread Happiness</h2>
-		<p>Happiness Agent is a co-sharing platform. We expected to create an environment that makes communities cooperate with each other. Lets make our lives better together. Come and join us!</p>
-	</section>
-
-</div>
+<section id="banner" class="swiper-container">
+	<ol class="swiper-wrapper list-unstyled">
+		<li class="swiper-slide">
+			<img src="~/Content/images/Index/banner.jpg" alt="">
+			<h2 class="slogan">
+				JOIN US
+				<small>我們正在尋找充滿熱情、有幹勁、想一起改變世界的夥伴。</small>
+				<a href="" class="btn btn-success btn-lg">活動參與 <i class="ti-arrow-right"></i></a>
+			</h2>
+		</li>
+	</ol>
+</section>
 
 <div id="content">
-	<div class="wrap">
-		
-		<div class="grid-house">
-			<section class="sell">
-				<h2 class="h3">
-					<a href="~/Sell">
-						<span>優質好宅出售</span>
-						<small>Achievement of your happiness is the only moral purpose of your life, and that happiness, not pain or mindless self-indulgence, is the proof of your moral integrity, since it is the proof and the result of your loyalty to the achievement of your values.</small>
-					</a>
-				</h2>
-			</section>
-			<section class="rent">
-				<h2 class="h3">
-					<a href="~/Rent">
-						<span>精選房屋出租</span>
-						<small>Achievement of your happiness is the only moral purpose of your life, and that happiness, not pain or mindless self-indulgence, is the proof of your moral integrity, since it is the proof and the result of your loyalty to the achievement of your values.</small>
-					</a>
-				</h2>
-			</section>
-		</div>
 
-		<section class="grid-contact">
-			<h2 class="h2">Contacts</h2>
-			<div class="map">
-				<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.572889805967!2d121.37944231500457!3d24.94661608401328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681c740c32b2af%3A0x2ba1a4efce64b775!2zMjM45paw5YyX5biC5qi55p6X5Y2A5a245oiQ6LevNjU16Jmf!5e0!3m2!1szh-TW!2stw!4v1458115457215" frameborder="0" allowfullscreen></iframe>
-				<ul class="list-unstyled">
-					<li><i class="icon-home"></i><span class="sr-only">地址</span>新北市樹林區學成路655號9樓</li>
-					<li><i class="icon-mobile"></i><span class="sr-only">電話</span>0983-792-107</li>
-					<li><i class="icon-mail"></i><span class="sr-only">E-mail</span><a href="ahagentcom@gmail.com">ahagentcom@gmail.com</a></li>
-				</ul>
-			</div>
-		</section>
+	<div class="grid-intro">
+
+		<div class="wrap"><div class="row">
+
+			<section class="video">
+				<a href="~/Videos/Content001" class="thumb">
+					<img src="~/Content/images/Index/speech.jpg" alt="">
+					<h2 class="h2"><span class="title">與社會對話的藝術思考</span><small>高俊宏</small></h2>
+				</a>
+			</section>
+			
+			<section class="news-list">
+				<h2 class="sr-only">最新消息 Latest News</h2>
+				<article class="article">
+					<h3 class="h3">
+						<small>2015-10-01</small>
+						<a href="~/News/Content001">10/29 吳毓庭「爵士的華麗登場」邀您一同享受美好的音樂饗宴</a>
+					</h3>
+					<p>10/29 下午五點在桃園中正藝文特區，吳毓庭老師將帶來一場爵士樂的豐富心靈饗宴！講師經歷：美國印第安納大學演奏碩士、「活樂時光工作室」負責人...</p>
+					<a href="~/News/Content001" class="btn btn-primary more">Read More</a>
+				</article>
+				<article class="article">
+					<h3 class="h3">
+						<small>2015-10-01</small>
+						<a href="~/News/Content001">10/29 吳毓庭「爵士的華麗登場」邀您一同享受美好的音樂饗宴</a>
+					</h3>
+					<p>10/29 下午五點在桃園中正藝文特區，吳毓庭老師將帶來一場爵士樂的豐富心靈饗宴！講師經歷：美國印第安納大學演奏碩士、「活樂時光工作室」負責人...</p>
+					<a href="~/News/Content001" class="btn btn-primary more">Read More</a>
+				</article>
+			</section>
+
+		</div></div>
 
 	</div>
+
+	<section class="article-list"><div class="wrap">
+		<h2 class="h2">精選文章 <small>Articles</small></h2>
+		<div class="card-list row">
+			<article class="article card">
+				<a href="~/Articles/Content001" class="card-img-top">
+					<img src="~/Content/images/Index/speech.jpg" alt="">
+					<i class="icon ti-eye"></i>
+					<small>
+						<span class="name">手塚貴晴</span>
+						<span class="date"><i class="ti-calendar"></i>2016-01-01</span>
+					</small>
+				</a>
+				<div class="card-block">
+					<h3 class="card-title">讓我們一起在島上，尋找未來。</h3>
+					<p class="card-text">海是海島國家最豐沛的資產也是最駭人的鄰居，日本和台灣同是海島國家。2011年一場因地震發生的巨大海嘯改變了村子的...</p>
+					<a href="~/Articles/Content001" class="more">繼續閱讀</a>
+				</div>
+			</article>
+			<article class="article card">
+				<a href="~/Articles/Content001" class="card-img-top">
+					<img src="~/Content/images/Index/speech.jpg" alt="">
+					<i class="icon ti-eye"></i>
+					<small>
+						<span class="name">手塚貴晴</span>
+						<span class="date"><i class="ti-calendar"></i>2016-01-01</span>
+					</small>
+				</a>
+				<div class="card-block">
+					<h3 class="card-title">讓我們一起在島上，尋找未來。</h3>
+					<p class="card-text">海是海島國家最豐沛的資產也是最駭人的鄰居，日本和台灣同是海島國家。2011年一場因地震發生的巨大海嘯改變了村子的...</p>
+					<a href="~/Articles/Content001" class="more">繼續閱讀</a>
+				</div>
+			</article>
+			<article class="article card">
+				<a href="~/Articles/Content001" class="card-img-top">
+					<img src="~/Content/images/Index/speech.jpg" alt="">
+					<i class="icon ti-eye"></i>
+					<small>
+						<span class="name">手塚貴晴</span>
+						<span class="date"><i class="ti-calendar"></i>2016-01-01</span>
+					</small>
+				</a>
+				<div class="card-block">
+					<h3 class="card-title">讓我們一起在島上，尋找未來。</h3>
+					<p class="card-text">海是海島國家最豐沛的資產也是最駭人的鄰居，日本和台灣同是海島國家。2011年一場因地震發生的巨大海嘯改變了村子的...</p>
+					<a href="~/Articles/Content001" class="more">繼續閱讀</a>
+				</div>
+			</article>
+			<article class="article card">
+				<a href="~/Articles/Content001" class="card-img-top">
+					<img src="~/Content/images/Index/speech.jpg" alt="">
+					<i class="icon ti-eye"></i>
+					<small>
+						<span class="name">手塚貴晴</span>
+						<span class="date"><i class="ti-calendar"></i>2016-01-01</span>
+					</small>
+				</a>
+				<div class="card-block">
+					<h3 class="card-title">讓我們一起在島上，尋找未來。</h3>
+					<p class="card-text">海是海島國家最豐沛的資產也是最駭人的鄰居，日本和台灣同是海島國家。2011年一場因地震發生的巨大海嘯改變了村子的...</p>
+					<a href="~/Articles/Content001" class="more">繼續閱讀</a>
+				</div>
+			</article>
+		</div>
+		<p class="text-xs-center"><a href="~/Articles/List" class="btn btn-primary">Read More</a></p>
+	</div></section>
+
 </div>
