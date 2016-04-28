@@ -1,0 +1,290 @@
+@charset "UTF-8";
+
+
+// cards
+// ----------------------------------------------------------------------
+.card-list {
+    @extend .list-unstyled;
+
+    .card {
+        @extend .col-xs-3;
+        margin-bottom: $grid-gutter-width;
+    }
+
+    .card-img-top {
+        display: block;
+        height: 184px;
+        position: relative;
+        overflow: hidden;
+
+        img, small, .icon, &::after {
+            position: absolute;
+        }
+
+        small, &::after {
+            display: block;
+            width: 100%;
+            left: 0;
+        }
+
+        img {
+            min-width: 100%;
+            min-height: 100%;
+            max-width: 150%;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        small {
+            bottom: $spacer*0.5;
+            padding: 0 $spacer;
+            color: #fff;
+            font-size: em(14px);
+            z-index: 10;
+
+            .date{
+                margin-left: $spacer;
+                i {margin-right: 5px;}
+            }
+        }
+
+        .icon {
+            left: 50%;
+            top: 35%;
+            z-index: 8;
+            opacity: 0;
+            transform: translate(-50%, -50%);
+            transition: opacity 0.35s, top 0.35s;
+
+            &[class*="ti-"] {
+                color: #fff;
+                font-size: em(36px);
+            }
+        }
+
+        &::after {
+            bottom: 0;
+            content: " ";
+            height: 65px;
+            background: linear-gradient(hsla(0,0,0,0), hsla(0,0,0,1) 95%);
+            transition: height 0.35s;
+        }
+
+        &:hover {
+            .icon {top: 45%; opacity: 1;}
+            &::after {height: 100%;}
+        }
+    }
+
+    .card-block {
+        margin-top: $spacer*0.8;
+    }
+
+    .card-title, .card-subtitle {@include text-truncate;}
+
+    .card-title {
+        font-weight: bold;
+        font-size: em(16px);
+    }
+
+    .card-subtitle {
+        color: $gray-light;
+    }
+
+    .card-text {
+        height: 4.5em;
+        margin-bottom: $spacer*0.3;
+        text-align: justify;
+        font-size: em(14px);
+        color: #333;
+    }
+
+    .more {
+        display: block;
+        font-size: em(14px);
+        font-weight: bold;
+        color: #1B4D9E;
+        &:hover {color: $link-hover-color;}
+    }
+}
+
+
+// breadcrumbs
+// ----------------------------------------------------------------------
+.breadcrumb {
+    margin: $spacer 0;
+    padding: 0;
+    color: $gray-dark;
+    font-size: em(14px);
+    background: none;
+    // border-bottom: 1px solid #f2f2f2;
+
+    li {
+        display: inline-block;
+        float: none
+    }
+
+    a {
+        color: $gray-light;
+        &:hover {color: $link-hover-color;}
+    }
+}
+
+
+// navs
+// ----------------------------------------------------------------------
+.nav-tabs {
+
+    text-align: center;
+    border-bottom-width: 3px;
+
+    .nav-item {
+        display: inline-block;
+        float: none;
+    }
+
+    .nav-link {
+        color: $body-color;
+
+        &:hover {color: $brand-secondary;}
+    }
+
+    @include media-breakpoint-down(xs) {
+        .nav-item {
+            font-size: $font-size-sm;
+            margin: 0;
+
+            .nav-link {padding: 0.5em;}
+        }
+    }
+
+}
+
+.tab-content {
+    background: #fff;
+    box-shadow: 0 10px 10px -10px #666 inset;
+
+    padding: $spacer*2;
+}
+
+
+// custom forms
+// ----------------------------------------------------------------------
+
+.c-input {cursor: text;}
+.c-radio, .c-checkbox, .c-select {cursor: pointer;}
+
+.c-input {
+    padding-left: .75rem;
+
+    &.c-checkbox, &.c-radio {padding-left: 2rem;}
+
+    > input {
+        &:focus ~ .c-indicator {box-shadow: none;}
+        &:active ~ .c-indicator {background: $link-hover-color;}
+    }
+}
+
+.c-indicator {
+    width: $line-height*1rem;
+    height: $line-height*1rem;
+    line-height: $line-height*1rem;
+    font-size: 80%;
+    transition: background 0.35s;
+}
+
+.c-checkbox {
+
+    input:checked ~ .c-indicator { background: $link-hover-color; }
+
+    input:indeterminate ~ .c-indicator {
+        background: $link-hover-color;
+
+        &::after {content:"■";}
+    }
+}
+
+.c-radio-group, .c-checkbox-group {
+    .c-indicator {
+        position: relative;
+        display: inline-block;
+        width: auto;
+        height: auto;
+        font-size: 100%;
+        line-height: $line-height;
+        color: $body-color;
+        background: #cfcfcf;
+        border: 1px solid $input-border-color;
+        border-radius: 0;
+
+        padding: $input-padding-y $input-padding-x;
+    }
+
+    .c-radio, .c-checkbox {
+
+        margin: 0;
+        padding: 0;
+
+        &:first-child {
+            .c-indicator {border-radius: $border-radius 0 0 $border-radius;}
+        }
+
+        &:last-child {
+            .c-indicator {border-radius: 0 $border-radius $border-radius 0;}
+        }
+
+        input:checked ~ .c-indicator {
+            background: $brand-primary;
+            border-color: $brand-primary;
+            color: #fff;
+        }
+    }
+
+    .c-radio + .c-radio, .c-checkbox + .c-checkbox {margin-left: -3px;}
+}
+
+
+// carousel
+// ----------------------------------------------------------------------
+#banner {
+    .swiper-pagination {
+        bottom: 0;
+
+        height: 30px;
+        line-height: 30px;
+        background: hsla(0,0,0,0.5);
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background: #B2B2B2;
+            border:2px solid #fff;
+            opacity: 1;
+        }
+        .swiper-pagination-bullet-active {
+            background: $brand-secondary;
+            border-color: #fff;
+        }
+    }
+}
+
+
+// popup
+// ----------------------------------------------------------------------
+.mfp-bg {opacity: 0.9 !important;}
+.mfp-container {
+    padding: $spacer !important;
+}
+.mfp-close {
+    width: 60px !important;
+    height: 60px !important;
+    line-height: 60px !important;
+    color: #fff !important;
+    font-family: 'themify' !important;
+    font-size: 40px !important;
+    text-shadow: 0 0 3px #000;
+}
+.mfp-content {
+    height: 100%;
+}

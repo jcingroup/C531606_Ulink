@@ -1,20 +1,137 @@
 ﻿@{
-    ViewBag.Title = "公司簡介";
-    ViewBag.BodyClass = "AboutUs";
+    ViewBag.Title = "協會簡介";
+    ViewBag.BodyClass = "AboutUs p2";
     Layout = "~/Views/Shared/Layout.cshtml";
 }
 
-<h2 class="h2 title">@ViewBag.Title</h2>
+@section Scripts {
+	<script src="~/Content/js/bootstrap/util.js"></script>
+	<script src="~/Content/js/bootstrap/collapse.js"></script>
+	<script>
+		$(".member .card-img-top").click(function() {
+			var h1 = $(this).parent(".cover").height();
+			var h2 = $(this).parent(".cover").siblings(".collapse").height();
+			if ( $(this).parent(".cover").siblings(".collapse").hasClass("in") ) {
+				$(this).parents(".member").height(h1);
+			} else {
+				$(this).parents(".member").height(h1+h2);
+			}
+		});
+	</script>
+}
+
+<h2 class="sr-only">@ViewBag.Title</h2>
 
 <section id="content">
 
+	<div id="banner">
+		<h3 class="h3 wrap">
+			<span class="title">團隊介紹</span>
+		</h3>
+		<img class="thumb" src="~/Content/images/Index/banner.jpg" alt="">
+	</div>
+
     <div class="wrap">
-        <div class="editor">
 
-            @Html.Raw(ViewBag.content)
+    	<ul class="breadcrumb text-md-right">
+    		<li><a href="~/Index">Home</a></li>
+    		<li><a href="~/Events">@ViewBag.Title</a></li>
+    		<li>團隊介紹</li>
+    	</ul>
 
-        </div>
+    	<div class="card-list member-list row m-t-2">
+			<article class="member card">
+				<div class="cover">
+					<a href="#m01" data-toggle="collapse" class="card-img-top img-circle">
+						<img src="~/Content/images/Index/speech.jpg" alt="">
+						<i class="icon ti-zoom-in"></i>
+					</a>
+					<div class="card-block">
+						<h3 class="card-title">吳志揚</h3>
+						<h4 class="card-subtitle">John Wu</h4>
+						<p class="card-text">召集人</p>
+					</div>
+				</div>
+				<div id="m01" class="intro collapse">
+					<p><strong>吳志揚</strong> <span class="text-muted">John Wu</span></p>
+					<hr class="sm">
+					<p>個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介</p>
+				</div>
+			</article>
+			<article class="member card">
+				<div class="cover">
+					<a href="#m02" data-toggle="collapse" class="card-img-top img-circle">
+						<img src="~/Content/images/Index/speech.jpg" alt="">
+						<i class="icon ti-zoom-in"></i>
+					</a>
+					<div class="card-block">
+						<h3 class="card-title">吳志揚2</h3>
+						<h4 class="card-subtitle">John Wu</h4>
+						<p class="card-text">召集人</p>
+					</div>
+				</div>
+				<div id="m02" class="intro collapse">
+					<p><strong>吳志揚2</strong> <span class="text-muted">John Wu</span></p>
+					<hr class="sm">
+					<p>個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介</p>
+				</div>
+			</article>
+			<article class="member card">
+				<div class="cover">
+					<a href="#m03" data-toggle="collapse" class="card-img-top img-circle">
+						<img src="~/Content/images/Index/speech.jpg" alt="">
+						<i class="icon ti-zoom-in"></i>
+					</a>
+					<div class="card-block">
+						<h3 class="card-title">吳志揚3</h3>
+						<h4 class="card-subtitle">John Wu</h4>
+						<p class="card-text">召集人</p>
+					</div>
+				</div>
+				<div id="m03" class="intro collapse">
+					<p><strong>吳志揚3</strong> <span class="text-muted">John Wu</span></p>
+					<hr class="sm">
+					<p>個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介</p>
+				</div>
+			</article>
+			<article class="member card">
+				<div class="cover">
+					<a href="#m04" data-toggle="collapse" class="card-img-top img-circle">
+						<img src="~/Content/images/Index/speech.jpg" alt="">
+						<i class="icon ti-zoom-in"></i>
+					</a>
+					<div class="card-block">
+						<h3 class="card-title">吳志揚4</h3>
+						<h4 class="card-subtitle">John Wu</h4>
+						<p class="card-text">召集人</p>
+					</div>
+				</div>
+				<div id="m04" class="intro collapse">
+					<p><strong>吳志揚4</strong> <span class="text-muted">John Wu</span></p>
+					<hr class="sm">
+					<p>個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介</p>
+				</div>
+			</article>
+			<article class="member card">
+				<div class="cover">
+					<a href="#m05" data-toggle="collapse" class="card-img-top img-circle">
+						<img src="~/Content/images/Index/speech.jpg" alt="">
+						<i class="icon ti-zoom-in"></i>
+					</a>
+					<div class="card-block">
+						<h3 class="card-title">吳志揚5</h3>
+						<h4 class="card-subtitle">John Wu</h4>
+						<p class="card-text">召集人</p>
+					</div>
+				</div>
+				<div id="m05" class="intro collapse">
+					<p><strong>吳志揚5</strong> <span class="text-muted">John Wu</span></p>
+					<hr class="sm">
+					<p>個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介</p>
+				</div>
+			</article>
+		</div>
+        
     </div>
 
 </section>
-

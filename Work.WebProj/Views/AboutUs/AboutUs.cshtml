@@ -1,20 +1,35 @@
 ﻿@{
-    ViewBag.Title = "公司簡介";
-    ViewBag.BodyClass = "AboutUs";
+    ViewBag.Title = "協會簡介";
+    ViewBag.BodyClass = "AboutUs p1";
     Layout = "~/Views/Shared/Layout.cshtml";
 }
 
-<h2 class="h2 title">@ViewBag.Title</h2>
+<h2 class="sr-only">@ViewBag.Title</h2>
 
 <section id="content">
 
+	<div id="banner">
+		<h3 class="h3 wrap">
+			<span class="title">理念說明</span>
+		</h3>
+		<img class="thumb" src="~/Content/images/Index/banner.jpg" alt="">
+	</div>
+
     <div class="wrap">
-        <div class="editor">
 
-            @Html.Raw(ViewBag.content)
+    	<ul class="breadcrumb text-md-right">
+    		<li><a href="~/Index">Home</a></li>
+    		<li><a href="~/Events">@ViewBag.Title</a></li>
+    		<li>理念說明</li>
+    	</ul>
 
-        </div>
+    	<article class="article section">
+    		<h5 class="h4">關於優靈客</h5>
+    		<div class="editor main-text">
+    			<p>優靈客希望能夠聚集優質靈感的人，向社會傳達正向的能量與聲音。</p>
+    		</div>
+    	</article>
+        
     </div>
 
 </section>
-

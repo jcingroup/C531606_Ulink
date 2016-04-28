@@ -1,20 +1,60 @@
 ﻿@{
-    ViewBag.Title = "公司簡介";
-    ViewBag.BodyClass = "AboutUs";
+    ViewBag.Title = "活動參與";
+    ViewBag.BodyClass = "Events p2";
     Layout = "~/Views/Shared/Layout.cshtml";
 }
 
-<h2 class="h2 title">@ViewBag.Title</h2>
+<h2 class="sr-only">@ViewBag.Title</h2>
 
 <section id="content">
 
+	<div id="banner">
+		<h3 class="h3 wrap">
+			<span class="title">加入我們</span>
+		</h3>
+		<img class="thumb" src="~/Content/images/Index/banner.jpg" alt="">
+	</div>
+
     <div class="wrap">
-        <div class="editor">
 
-            @Html.Raw(ViewBag.content)
+    	<ul class="breadcrumb text-md-right">
+    		<li><a href="~/Index">Home</a></li>
+    		<li><a href="~/Events">@ViewBag.Title</a></li>
+    		<li>加入我們</li>
+    	</ul>
 
-        </div>
+    	<p>請填妥以下基本資料，我們將會盡快與您聯繫！</p>
+
+    	<form action="" class="form">
+    		<div class="form-group">
+    			<input type="text" class="form-control" placeholder="姓名">
+    		</div>
+    		<div class="form-group">
+    			<input type="text" class="form-control" placeholder="E-mail">
+    		</div>
+    		<div class="form-group">
+    			<input type="text" class="form-control" placeholder="聯絡電話">
+    		</div>
+    		<div class="form-group">
+    			<label class="c-input c-checkbox">
+    				<input type="checkbox">
+    				<span class="c-indicator"><i class="ti-check"></i></span>
+    				我想加入優靈客工作團隊
+    			</label>
+    			<label class="c-input c-checkbox">
+    				<input type="checkbox">
+    				<span class="c-indicator"><i class="ti-check"></i></span>
+    				我想成為講者
+    			</label>
+    		</div>
+    		<div class="form-group">
+    			<textarea name="" id="" cols="30" rows="5" class="form-control" placeholder="介紹一下你自己吧！"></textarea>
+    		</div>
+    		<div class="form-group">
+    			<button class="btn btn-primary btn-lg">送出資料</button>
+    		</div>
+    	</form>
+        
     </div>
 
 </section>
-

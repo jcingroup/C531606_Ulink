@@ -1,19 +1,68 @@
 ﻿@{
-    ViewBag.Title = "公司簡介";
-    ViewBag.BodyClass = "AboutUs";
+    ViewBag.Title = "觀看演講";
+    ViewBag.BodyClass = "Videos";
     Layout = "~/Views/Shared/Layout.cshtml";
 }
 
-<h2 class="h2 title">@ViewBag.Title</h2>
+@section Scripts {
+	<script>
+		$("#banner .play").click(function() {
+			$(".youtube").fadeIn();
+			var url = $(".youtube iframe").attr("src");
+			$(".youtube iframe").attr("src", url + "&autoplay=1");
+		});
+	</script>
+}
+
+<h2 class="sr-only">@ViewBag.Title</h2>
 
 <section id="content">
 
+	<div id="banner" class="dark">
+		<h3 class="h3 wrap">
+			<span class="label label-primary">主題XX</span>
+			<small>
+				<span class="name">余浩瑋</span>
+				<span class="date"><i class="ti-calendar"></i>2016-01-01</span>
+			</small>
+			<span class="title">他用戲劇表演，讓年輕人找回自我方向</span>
+		</h3>
+		<i class="icon play"></i>
+		<i class="thumb">
+			<img src="~/Content/images/Videos/banner.jpg" alt="">
+		</i>
+		<div class="youtube">
+			<iframe src="https://www.youtube.com/embed/3p31ftvioBc?rel=0" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
+
     <div class="wrap">
-        <div class="editor">
 
-            @Html.Raw(ViewBag.content)
+    	<ul class="breadcrumb text-md-right">
+    		<li><a href="~/Index">Home</a></li>
+    		<li><a href="~/Videos/List">@ViewBag.Title</a></li>
+    		<li>演講內容</li>
+    	</ul>
 
-        </div>
+    	<article class="article section">
+    		<h4 class="h4">簡介 &amp; 大綱</h4>
+    		<div class="editor main-text">
+    			<p>余浩瑋認為：改變價值觀，正是教育翻轉的破口。藉由戲劇節與風箏計畫創造舞台、找回邊緣青少年，余浩瑋要帶年輕人從體制外找到活路、找回對社會的關注。讓我們跟著余浩瑋與青藝盟少年們的，看見這群天生就與眾不同的青少年們，如何讓改變從現在開始！</p>
+    		</div>
+    	</article>
+
+    	<aside class="article section">
+    		<h4 class="h4">余浩瑋 Yu Hao-Wei</h4>
+    		<h5 class="h5">青少年表演藝術聯盟團長</h5>
+    		<div class="editor main-text">
+    			<p>余浩瑋認為：改變價值觀，正是教育翻轉的破口。藉由戲劇節與風箏計畫創造舞台、找回邊緣青少年，余浩瑋要帶年輕人從體制外找到活路、找回對社會的關注。讓我們跟著余浩瑋與青藝盟少年們的，看見這群天生就與眾不同的青少年們，如何讓改變從現在開始！</p>
+    		</div>
+    	</aside>
+
+    	<p class="text-xs-center">
+    		<a href="~/Videos/List" class="btn btn-primary">回列表</a>
+    	</p>
+        
     </div>
 
 </section>

@@ -1,19 +1,91 @@
 ﻿@{
-    ViewBag.Title = "公司簡介";
-    ViewBag.BodyClass = "AboutUs";
+    ViewBag.Title = "精選文章";
+    ViewBag.BodyClass = "Articles";
     Layout = "~/Views/Shared/Layout.cshtml";
 }
 
-<h2 class="h2 title">@ViewBag.Title</h2>
+<h2 class="sr-only">@ViewBag.Title</h2>
 
 <section id="content">
 
     <div class="wrap">
-        <div class="editor">
 
-            @Html.Raw(ViewBag.content)
+    	<ul class="breadcrumb text-md-right">
+    		<li><a href="~/Index">Home</a></li>
+    		<li>@ViewBag.Title</li>
+    	</ul>
 
-        </div>
+    	<ul class="filter list-inline">
+    		<li>所有主題</li>
+    		<li>主題1</li>
+    		<li>主題2</li>
+    	</ul>
+
+    	<hr>
+
+    	<div class="card-list row">
+			<article class="article card">
+				<a href="~/Articles/Content001" class="card-img-top">
+					<img src="~/Content/images/Index/speech.jpg" alt="">
+					<i class="icon ti-eye"></i>
+					<small>
+						<span class="name">手塚貴晴</span>
+						<span class="date"><i class="ti-calendar"></i>2016-01-01</span>
+					</small>
+				</a>
+				<div class="card-block">
+					<h3 class="card-title">讓我們一起在島上，尋找未來。</h3>
+					<p class="card-text">海是海島國家最豐沛的資產也是最駭人的鄰居，日本和台灣同是海島國家。2011年一場因地震發生的巨大海嘯改變了村子的...</p>
+					<a href="~/Articles/Content001" class="more">繼續閱讀</a>
+				</div>
+			</article>
+			<article class="article card">
+				<a href="~/Articles/Content001" class="card-img-top">
+					<img src="~/Content/images/Index/speech.jpg" alt="">
+					<i class="icon ti-eye"></i>
+					<small>
+						<span class="name">手塚貴晴</span>
+						<span class="date"><i class="ti-calendar"></i>2016-01-01</span>
+					</small>
+				</a>
+				<div class="card-block">
+					<h3 class="card-title">讓我們一起在島上，尋找未來。</h3>
+					<p class="card-text">海是海島國家最豐沛的資產也是最駭人的鄰居，日本和台灣同是海島國家。2011年一場因地震發生的巨大海嘯改變了村子的...</p>
+					<a href="~/Articles/Content001" class="more">繼續閱讀</a>
+				</div>
+			</article>
+			<article class="article card">
+				<a href="~/Articles/Content001" class="card-img-top">
+					<img src="~/Content/images/Index/speech.jpg" alt="">
+					<i class="icon ti-eye"></i>
+					<small>
+						<span class="name">手塚貴晴</span>
+						<span class="date"><i class="ti-calendar"></i>2016-01-01</span>
+					</small>
+				</a>
+				<div class="card-block">
+					<h3 class="card-title">讓我們一起在島上，尋找未來。</h3>
+					<p class="card-text">海是海島國家最豐沛的資產也是最駭人的鄰居，日本和台灣同是海島國家。2011年一場因地震發生的巨大海嘯改變了村子的...</p>
+					<a href="~/Articles/Content001" class="more">繼續閱讀</a>
+				</div>
+			</article>
+			<article class="article card">
+				<a href="~/Articles/Content001" class="card-img-top">
+					<img src="~/Content/images/Index/speech.jpg" alt="">
+					<i class="icon ti-eye"></i>
+					<small>
+						<span class="name">手塚貴晴</span>
+						<span class="date"><i class="ti-calendar"></i>2016-01-01</span>
+					</small>
+				</a>
+				<div class="card-block">
+					<h3 class="card-title">讓我們一起在島上，尋找未來。</h3>
+					<p class="card-text">海是海島國家最豐沛的資產也是最駭人的鄰居，日本和台灣同是海島國家。2011年一場因地震發生的巨大海嘯改變了村子的...</p>
+					<a href="~/Articles/Content001" class="more">繼續閱讀</a>
+				</div>
+			</article>
+		</div>
+        
     </div>
 
 </section>

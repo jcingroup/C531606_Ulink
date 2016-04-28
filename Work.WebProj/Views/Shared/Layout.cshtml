@@ -28,6 +28,7 @@
     <div id="wrapper">
 
         <header id="header">
+
             <div class="wrap">
 
                 <div class="logo"><a href="~/Index" title="回首頁"><img src="~/Content/images/logo.png" alt="@Resources.Res.System_FrontName"></a></div>
@@ -52,19 +53,34 @@
                     </div>
                 </form>
 
-                <nav id="menu" class="navbar">
+            </div><!-- wrap //-->
+
+            <nav id="menu" class="navbar">
+                <div class="wrap">
                 	<h2 class="sr-only">主選單</h2>
                 	<ul class="nav navbar-nav">
                 		<li><a href="~/Videos/List">觀看演講</a></li>
                 		<li><a href="~/Articles/List">精選文章</a></li>
-                		<li><a href="~/Events">活動參與</a></li>
-                		<li><a href="~/AboutUs">協會簡介</a></li>
+                		<li>
+                            <a href="~/Events">活動參與</a>
+                            <ul class="sidebar list-inline text-xs-center">
+                                <li><a href="~/Events">活動預告</a></li>
+                                <li><a href="~/Events/p2">加入我們</a></li>
+                            </ul>
+                        </li>
+                		<li>
+                            <a href="~/AboutUs">協會簡介</a>
+                            <ul class="sidebar list-inline text-xs-center">
+                                <li><a href="~/ABoutUs">理念說明</a></li>
+                                <li><a href="~/ABoutUs/p2">團隊介紹</a></li>
+                            </ul>
+                        </li>
                 		<li><a href="~/ContactUs">聯絡我們</a></li>
                 		<li><a href="~/News/List">最新消息</a></li>
                     </ul>
-                </nav>
+                </div><!-- wrap //-->
+            </nav>
 
-            </div><!-- wrap //-->
         </header><!-- header //-->
 
         <main id="main">

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+// Settiings
+$enable-lte7:                   false;
+$enable-rounded:                false;
+$img-path:                      '../images';
+$font-path:                     '../font/';
+$pages:                         'Videos' 'Articles' 'Events' 'AboutUs' 'ContactUs' 'News';
+$subpages-max:                  2;
+
+
+// Colors
+$brand-secondary:               #349CCF !default;
+
+$link-color:                    darken($brand-primary, 5%);
+$link-hover-color:              $brand-secondary;
+
+
+// Typography
+$font-family-en:                "Open Sans", "Helvetica Neue", Helvetica, Arial, 'Microsoft Jhenghei', \5FAE\8EDF\6B63\9ED1\9AD4, sans-serif !default;
+
+
+// Table
+$table-cell-padding:            .35rem .75rem;
+$table-bg:                      #fff;
+$table-bg-accent:               #F5F5F5;
+$thead-bg:                      #ccc;
+$table-border-color:            $table-bg;
+
+
+// Buttons
+
+$btn-padding-y:                 .3rem;
+
+$btn-padding-x-lg:              1.35rem;
+$btn-padding-y-lg:              .6rem;
+
+$btn-border-radius:             .5rem;
+$btn-border-radius-lg:          .625rem;
+
+$btn-primary-border:            #E5E5E5;
+
+$btn-secondary-color:           lighten($link-color, 30%);
+$btn-secondary-bg:              #333;
+$btn-secondary-border:          transparent;
+
+$btn-muted-color:               #fff !default;
+$btn-muted-bg:                  lighten($gray-light,20%) !default;
+$btn-muted-border:              $btn-muted-bg !default;
+
+$btn-danger-bg:                 darken($btn-danger-bg,10%);
+
+
+// Forms
+$input-border-focus:            #818E96;
+$input-color-placeholder:       #5F6D68;
+
+
+// Navbar
+$navbar-padding-horizontal:     0;
+$navbar-padding-vertical:       $spacer*0.375;
+
+
+// Navs
+$nav-tabs-border-color:                     $brand-secondary;
+
+$nav-tabs-active-link-hover-bg:             #544D48;
+$nav-tabs-active-link-hover-color:          #fff;
+$nav-tabs-active-link-hover-border-color:   transparent;
+
+
+// Cards
+$card-border-width:             0;
+$card-spacer-x:                 .75rem;
+
+
+// Labels
+$label-primary-bg:              #F98D13;

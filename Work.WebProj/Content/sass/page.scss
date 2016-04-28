@@ -1,0 +1,300 @@
+@charset "UTF-8";
+
+// var
+// ------------------------------------------------------------
+
+
+// import
+// ------------------------------------------------------------
+
+// Core variables and mixins
+@import "helper/variables";
+@import "_web/var";
+
+@import "helper/mixins";
+@import "helper/function";
+
+// Reset and dependencies
+@import "base/normalize";
+@import "base/print";
+@import "base/reboot";
+
+// Elements
+@import "element/type";
+@import "element/images";
+// @import "element/tables";
+@import "element/forms";
+@import "element/buttons";
+
+// Layout
+@import "layout/grid";
+
+// Module
+@import "module/animation";
+// @import "module/button-group";
+// @import "module/input-group";
+@import "module/custom-forms";
+@import "module/nav";
+@import "module/navbar";
+// @import "module/card";
+@import "module/breadcrumb";
+// @import "module/pagination";
+// @import "module/pager";
+@import "module/labels";
+// @import "module/jumbotron";
+// @import "module/alert";
+// @import "module/list-group";
+// @import "module/responsive-embed";
+// @import "module/close";
+
+// Components w/ JavaScript
+// @import "module/modal";
+// @import "module/dropdown";
+// @import "module/tooltip";
+// @import "module/popover";
+// @import "module/carousel";
+
+// Utility classes
+@import "helper/utilities-extends";
+@import "helper/utilities";
+@import "helper/extend";
+@import "helper/classes";
+// @import "helper/utilities-background";
+@import "helper/utilities-spacing";
+@import "helper/utilities-responsive";
+
+@import "_web/element";
+@import "_web/module";
+// @import "_web/editor";
+@import "_web/layout";
+
+
+// Elements
+// ----------------------------------------------------------------------
+
+.filter {
+
+	li {
+		padding: $spacer*0.5 $spacer;
+		background: $link-color;
+		cursor: pointer;
+		transition: color 0.35s, background 0.35s;
+
+		&:hover {
+			color: #fff;
+			background: $link-hover-color;
+		}
+	}
+}
+
+.icon {
+	&.play {
+		display: block;
+		@include size(50px);
+		position: relative;
+		border-radius: 50%;
+		background: $brand-danger;
+
+		&::after {
+			content:" ";
+			display: block;
+			position: absolute;
+			left: 18px;
+			top: 13px;
+			border: 12px solid transparent;
+			border-left: 18px solid #fff;
+			border-right: 0;
+		}
+	}
+}
+
+#banner {
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+
+	.h3, .icon, .thumb, .youtube {position: absolute;}
+
+	.h3 {
+		@include clearfix;
+		width: 100%;
+		left: 50%;
+		bottom: $spacer*1.5;
+		font-size: em(32px);
+		transform: translateX(-50%);
+		z-index: 5;
+		text-shadow: 0 0 10px #fff;
+
+		.label {
+			font-size: $font-size-lg;
+			text-shadow: none;
+		}
+
+		small, .title {
+			display: block;
+			margin-top: $spacer;
+		}
+
+		small {
+			font-size: 1rem;
+
+			.date {
+				margin-left: $spacer;
+				i {margin-right: 5px;}
+			}
+		}
+
+		.title {
+			line-height: 1.5;
+		}
+	}
+
+	.icon {
+		left: 50%;
+		top: 45%;
+		transform: translate(-50%, -50%);
+		background: #E40000;
+		box-shadow: 0 0 10px #000;
+		z-index: 8;
+		transition: transform 0.35s;
+		cursor: pointer;
+		
+		&:hover {transform: translate(-50%, -50%) scale(1.2);}
+	}
+
+	.thumb {
+		height: 100%;
+		top: 0; left: 50%;
+		transform: translateX(-50%);
+
+		&::after {
+			content:" ";
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0; top: 0;
+			background: linear-gradient(to right, hsla(0,0,0,1), hsla(0,0,0,0) 30%, hsla(0,0,0,0) 70%, hsla(0,0,0,1));
+		}
+
+    	img {height: 100%;}
+	}
+
+	img.thumb {
+		width: 110%;
+		height: auto;
+		min-height: 100%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+		opacity: 0.5;
+		-webkit-filter: blur(15px);
+		filter: blur(15px);
+
+		&::after {display: none;}
+	}
+
+	.youtube {
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: #000;
+		z-index: 10;
+		display: none;
+
+		iframe {
+			width: 800px;
+			height: 100%;
+			position: absolute;
+			left: 50%;
+			top: 0;
+			transform: translateX(-50%);
+		}
+	}
+
+	&.dark {
+		background: #000;
+		
+		.h3 {
+			color: #fff;
+			text-shadow: 0 0 10px #000;
+		}
+	}
+
+	.Videos & {height: 400px;}
+	.Articles &, .Events.p1 & {height: 300px;}
+}
+
+.section {margin-bottom: $spacer*2.5;}
+
+.main-text {
+	margin: $spacer*0.8 0 0 $spacer*0.8;
+	padding-left: $spacer;
+	border-left: 1px solid #ddd;
+}
+
+
+
+
+
+// Layout
+// ----------------------------------------------------------------------
+
+
+
+// Main
+// ----------------------------------------------------------------------
+
+// == About Us
+.member-list {
+	position: relative;
+
+	.member {
+		position: static;
+
+		&:nth-of-type(4n+1) {clear: both;}
+		
+		.cover {
+			@include clearfix;
+			width: 100%;
+			height: 120px;
+			float: left;
+		}
+
+		.card-img-top {
+			width: 120px;
+			height: 120px;
+			float: left;
+			position: relative;
+			margin-right: $spacer*1.5;
+			z-index: 10;
+
+			&::after {background: linear-gradient(hsla(0,0,100%,0), hsla(0,0,100%,0.5) 95%);}
+
+			.icon {color: $body-color;}
+			&:hover .icon {top: 50%;}
+		}
+
+		.card-block {
+			margin-top: 60px;
+			transform: translateY(-50%);
+		}
+		.card-title {font-size: em(20px);}
+		.card-subtitle {font-size: em(16px);}
+		.card-text {height: auto;}
+
+		.intro {
+			position: absolute;
+			left: 0;
+			top: auto;
+			width: 100%;
+			margin-top: 120px;
+			padding: 0 $spacer;
+			background: #f2f2f2;
+			transition-property: height, padding;
+
+			&.collapse {padding: 0 $spacer;}
+			&.collapse.in {padding: $spacer;}
+		}
+	}
+}

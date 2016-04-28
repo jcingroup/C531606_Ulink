@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+
+// type
+// ----------------------------------------------------------------------
+h1, .h1 {
+    font-size: 2.2em;
+    margin-bottom: $spacer;
+}
+
+h2, .h2 {
+}
+
+h3, .h3 {
+}
+
+h4, .h4 {
+}
+.h4 {
+    font-weight: bold;
+}
+
+h5, .h5 {
+}
+
+.h5 {
+    color: $gray;
+    letter-spacing: 0.05em;
+}
+
+h6, .h6 {
+}
+
+hr {
+    margin: $spacer*2 auto;
+    border-color: #ddd;
+
+    &.sm {margin: $spacer auto;}
+}
+
+
+// table
+// ----------------------------------------------------------------------
+.table {
+	background: transparent;
+
+    td {border: $table-border-width solid $table-border-color;}
+
+    thead {
+
+    	th {
+    		background: $thead-bg;
+    		border: $table-border-width solid $table-border-color;
+
+            vertical-align: middle;
+    		color: #3D3935;
+    		font-size: em(18px);
+    		font-weight: normal;
+    	}
+    }
+
+    tbody {
+    	tr {background: $table-bg;}
+    }
+}
+
+
+// buttons
+// ----------------------------------------------------------------------
+.btn {}
+
+.btn-primary {
+    font-size: em(14px);
+    letter-spacing: 0.08em;
+    color: $body-color;
+    text-transform: uppercase;
+    border: 0;
+
+    &:hover, &.active {
+        color: #fff;
+        background: $link-hover-color;
+    }
+
+    &.btn-lg {font-size: em(20px);}
+}
+
+.btn-secondary {
+    &:hover {background: #544D48;}
+}
+
+.btn-danger {
+    &:hover {background: lighten($btn-danger-bg,10%);}
+}
+
+.btn-muted {@include button-variant($btn-muted-color, $btn-muted-bg, $btn-muted-border);}
+
+
+// form
+// ----------------------------------------------------------------------
+.form-inline {
+
+    .form-group {margin: 0 $spacer $spacer 0;}
+}
