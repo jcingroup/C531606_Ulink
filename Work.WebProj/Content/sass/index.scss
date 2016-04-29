@@ -31,7 +31,7 @@ $content-spacing:       0;
 @import "layout/grid";
 
 // Module
-// @import "module/animation";
+@import "module/animation";
 @import "module/nav";
 @import "module/navbar";
 
@@ -68,22 +68,22 @@ $content-spacing:       0;
 
 		img, h2 {
 			position: absolute;
-			left: 50%; top:0;
-			transform: translateX(-50%);
+			left: 50%; top:50%;
+			transform: translate(-50%, -50%);
 		}
 
 		img {
 			width: 1920px;
-			height: 100%;
+			height: 500px;
 		}
 
 		h2 {
-			width: 600px;
-			height: 185px;
+			width: 685px;
+			height: 285px;
 			padding: $spacer*2.5 $spacer*2;
-			top: 80px;
-			background: hsla(0,0,100%,0.5);
+			background: hsla(0,0,100%,0.6);
 			border: 10px solid $brand-primary;
+			box-sizing: border-box;
 
 			text-align: center;
 			font-weight: 600;
@@ -95,8 +95,67 @@ $content-spacing:       0;
 
 				font-weight: bold;
 				font-size: em(21px, 50px);
+			}
+		}
+	}
 
-				// border-top: 1px solid #534741;
+	@include media-breakpoint-down(lg) {
+		height: 380px;
+		li {
+			h2 {padding: $spacer*2;}
+			img {
+				width: auto;
+				max-height: 150%;
+			}
+		}
+	}
+	@include media-breakpoint-down(md) {
+		li {
+			h2 {
+				width: 600px;
+				height: 250px;
+				padding: $spacer*1.5;
+				font-size: em(40px);
+
+				small {font-size: em(18px, 40px);}
+			}
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		height: 300px;
+		li {
+			h2 {
+				width: 500px;
+				padding: $spacer*1.5 $spacer;
+
+				small {
+					margin: $spacer 0;
+					line-height: 1.5;
+					letter-spacing: 0.1em;
+				}
+				.btn {
+					padding: $spacer*0.3 $spacer;
+					font-size: em(16px, 40px);
+				}
+			}
+		}
+	}
+	@include media-breakpoint-down(xs) {
+		height: 200px;
+		li {
+			h2 {
+				width: 90%;
+				height: 70%;
+				padding: $spacer*1.1;
+				font-size: em(36px);
+				border-width: 7px;
+				small {display: none;}
+				.btn {
+					display: block;
+					width: 10em;
+					margin: $spacer auto;
+					font-size: em(16px, 36px);
+				}
 			}
 		}
 	}
@@ -111,7 +170,7 @@ $content-spacing:       0;
 
 .video {
 	@extend .col-xs-4;
-	width: 510px;
+	width: 42.5%;
 
 	.thumb {
 		display: block;
@@ -133,7 +192,7 @@ $content-spacing:       0;
 		&::before {
 			@include size(100px);
 			border-radius: 50%;
-			background: $link-color;
+			background: $brand-primary;
 			box-shadow: 0 0 15px hsla(0,0,0,0.5);
 			transition: background 0.35s;
 		}
@@ -182,45 +241,105 @@ $content-spacing:       0;
 			}
 		}
 	}
+
+	@include media-breakpoint-down(lg) {
+		width:45%;
+		.thumb {
+			height: 275px;
+			&::before {@include size(80px);}
+			&::after {border-width: 20px 0 20px 30px;}
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		width: 100%;
+		float:right;
+		.thumb {height: 320px;}
+	}
+
+	@include media-breakpoint-down(xs) {
+		.thumb {
+			position: relative;
+			display: block;
+			height: 0;
+			padding: 0 0 percentage(9 / 16) 0;
+			overflow: hidden;
+
+			&::before, &::after {top: 40%;}
+			&::before {@include size(50px);}
+			&::after {
+				margin-left: 2px;
+				border-width: 10px 0 10px 15px;
+			}
+
+			.h2 {
+				height: auto;
+				padding: $spacer*0.8 $spacer;
+				font-size: em(18px);
+				.title {height: 1.2em;}
+			}
+		}
+	}
 }
 
 .news-list {
 	@extend .col-xs-8;
-	width: 660px;
+	width: 57.5%;
 
 	.article {
-		position: relative;
-		margin-bottom: $spacer*1.5;
-		padding: $spacer $spacer $spacer*2.7 $spacer;
-		background: #fff;
-		border-left: 5px solid $brand-primary;
-
-		&:last-of-type {margin-bottom: 0;}
-
 		.h3 {
-			font-size: em(20px);
-
-			small {
-				display: block;
-				margin-bottom: 5px;
-				font-size: em(14px, 20px);
-				color: #999;
-			}
-
+			margin-bottom: $spacer*0.5;
+			line-height: 1;
 			a {
-				font-weight: bold;
-				color: $body-color;
-
-				&:hover {color: $link-hover-color;}
+				@extend %text-truncate;
+				height: 1em;
 			}
 		}
+		p {
+			height: 3em;
+			overflow: hidden;
+		}
+	}
 
-		p {margin-bottom: 0;}
+	@include media-breakpoint-down(lg) {
+		width:55%;
 
-		.more {
-			position: absolute;
-			right: 0;
-			bottom: 0;
+		.article {
+			p {
+				@include text-truncate;
+				width: 100%;
+				height: 1.5em;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(md) {
+		width: 100%;
+
+		.article {
+			width: 48.5%;
+			float: left;
+			padding: $spacer*0.7 $spacer*0.7 $spacer*3.5 $spacer*0.7;
+
+			&:first-of-type {margin-right: 1.5%;}
+			&:last-of-type {margin-left: 1.5%;}
+
+			.more {
+				left: $spacer*0.8;
+				right: auto;
+				bottom: $spacer;
+				background: #f2f2f2;
+				&:hover, &:active {background: $link-hover-color;}
+			}
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		.article {
+			width: 100%;
+			float: none;
+			&:first-of-type {margin: 0 0 $spacer 0;}
+			&:last-of-type {margin: 0 0 $spacer*1.5 0;}
 		}
 	}
 }

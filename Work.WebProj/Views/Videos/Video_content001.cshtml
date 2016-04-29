@@ -8,8 +8,10 @@
 	<script>
 		$("#banner .play").click(function() {
 			$(".youtube").fadeIn();
-			var url = $(".youtube iframe").attr("src");
+            var url = $(".youtube iframe").attr("src");
 			$(".youtube iframe").attr("src", url + "&autoplay=1");
+            var h = $(".youtube .embed-responsive").outerHeight();
+            $("#banner").outerHeight(h);
 		});
 	</script>
 }
@@ -18,8 +20,8 @@
 
 <section id="content">
 
-	<div id="banner" class="dark">
-		<h3 class="h3 wrap">
+	<div id="banner" class="dark taller">
+		<h3 class="h3 wrap hidden-md-down">
 			<span class="label label-primary">主題XX</span>
 			<small>
 				<span class="name">余浩瑋</span>
@@ -29,11 +31,13 @@
 		</h3>
 		<i class="icon play"></i>
 		<i class="thumb">
-			<img src="~/Content/images/Videos/banner.jpg" alt="">
+			<img src="~/Content/images/Videos/data/001/banner.jpg" alt="">
 		</i>
-		<div class="youtube">
-			<iframe src="https://www.youtube.com/embed/3p31ftvioBc?rel=0" frameborder="0" allowfullscreen></iframe>
-		</div>
+		<div class="youtube"><div class="wrap">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.youtube.com/embed/3p31ftvioBc?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
+		</div></div>
 	</div>
 
     <div class="wrap">
@@ -43,6 +47,15 @@
     		<li><a href="~/Videos/List">@ViewBag.Title</a></li>
     		<li>演講內容</li>
     	</ul>
+
+        <h4 class="h3 hidden-lg-up">
+            <span class="label label-primary">主題XX</span>
+            <small>
+                <span class="name">余浩瑋</span>
+                <span class="date"><i class="ti-calendar"></i>2016-01-01</span>
+            </small>
+            <span class="title">他用戲劇表演，讓年輕人找回自我方向</span>
+        </h4>
 
     	<article class="article section">
     		<h4 class="h4">簡介 &amp; 大綱</h4>

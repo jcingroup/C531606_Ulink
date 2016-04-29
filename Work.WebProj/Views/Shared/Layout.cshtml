@@ -5,6 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>@ViewBag.Title:@Resources.Res.System_FrontName</title>
     <script src="~/Scripts/cdn/BrowerInfo.js"></script>
     <script>
@@ -31,11 +32,15 @@
 
             <div class="wrap">
 
+                <button class="navbar-toggler btn btn-primary hidden-lg-up"><i class="ti-menu"></i> MENU</button>
+
                 <div class="logo"><a href="~/Index" title="回首頁"><img src="~/Content/images/logo.png" alt="@Resources.Res.System_FrontName"></a></div>
 
                 <h1 class="h1">
-                    @Resources.Res.System_FrontName
-                    <small>Taiwan U-Link Association</small>
+                    <a href="~/Index" title="回首頁">
+                        @Resources.Res.System_FrontName
+                        <small>Taiwan U-Link Association</small>
+                    </a>
                 </h1>
 
                 <h2 class="slogan">聚集優質靈感的人，向社會傳達正向的能量與聲音</h2>
@@ -46,11 +51,30 @@
                     <li><a href="" target="new"><i class="ti-google"></i><span class="sr-only">Google+</span></a></li>
                 </ul>
 
-                <form action="" class="search form-inline">
+                <button class="search-toggler btn btn-link hidden-md-up collapsed" data-toggle="collapse" data-target="#search">
+                    <i class="ti-close"></i>
+                </button>
+
+                <form id="search" action="" class="search form-inline collapse navbar-toggleable-sm">
+                <div class="collapse-wrap">
                     <div class="form-group">
-                        <input type="text" class="form-control">
-                        <button class="btn btn-link"><i class="ti-search"></i></button>
+                        @* <input type="text" class="form-control"> *@
+                        @* <button class="btn btn-link"><i class="ti-search"></i></button> *@
+                        <i class="ti-search"></i>
+                        <script>
+                            (function() {
+                                var cx = '015136155163926618093:qz-ngu50exs';
+                                var gcse = document.createElement('script');
+                                gcse.type = 'text/javascript';
+                                gcse.async = true;
+                                gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                var s = document.getElementsByTagName('script')[0];
+                                s.parentNode.insertBefore(gcse, s);
+                            })();
+                        </script>
+                        <gcse:search></gcse:search>
                     </div>
+                </div>
                 </form>
 
             </div><!-- wrap //-->
@@ -58,10 +82,13 @@
             <nav id="menu" class="navbar">
                 <div class="wrap">
                 	<h2 class="sr-only">主選單</h2>
+                    <button class="close hidden-lg-up"><i class="ti-close"></i></button>
                 	<ul class="nav navbar-nav">
                 		<li><a href="~/Videos/List">觀看演講</a></li>
                 		<li><a href="~/Articles/List">精選文章</a></li>
                 		<li>
+                            @* <span class="sidebar-toggler hidden-lg-up">活動參與</span>
+                            <small class="sidebar-toggler hidden-lg-up">Back 回上層</small> *@
                             <a href="~/Events">活動參與</a>
                             <ul class="sidebar list-inline text-xs-center">
                                 <li><a href="~/Events">活動預告</a></li>
@@ -69,6 +96,8 @@
                             </ul>
                         </li>
                 		<li>
+                            @* <span class="sidebar-toggler hidden-lg-up">協會簡介</span>
+                            <small class="sidebar-toggler hidden-lg-up">Back 回上層</small> *@
                             <a href="~/AboutUs">協會簡介</a>
                             <ul class="sidebar list-inline text-xs-center">
                                 <li><a href="~/ABoutUs">理念說明</a></li>
@@ -133,7 +162,7 @@
         </div>
     </footer><!-- footer -->
 
-    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="~/Scripts/cdn/jquery.min.js"></script>
     <script type="text/javascript">
         // 回頂端
         $(window).scroll(function () {
@@ -149,7 +178,20 @@
             }, 1000);
             event.preventDefault();
         });
+        $('.navbar-toggler').click(function (event) {
+            $('#menu').fadeIn();
+            $("body").addClass("toggled");
+            event.preventDefault();
+        });
+        $('#menu .close').click(function (event) {
+            $('#menu').fadeOut();
+            $("body").removeClass("toggled");
+            event.preventDefault();
+        });
+
     </script>
+    <script src="~/Content/js/bootstrap/util.js"></script>
+    <script src="~/Content/js/bootstrap/collapse.js"></script>
     @RenderSection("Scripts", required: false)
 
 </body>

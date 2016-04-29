@@ -1,19 +1,40 @@
 ﻿@{
-    ViewBag.Title = "公司簡介";
-    ViewBag.BodyClass = "AboutUs";
+    ViewBag.Title = "最新消息";
+    ViewBag.BodyClass = "News";
     Layout = "~/Views/Shared/Layout.cshtml";
 }
 
-<h2 class="h2 title">@ViewBag.Title</h2>
+<h2 class="sr-only">@ViewBag.Title</h2>
 
 <section id="content">
 
+	<div id="banner">
+		<h2 class="h3 wrap">
+			<span class="title">@ViewBag.Title</span>
+		</h2>
+		<img class="thumb" src="~/Content/images/News/banner.jpg" alt="">
+	</div>
+
     <div class="wrap">
-        <div class="editor">
 
-            @Html.Raw(ViewBag.content)
+    	<ul class="breadcrumb text-md-right">
+    		<li><a href="~/Index">Home</a></li>
+    		<li><a href="~/News/List">@ViewBag.Title</a></li>
+    		<li>最新消息內容</li>
+    	</ul>
 
-        </div>
+    	<article class="article section">
+    		<h4 class="h4">10/29 吳毓庭「爵士的華麗登場」邀您一同享受美好的音樂饗宴</h4>
+    		<h5 class="h5"><small><i class="ti-calendar"></i> 2015-10-01 19:00</small></h5>
+    		<div class="editor main-text">
+    			<p>10/29 下午五點在桃園中正藝文特區，吳毓庭老師將帶來一場爵士樂的豐富心靈饗宴！講師經歷：美國印第安納大學演奏碩士、「活樂時光工作室」負責人...10/29 下午五點在桃園中正藝文特區，吳毓庭老師將帶來一場爵士樂的豐富心靈饗宴！講師經歷：美國印第安納大學演奏碩士、「活樂時光工作室」負責人...10/29 下午五點在桃園中正藝文特區，吳毓庭老師將帶來一場爵士樂的豐富心靈饗宴！講師經歷：美國印第安納大學演奏碩士、「活樂時光工作室」負責人...</p>
+    		</div>
+    	</article>
+
+    	<p class="text-xs-center">
+    		<a href="~/News/List" class="btn btn-primary">回列表</a>
+    	</p>
+        
     </div>
 
 </section>

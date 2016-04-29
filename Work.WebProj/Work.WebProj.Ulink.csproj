@@ -336,9 +336,17 @@
     <Content Include="Content\css\_admin\fa\font-awesome.css" />
     <Content Include="Content\css\_admin\mobile.css" />
     <Content Include="Content\css\_admin\page.css" />
+    <Content Include="Content\images\AboutUs\banner.jpg" />
+    <Content Include="Content\images\AboutUs\banner2.jpg" />
+    <Content Include="Content\images\Articles\banner.jpg" />
+    <Content Include="Content\images\Articles\data\001\banner.jpg" />
+    <Content Include="Content\images\ContactUs\banner.jpg" />
+    <Content Include="Content\images\Events\banner.jpg" />
+    <Content Include="Content\images\Events\data\001\banner.jpg" />
     <Content Include="Content\images\Index\banner.jpg" />
     <Content Include="Content\images\Index\speech.jpg" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\News\banner.jpg" />
     <Content Include="Content\images\no-pic.gif" />
     <Content Include="Areas\Base\Views\Menu\Main.cshtml" />
     <Content Include="Content\font\icomoon\icomoon.eot" />
@@ -351,6 +359,7 @@
     <Content Include="Content\font\themify-icons\themify.woff" />
     <Content Include="Content\images\qr.png" />
     <Content Include="Content\images\Videos\banner.jpg" />
+    <Content Include="Content\images\Videos\data\001\banner.jpg" />
     <Content Include="Content\js\bootstrap\alert.js" />
     <Content Include="Content\js\bootstrap\button.js" />
     <Content Include="Content\js\bootstrap\carousel.js" />

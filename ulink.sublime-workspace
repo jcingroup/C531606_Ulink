@@ -4,8 +4,52 @@
 		"selected_items":
 		[
 			[
+				"po",
+				"pos:s	position:static"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"lin",
+				"link-hover-color"
+			],
+			[
 				"pos",
 				"pos:a	position:absolute"
+			],
+			[
+				"navbar",
+				"navbar-nav"
+			],
+			[
+				"bod",
+				"body-color"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"fon-t",
+				"font-weight"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"marin",
+				"margin-bottom"
+			],
+			[
+				"marig",
+				"margin-bottom"
+			],
+			[
+				"bran",
+				"brand-primary"
 			],
 			[
 				"link",
@@ -20,20 +64,12 @@
 				"brand-danger"
 			],
 			[
-				"padd",
-				"padding-top"
-			],
-			[
 				"co",
 				"copyright"
 			],
 			[
 				"grid",
 				"grid-intro"
-			],
-			[
-				"border",
-				"border-radius"
 			],
 			[
 				"font-s",
@@ -92,10 +128,6 @@
 				"font-size"
 			],
 			[
-				"po",
-				"pos:a	position:absolute"
-			],
-			[
 				"mar",
 				"margin-right"
 			],
@@ -108,16 +140,8 @@
 				"after"
 			],
 			[
-				"margin",
-				"margin-right"
-			],
-			[
 				"bor",
 				"border"
-			],
-			[
-				"lin",
-				"link-hover-color"
 			],
 			[
 				"padding",
@@ -427,7 +451,7 @@
 			"file": "Work.WebProj/Content/sass/_web/_var.scss",
 			"settings":
 			{
-				"buffer_size": 2074,
+				"buffer_size": 2055,
 				"line_ending": "Windows"
 			}
 		},
@@ -435,31 +459,15 @@
 			"file": "Work.WebProj/Content/sass/_web/_layout.scss",
 			"settings":
 			{
-				"buffer_size": 8241,
+				"buffer_size": 18682,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Work.WebProj/Content/sass/_web/_module.scss",
+			"file": "Work.WebProj/Views/Index/Index.cshtml",
 			"settings":
 			{
-				"buffer_size": 6013,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Work.WebProj/Content/sass/page.scss",
-			"settings":
-			{
-				"buffer_size": 5287,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Work.WebProj/Views/AboutUs/AboutUs2.cshtml",
-			"settings":
-			{
-				"buffer_size": 4432,
+				"buffer_size": 4589,
 				"line_ending": "Windows"
 			}
 		},
@@ -467,7 +475,7 @@
 			"file": "Work.WebProj/Content/sass/index.scss",
 			"settings":
 			{
-				"buffer_size": 3981,
+				"buffer_size": 3429,
 				"line_ending": "Windows"
 			}
 		},
@@ -475,39 +483,31 @@
 			"file": "Work.WebProj/Views/Shared/Layout.cshtml",
 			"settings":
 			{
-				"buffer_size": 6135,
+				"buffer_size": 8569,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Work.WebProj/Views/Events/Events.cshtml",
+			"file": "Work.WebProj/Content/sass/_web/_module.scss",
 			"settings":
 			{
-				"buffer_size": 1977,
+				"buffer_size": 6946,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Work.WebProj/Views/Events/Events2.cshtml",
+			"file": "Work.WebProj/Content/sass/page.scss",
 			"settings":
 			{
-				"buffer_size": 1631,
+				"buffer_size": 5942,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Work.WebProj/Views/Articles/Article_content001.cshtml",
+			"file": "Work.WebProj/Views/AboutUs/AboutUs2.cshtml",
 			"settings":
 			{
-				"buffer_size": 2364,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Work.WebProj/Views/Videos/Video_content001.cshtml",
-			"settings":
-			{
-				"buffer_size": 1868,
+				"buffer_size": 5569,
 				"line_ending": "Windows"
 			}
 		}
@@ -628,26 +628,37 @@
 		"/D/Github/C531606_Ulink/Work.WebProj/Views",
 		"/D/Github/C531606_Ulink/Work.WebProj/Views/AboutUs",
 		"/D/Github/C531606_Ulink/Work.WebProj/Views/Articles",
+		"/D/Github/C531606_Ulink/Work.WebProj/Views/ContactUs",
 		"/D/Github/C531606_Ulink/Work.WebProj/Views/Events",
 		"/D/Github/C531606_Ulink/Work.WebProj/Views/Index",
+		"/D/Github/C531606_Ulink/Work.WebProj/Views/News",
 		"/D/Github/C531606_Ulink/Work.WebProj/Views/Shared",
 		"/D/Github/C531606_Ulink/Work.WebProj/Views/Videos"
 	],
 	"file_history":
 	[
+		"/D/Github/C531606_Ulink/Work.WebProj/Content/js/bootstrap/util.js",
+		"/D/Github/C531606_Ulink/Work.WebProj/Content/js/bootstrap/collapse.js",
+		"/D/Github/C531606_Ulink/Work.WebProj/Views/News/News_content001.cshtml",
+		"/D/Github/C531606_Ulink/Work.WebProj/Views/Videos/Video_content001.cshtml",
+		"/D/Github/C531606_Ulink/Work.WebProj/Views/Articles/Article_content001.cshtml",
+		"/D/Github/C531606_Ulink/Work.WebProj/Views/Events/Events2.cshtml",
+		"/D/Github/C531606_Ulink/Work.WebProj/Views/Shared/Layout.cshtml",
+		"/D/Github/C531606_Ulink/Work.WebProj/Content/sass/index.scss",
+		"/D/Github/C531606_Ulink/Work.WebProj/Views/AboutUs/AboutUs2.cshtml",
+		"/D/Github/C531606_Ulink/Work.WebProj/Views/ContactUs/ContactUs.cshtml",
+		"/D/Github/C531606_Ulink/Work.WebProj/Views/News/News_list.cshtml",
+		"/D/Github/C531606_Ulink/Work.WebProj/Views/Events/Events.cshtml",
+		"/D/Github/C531606_Ulink/Work.WebProj/cse.xml",
 		"/D/Github/C531606_Ulink/Work.WebProj/Views/AboutUs/AboutUs.cshtml",
 		"/D/Github/C531606_Ulink/Work.WebProj/Views/Events/Events_sidebar.cshtml",
 		"/D/Github/C531606_Ulink/Work.WebProj/Views/Articles/Article_list.cshtml",
-		"/D/Github/C531606_Ulink/Work.WebProj/Views/Articles/Article_content001.cshtml",
 		"/D/Github/C531606_Ulink/Work.WebProj/Views/Videos/Video_list.cshtml",
 		"/D/Github/C531606_Ulink/Work.WebProj/Views/Index/Index.cshtml",
-		"/D/Github/C531606_Ulink/Work.WebProj/Content/sass/index.scss",
-		"/D/Github/C531606_Ulink/Work.WebProj/Views/Videos/Video_content001.cshtml",
 		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/AboutUs/AboutUs_sidebar.cshtml",
 		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/AboutUs/AboutUs.cshtml",
 		"/D/Github/C531606_Ulink/Work.WebProj/Views/Events/sidebar.cshtml",
 		"/D/Github/C531606_Ulink/Work.WebProj/Content/sass/_web/_element.scss",
-		"/D/Github/C531606_Ulink/Work.WebProj/Views/Shared/Layout.cshtml",
 		"/D/Github/C531606_Ulink/Work.WebProj/Content/sass/_web/_layout.scss",
 		"/D/Github/C531606_Ulink/Work.WebProj/Content/sass/_web/_module.scss",
 		"/D/Github/C541607_JobBank/Work.WebProj/Views/Index/Index.cshtml",
@@ -753,16 +764,7 @@
 		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Loan/Loan.cshtml",
 		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Offer/Offer_content.cshtml",
 		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Offer/Offer_list.cshtml",
-		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Repair/Repair.cshtml",
-		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/UsedCar/UsedCar_Form.cshtml",
-		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Content/sass/layout/_grid.scss",
-		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Controllers/BuyCarController.cs",
-		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Controllers/FAQController.cs",
-		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/FAQ/FAQ_list.cshtml",
-		"/D/1_web/台電/web/form2_list.html",
-		"/D/1_web/台電/web/form1_content.html",
-		"/D/1_web/台電/web/form1_list.html",
-		"/D/1_web/台電/web/form2_content.html"
+		"/D/Github/C431603_SymMotorWeb/Work.WebProj/Views/Repair/Repair.cshtml"
 	],
 	"find":
 	{
@@ -795,6 +797,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"data-parent=\".member-list\"",
 			"觀看演講",
 			"<i class=\"ti-eye\"></i>",
 			"video card",
@@ -921,8 +924,7 @@
 			"hidden",
 			"enable-transitions",
 			"@import \"component/",
-			"Offer",
-			"@import \""
+			"Offer"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -930,6 +932,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"data-parent=\"#accordion\"",
 			"精選文章",
 			"<i class=\"icon ti-eye\"></i>",
 			"article card",
@@ -1056,8 +1059,7 @@
 			"椰子",
 			"杏桃",
 			"蘋果",
-			"肉桂",
-			"燕麥棒"
+			"肉桂"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -1068,7 +1070,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -1099,7 +1101,7 @@
 						"translation.y": 171.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
@@ -1115,8 +1117,8 @@
 						"selection":
 						[
 							[
-								18343,
-								18326
+								2567,
+								2569
 							]
 						],
 						"settings":
@@ -1127,10 +1129,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 9421.0,
+						"translation.y": 1767.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -1139,15 +1141,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2074,
+						"buffer_size": 2055,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								324,
-								290
+								1948,
+								1948
 							]
 						],
 						"settings":
@@ -1155,11 +1157,11 @@
 							"origin_encoding": "ASCII",
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.x": -0.0,
+						"translation.y": 228.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -1168,15 +1170,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8241,
+						"buffer_size": 18682,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3666,
-								3666
+								18091,
+								18091
 							]
 						],
 						"settings":
@@ -1187,38 +1189,36 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2859.0,
+						"translation.y": 14703.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "Work.WebProj/Content/sass/_web/_module.scss",
-					"semi_transient": false,
+					"file": "Work.WebProj/Views/Index/Index.cshtml",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 6013,
+						"buffer_size": 4589,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								226,
-								192
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"origin_encoding": "UTF-8",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Razor/Razor.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1148.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
@@ -1226,192 +1226,49 @@
 				},
 				{
 					"buffer": 5,
-					"file": "Work.WebProj/Content/sass/page.scss",
+					"file": "Work.WebProj/Content/sass/index.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5287,
+						"buffer_size": 3429,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5115,
-								5115
+								627,
+								627
 							]
 						],
 						"settings":
 						{
 							"origin_encoding": "UTF-8",
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 2592.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Work.WebProj/Views/AboutUs/AboutUs2.cshtml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4432,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								542,
-								542
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Razor/Razor.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1775.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "Work.WebProj/Content/sass/index.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3981,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								630,
-								630
-							]
-						],
-						"settings":
-						{
-							"origin_encoding": "ASCII",
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": -0.0,
-						"translation.y": 228.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "Work.WebProj/Views/Shared/Layout.cshtml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6135,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5575,
-								5508
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Razor/Razor.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
 						"translation.x": 0.0,
-						"translation.y": 1585.0,
+						"translation.y": 285.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "Work.WebProj/Views/Events/Events.cshtml",
+					"buffer": 6,
+					"file": "Work.WebProj/Views/Shared/Layout.cshtml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1977,
+						"buffer_size": 8569,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1110,
-								1110
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Razor/Razor.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 399.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "Work.WebProj/Views/Events/Events2.cshtml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1631,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								179,
-								179
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Razor/Razor.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "Work.WebProj/Views/Articles/Article_content001.cshtml",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2364,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								396,
-								274
+								2477,
+								2477
 							]
 						],
 						"settings":
@@ -1421,38 +1278,100 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 513.0,
+						"translation.y": 484.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "Work.WebProj/Views/Videos/Video_content001.cshtml",
+					"buffer": 7,
+					"file": "Work.WebProj/Content/sass/_web/_module.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1868,
+						"buffer_size": 6946,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								817,
-								810
+								409,
+								409
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Razor/Razor.tmLanguage"
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Work.WebProj/Content/sass/page.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5942,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2111,
+								2111
+							]
+						],
+						"settings":
+						{
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3504.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Work.WebProj/Views/AboutUs/AboutUs2.cshtml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5569,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								135,
+								135
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Razor/Razor.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 114.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
@@ -1521,7 +1440,7 @@
 		[
 			[
 				"",
-				"D:\\Github\\C491601_Alder\\Alder.sublime-project"
+				"D:\\Github\\C541607_JobBank\\JobBank.sublime-project"
 			]
 		],
 		"width": 380.0

@@ -5,17 +5,22 @@
 }
 
 @section Scripts {
-	<script src="~/Content/js/bootstrap/util.js"></script>
-	<script src="~/Content/js/bootstrap/collapse.js"></script>
 	<script>
+		var memberH = $(".member").height();
+
 		$(".member .card-img-top").click(function() {
-			var h1 = $(this).parent(".cover").height();
-			var h2 = $(this).parent(".cover").siblings(".collapse").height();
-			if ( $(this).parent(".cover").siblings(".collapse").hasClass("in") ) {
-				$(this).parents(".member").height(h1);
-			} else {
-				$(this).parents(".member").height(h1+h2);
-			}
+
+			$(this).parent(".cover").siblings(".intro").on('shown.bs.collapse', function () {
+				var introH = $(this).outerHeight();
+				var coverH = $(this).siblings(".cover").outerHeight();
+				$(this).parent(".member").height(coverH+introH);
+				$(".intro").not(this).parent(".member").height(memberH);
+			});
+			
+			$(this).parent(".cover").siblings(".intro").on('hide.bs.collapse', function () {
+				$(this).parent(".member").height(memberH);
+			});
+			
 		});
 	</script>
 }
@@ -28,7 +33,7 @@
 		<h3 class="h3 wrap">
 			<span class="title">團隊介紹</span>
 		</h3>
-		<img class="thumb" src="~/Content/images/Index/banner.jpg" alt="">
+		<img class="thumb" src="~/Content/images/AboutUs/banner2.jpg" alt="">
 	</div>
 
     <div class="wrap">
@@ -39,10 +44,12 @@
     		<li>團隊介紹</li>
     	</ul>
 
-    	<div class="card-list member-list row m-t-2">
-			<article class="member card">
+    	<h3 class="h3">暫無資料</h3>
+
+    	@* <div id="accordion" class="card-list member-list row m-t-2">
+			<article class="member card panel">
 				<div class="cover">
-					<a href="#m01" data-toggle="collapse" class="card-img-top img-circle">
+					<a href="#m01" data-toggle="collapse" data-parent="#accordion" class="card-img-top img-circle">
 						<img src="~/Content/images/Index/speech.jpg" alt="">
 						<i class="icon ti-zoom-in"></i>
 					</a>
@@ -53,14 +60,21 @@
 					</div>
 				</div>
 				<div id="m01" class="intro collapse">
-					<p><strong>吳志揚</strong> <span class="text-muted">John Wu</span></p>
-					<hr class="sm">
-					<p>個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介</p>
+					<dl class="row">
+						<dt class="col-xs-3">
+						</dt>
+						<dd class="col-xs-9">
+							<h5 class="h5">吳志揚 <small>John Wu</small></h5>
+							<h6 class="h6">召集人</h6>
+							<hr class="sm">
+							<p>個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介</p>
+						</dd>
+					</dl>
 				</div>
 			</article>
-			<article class="member card">
+			<article class="member card panel">
 				<div class="cover">
-					<a href="#m02" data-toggle="collapse" class="card-img-top img-circle">
+					<a href="#m02" data-toggle="collapse" data-parent="#accordion" class="card-img-top img-circle">
 						<img src="~/Content/images/Index/speech.jpg" alt="">
 						<i class="icon ti-zoom-in"></i>
 					</a>
@@ -71,14 +85,22 @@
 					</div>
 				</div>
 				<div id="m02" class="intro collapse">
-					<p><strong>吳志揚2</strong> <span class="text-muted">John Wu</span></p>
-					<hr class="sm">
-					<p>個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介</p>
+					<dl class="row">
+						<dt class="col-xs-3">
+							<img src="~/Content/images/Index/speech.jpg" alt="" class="img-thumbnail">
+						</dt>
+						<dd class="col-xs-9">
+							<h5 class="h5">吳志揚 <small>John Wu</small></h5>
+							<h6 class="h6">召集人</h6>
+							<hr class="sm">
+							<p>個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介</p>
+						</dd>
+					</dl>
 				</div>
 			</article>
-			<article class="member card">
+			<article class="member card panel">
 				<div class="cover">
-					<a href="#m03" data-toggle="collapse" class="card-img-top img-circle">
+					<a href="#m03" data-toggle="collapse" data-parent="#accordion" class="card-img-top img-circle">
 						<img src="~/Content/images/Index/speech.jpg" alt="">
 						<i class="icon ti-zoom-in"></i>
 					</a>
@@ -89,14 +111,22 @@
 					</div>
 				</div>
 				<div id="m03" class="intro collapse">
-					<p><strong>吳志揚3</strong> <span class="text-muted">John Wu</span></p>
-					<hr class="sm">
-					<p>個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介</p>
+					<dl class="row">
+						<dt class="col-xs-3">
+							<img src="~/Content/images/Index/speech.jpg" alt="" class="img-thumbnail">
+						</dt>
+						<dd class="col-xs-9">
+							<h5 class="h5">吳志揚 <small>John Wu</small></h5>
+							<h6 class="h6">召集人</h6>
+							<hr class="sm">
+							<p>個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介</p>
+						</dd>
+					</dl>
 				</div>
 			</article>
-			<article class="member card">
+			<article class="member card panel">
 				<div class="cover">
-					<a href="#m04" data-toggle="collapse" class="card-img-top img-circle">
+					<a href="#m04" data-toggle="collapse" data-parent="#accordion" class="card-img-top img-circle">
 						<img src="~/Content/images/Index/speech.jpg" alt="">
 						<i class="icon ti-zoom-in"></i>
 					</a>
@@ -107,14 +137,22 @@
 					</div>
 				</div>
 				<div id="m04" class="intro collapse">
-					<p><strong>吳志揚4</strong> <span class="text-muted">John Wu</span></p>
-					<hr class="sm">
-					<p>個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介</p>
+					<dl class="row">
+						<dt class="col-xs-3">
+							<img src="~/Content/images/Index/speech.jpg" alt="" class="img-thumbnail">
+						</dt>
+						<dd class="col-xs-9">
+							<h5 class="h5">吳志揚 <small>John Wu</small></h5>
+							<h6 class="h6">召集人</h6>
+							<hr class="sm">
+							<p>個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介</p>
+						</dd>
+					</dl>
 				</div>
 			</article>
-			<article class="member card">
+			<article class="member card panel">
 				<div class="cover">
-					<a href="#m05" data-toggle="collapse" class="card-img-top img-circle">
+					<a href="#m05" data-toggle="collapse" data-parent="#accordion" class="card-img-top img-circle">
 						<img src="~/Content/images/Index/speech.jpg" alt="">
 						<i class="icon ti-zoom-in"></i>
 					</a>
@@ -125,12 +163,19 @@
 					</div>
 				</div>
 				<div id="m05" class="intro collapse">
-					<p><strong>吳志揚5</strong> <span class="text-muted">John Wu</span></p>
-					<hr class="sm">
-					<p>個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介</p>
+					<dl class="row">
+						<dt class="col-xs-3">
+						</dt>
+						<dd class="col-xs-9">
+							<h5 class="h5">吳志揚 <small>John Wu</small></h5>
+							<h6 class="h6">召集人</h6>
+							<hr class="sm">
+							<p>個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介個人資料簡介</p>
+						</dd>
+					</dl>
 				</div>
 			</article>
-		</div>
+		</div> *@
         
     </div>
 

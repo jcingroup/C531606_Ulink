@@ -25,6 +25,13 @@ a {
 /*      layout
 -----------------------------------------------------------------------*/
 
+body.toggled {
+    width: 100%;
+    height: 100%;
+    overflow: hidden !important;
+    position: fixed;
+}
+
 #wrapper {
     @if $enable-lte7 { _height: 100%; }
     min-height: 100%;
@@ -46,8 +53,42 @@ a {
 
 /*      elements
 -----------------------------------------------------------------------*/
-
-
+.gsc-control-cse {
+    padding: 0 !important;
+    background: none !important;
+    border: none !important;
+}
+.gsc-search-box {
+    margin: 0 !important;
+    background: none !important;
+}
+.gsib_a {
+    padding: 0 !important;
+}
+.gsib_b {
+    display: none !important;
+}
+.gsc-input-box {
+    border: 0 !important;
+}
+td.gsc-input {
+    padding: 0 !important;
+}
+input.gsc-input {
+    width: 10em !important;
+    background: none !important;
+    border: 0 !important;
+    border-radius: 10px;
+}
+input.gsc-search-button {
+    width: 45px !important;
+    height:20px !important;
+    margin: 3px 0 0 0 !important;
+    padding: 0 !important;
+    position: relative;
+    opacity: 0;
+    z-index: 1000;
+}
 
 
 // header
@@ -70,9 +111,7 @@ a {
 
     .logo, .topNav, .search {position: absolute;}
 
-    .wrap {
-        padding: 45px 0 0 280px;
-    }
+    .wrap {padding: 45px 0 0 280px;}
 
     .logo {left: 0; top: 5px;}
 
@@ -85,6 +124,8 @@ a {
             font-weight: 300;
             letter-spacing: 0;
         }
+
+        a {color: $body-color;}
     }
 
     .slogan {
@@ -101,7 +142,7 @@ a {
         a {
             font-size: em(18.5px);
             color: #ccc;
-            &:hover {color: $link-color;}
+            &:hover {color: $brand-primary;}
         }
     }
 
@@ -112,20 +153,193 @@ a {
         .form-group {
             position: relative;
             margin: 0;
+            padding: 4px 0 4px 12px;
+            border: 1px solid #ccc;
+            border-radius: 19px;
         }
         .form-control {
             padding-right: 50px;
             border-radius: 19px;
         }
 
-        .btn {
+        .ti-search {
             position: absolute;
-            right: 0;
-            top: 0;
+            right: 12px;
+            top: 10px;
 
             font-size: em(18.5px);
             color: #ccc;
-            background: none;
+        }
+
+        // .btn {
+        //     position: absolute;
+        //     right: 0;
+        //     top: 0;
+
+        //     font-size: em(18.5px);
+        //     color: #ccc;
+        //     background: none;
+        // }
+    }
+
+    @include media-breakpoint-down(lg) {
+        height: 185px;
+
+        &::before {height: 63px;}
+
+        .logo {
+            width: 180px;
+            top: 12px;
+            img {max-width: 100%;}
+        }
+
+        .wrap {padding: 32px 0 0 210px;}
+        .h1 {
+            margin-bottom: $spacer*0.5;
+            font-size: em(24px);
+            letter-spacing: 0.1em;
+
+            small {
+                font-size: em(16px,24px);
+            }
+        }
+
+        .slogan {
+            font-size: em(16px);
+            color: #666;
+            letter-spacing: 0.1em;
+        }
+
+        .topNav {
+            top: 20px;
+
+            li {margin-left: $spacer*0.2;}
+
+            a {font-size: em(16px);}
+        }
+
+        .search {
+            top: 55px;
+
+            // .form-control {
+            //     padding: 2px 42px 2px 15px;
+            //     border-radius: 15px;
+            // }
+
+            // .btn {
+            //     padding: 2px 12px 2px 12px;
+            //     font-size: em(16px);
+            // }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        height: 110px;
+
+        &::before {display: none;}
+
+        .navbar-toggler {
+            position: absolute;
+            left: $grid-gutter-width/2;
+            top: 35px;
+            background: $brand-primary;
+            &:hover, &:active, &:focus {background: $link-hover-color;}
+        }
+
+        .logo, .slogan {display: none;}
+
+        .wrap {padding: 10px $grid-gutter-width/2;}
+
+        .h1 {
+            height: 90px;
+            margin: 0 0 0 115px;
+            padding: 20px 0 0 110px;
+            float: left;
+
+            font-size: em(20px);
+            background: url('#{$img-path}/logo.png') no-repeat;
+            background-size: contain;
+
+            small {
+                display: block;
+                margin-top: 10px;
+                font-size: em(14px, 20px);
+            }
+        }
+
+        // .search {
+        //     .form-control {width: 14em;}
+        // }
+    }
+
+    @include media-breakpoint-down(sm) {
+        height: auto;
+
+        .topNav,
+        .search-toggler {right: $grid-gutter-width/2}
+
+        .search-toggler {
+            position: absolute;
+            right: $grid-gutter-width/2;
+            top: 55px;
+            padding: 0;
+            color: #ccc;
+
+            &.collapsed {
+                .ti-close::before {content:"\e610";}
+            }
+        }
+
+        .search {
+            display: block;
+            height: 0;
+            position: static;
+            clear: both;
+            overflow: hidden;
+
+            &.in {height: auto;}
+
+            .collapse-wrap {
+                padding: $spacer*1.5 0 $spacer*0.5 0;
+            }
+
+            .form-group {
+                display: block;
+            }
+            // .form-control {
+            //     width: 100%;
+            //     font-size: em(20px);
+            //     border-radius: 18px;
+            // }
+            // .btn {
+            //     top: $spacer*1.5;
+            //     font-size: em(20px);
+            // }
+        }
+    }
+    @include media-breakpoint-down(xs) {
+        &::before {
+            display: block;
+            height: 30px;
+            top: 0;
+            bottom: auto;
+            background: #f2f2f2;
+            border: none;
+        }
+        .wrap {padding-top: 40px;}
+        .navbar-toggler {top: 0px;}
+        .topNav,
+        .search-toggler {top: 3px;}
+        .topNav {
+            right: 2.8em;
+            a {color: #999;}
+        }
+        .search-toggler {color: #999;}
+        .h1 {
+            width: 290px;
+            float: none;
+            margin: 0 auto;
+            padding-left: 120px;
         }
     }
 }
@@ -158,6 +372,8 @@ a {
                 color: #000;
             }
 
+            small {display: none;}
+
             $selector: ();
             @each $item in $pages {
                 $i: index($pages, $item);
@@ -165,10 +381,94 @@ a {
             }
             > a:hover, #{$selector} {
                 color: #fff;
-                background: #F98D13;
+                background: $link-color;
             }
             #{$selector} {
                 & + .sidebar {display: block;}
+            }
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        top: 125px;
+
+        .navbar-nav {
+            > li {
+                > a {
+                    height: 60px;
+                    font-size: em(18px);
+                    line-height: 60px;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background: hsla(48, 94%, 56%, 0.95);
+        display: none;
+
+        .wrap {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+        }
+
+        .close {
+            display: block;
+            width: 54px;
+            height: 54px;
+            position: absolute;
+            right: $spacer;
+            top: $spacer;
+            text-align: center;
+            font-size: em(36px);
+            color: #fff;
+            background: darken($brand-primary, 15%);
+            border: 0;
+            z-index: 1000;
+        }
+
+        .navbar-nav {
+            width: 200px;
+            height: 100%;
+            position: relative;
+            margin: 0 auto;
+            padding: $spacer 0;
+            overflow-y: auto;
+            overflow-x: hidden;
+
+            > li {
+                width: 100%;
+                float: none;
+                margin: 10px 0;
+                text-align: center;
+
+                > a {
+                    display: block;
+                    height: 100%;
+                    line-height: 1;
+                    padding: $spacer*0.8 0;
+                    font-weight: normal;
+                    letter-spacing: 0.2em;
+                }
+
+                $selector: ();
+                @each $item in $pages {
+                    $i: index($pages, $item);
+                    $selector: append($selector, unquote(".#{$item} &:nth-of-type(#{$i}) > a"), comma);
+                }
+                > a:hover, > a:active, #{$selector} {
+                    color: #fff;
+                    background: darken($brand-primary, 15%);
+                }
             }
         }
     }
@@ -217,6 +517,46 @@ a {
             > a {color: #fff;}
         }
     }
+
+    @include media-breakpoint-down(lg) {
+        top: 60px;
+    }
+
+    @include media-breakpoint-down(md) {
+        width: 60%;
+        position: static;
+        margin: $spacer*0.5 auto $spacer auto;
+        padding: 0;
+        background: none;
+        border: 0;
+        border-left: 1px solid hsla(0,0,100%, 0.5);
+
+        > li {
+            display: block;
+            margin: 0;
+            padding: 5px 0;
+
+            &::after {
+                display: none;
+            }
+
+            > a {
+                padding: 0;
+                font-size: em(16px);
+                letter-spacing: 0.05em;
+                opacity: 0.3;
+            }
+
+            &:hover,
+            .p1 &:nth-of-type(1),
+            .p2 &:nth-of-type(2) {
+                > a {
+                    color: $body-color;
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
 
 
@@ -241,7 +581,6 @@ a {
 
     .logo {
         float: left;
-        margin-right: $spacer;
 
         a {
             @include text-hide;
@@ -257,14 +596,19 @@ a {
 
     .about,
     .menu,
-    .copyright {
-        width: 430px;
-        float: left;
+    .copyright {float: left;}
+
+    .about,
+    .menu {
+        margin-left: $spacer*1.5;
+        margin-right: $spacer*1.5;
     }
+
+    .about, .copyright {width: 45%;}
+    .menu {width: 30%;}
 
     .about {
         margin-top: $spacer*0.5;
-        margin-right: $spacer*3;
 
         .h2 {
             font-size: em(16px);
@@ -284,7 +628,7 @@ a {
             height: 1.5em;
             float: left;
             position: relative;
-            margin: 0  $spacer*2 $spacer*1.25 0;
+            margin: 0  $spacer*1.5 $spacer 0;
             padding-left: $spacer;
             letter-spacing: 0.08em;
 
@@ -315,18 +659,15 @@ a {
             }
 
             > ul {
-                margin-left: $spacer;
+                margin-left: $spacer*0.8;
                 > li {
                     > a {
                         padding-bottom: 3px;
                         font-size: em(14px);
                         color: #4D4D4D;
-                        border-bottom: 1px solid;
-                        transition: color 0.35s, border 0.35s;
 
                         &:hover {
                             color: $body-color;
-                            border-color: transparent;
                         }
                     }
                 }
@@ -337,7 +678,7 @@ a {
 
     .copyright {
         margin-top: -20px;
-        padding-left: 123 + 16px;
+        padding-left: 123 + 24px;
         color: #999;
         font-size: em(12px);
     }
@@ -378,7 +719,107 @@ a {
         a {
             font-size: em(18.5px);
             color: #ccc;
-            &:hover {color: $link-color;}
+            &:hover {color: $brand-primary;}
+        }
+    }
+
+    @include media-breakpoint-down(lg) {
+        .about,
+        .menu {
+            margin-left: $spacer;
+            margin-right: $spacer;
+        }
+        .about {width: 38%;}
+        .copyright {
+            margin: 0;
+            padding-left: 123 + 16px;
+        }
+        .menu {
+            > li {
+                margin: 0  $spacer*1.25 $spacer*0.8 0;
+            }
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        .about,
+        .menu,
+        .copyright {
+            width: 100%;
+            float: none;
+            @include clearfix;
+        }
+        .about {
+            height: 105px;
+            margin: 0 0 $spacer*1.3 0;
+            padding-left: 140px;
+            h2 {padding-top: 10px;}
+            p {margin-bottom: 0;}
+        }
+        .menu {
+            margin: 0 0 $spacer*1.3 0;
+            text-align: center;
+            > li {
+                display: inline-block;
+                float: none;
+                margin: 0 0 0 $spacer*0.8;
+                &::before {display: none;}
+                &:not(:first-of-type) {
+                    border-left: 1px solid #ccc;
+                }
+                > .submenu {display: none;}
+            }
+        }
+        .social {
+            width: 90px;
+            top: 10px;
+            right: $grid-gutter-width/2;
+            li.qr {display: none;}
+            a {font-size: em(14px);}
+        }
+        .copyright {
+            padding: $spacer*0.5 0;
+            text-align: center;
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .about {height: auto;}
+        .menu {
+            > li {
+                margin-left: $spacer*0.5;
+                padding-left: $spacer*0.5;
+                &:first-of-type {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint-down(xs) {
+        .logo {
+            float: none;
+            margin-bottom: $spacer*0.5;
+            a {height: 80px;}
+        }
+        .about {padding-left: 0;}
+        .menu {
+            margin-bottom: 0;
+            > li {
+                margin: 0 0 $spacer*0.3 0;
+                padding: 0 $spacer*0.5;
+                &:first-of-type {
+                    margin: 0 0 $spacer*0.3 0;
+                    padding: 0 $spacer*0.5;
+                }
+                &:not(:first-of-type) {border: none;}
+            }
+        }
+        .social {
+            width: 105px;
+            top: 40px;
+            a {font-size: em(18px);}
         }
     }
 }
