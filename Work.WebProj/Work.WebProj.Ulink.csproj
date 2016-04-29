@@ -639,6 +639,7 @@
     <Content Include="Content\sass\_web\_layout.scss" />
     <Content Include="Content\sass\_web\_module.scss" />
     <Content Include="Content\sass\_web\_var.scss" />
+    <Content Include="Views\Events\EventEmail.cshtml" />
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -719,6 +720,7 @@
     <TypeScriptCompile Include="Scripts\src\tsx\m-login.tsx" />
     <TypeScriptCompile Include="Scripts\src\tsx\m-community.tsx" />
     <TypeScriptCompile Include="Scripts\src\tsx\m-users.tsx" />
+    <TypeScriptCompile Include="Scripts\src\tsx\w-joinus_email.ts" />
     <TypeScriptCompile Include="Scripts\ts-def\commfunc.ts" />
     <TypeScriptCompile Include="Scripts\ts-def\commwww.ts" />
     <TypeScriptCompile Include="Scripts\ts-def\ConsoleIe8.ts" />

@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Email";
+    Layout = null;
+}
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>【ULink台灣優靈客協會】 - 加入我們</title>
+</head>
+<body style="font: .8em/140% '微軟正黑體', 'Microsoft JhengHei', Helvetica, sans-serif;">
+    <h1 style="font-size:1.5em;">【ULink台灣優靈客協會】 - 加入我們</h1>
+    <table border="1" bordercolor="#ddd" style="border:1px solid #ccc">
+        <caption style="background:#FCF8E3; color:#9C7163; font-size:1.2em; font-weight:bold; padding:5px; text-align:center;">
+            以下為聯絡人資料
+        </caption>
+
+        <tr>
+            <td style="color:#9C7163; padding:5px; border:1px solid #ccc">姓名</td>
+            <td colspan="3" style="width:50px; padding:5px; border:1px solid #ccc">@Model.name</td>
+        </tr>
+        <tr>
+            <td style="color:#9C7163; padding:5px; border:1px solid #ccc">E-mail</td>
+            <td style="width:150px; padding:5px; border:1px solid #ccc">@Model.email</td>
+            <td style="color:#9C7163; padding:5px; border:1px solid #ccc">連絡電話</td>
+            <td style="width:150px; padding:5px; border:1px solid #ccc">@Model.tel</td>
+        </tr>
+        <tr>
+            <td style="color:#9C7163; padding:5px; border:1px solid #ccc">加入原因</td>
+            <td colspan="3" style="width:150px; padding:5px; border:1px solid #ccc">
+                @foreach (var i in (List<int>)Model.join_type)
+                {
+                    switch (i)
+                    {
+                        case 1:
+                            <span>我想加入優靈客工作團隊  、</span>
+                            break;
+                        case 2:
+                            <span>我想成為講者</span>
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            </td>
+        </tr>
+        <tr>
+            <td style="color:#9C7163; padding:5px; border:1px solid #ccc">聯絡內容</td>
+            <td colspan="3" style="width:500px; height:100px; word-break:break-all; height:100px; padding:5px; border:1px solid #ccc">
+                @Html.Raw(Model.content.Replace("\n", "<br/>"))
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
+

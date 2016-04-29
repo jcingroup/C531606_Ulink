@@ -637,6 +637,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   查詢類似 信箱號碼未填寫! 的當地語系化字串。
+        /// </summary>
+        internal static string Log_Err_MailAddressBlank {
+            get {
+                return ResourceManager.GetString("Log_Err_MailAddressBlank", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 系統錯誤，無任何資料傳出。 的當地語系化字串。
         /// </summary>
         internal static string Log_Err_MustHaveData {
@@ -736,6 +745,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   查詢類似 信箱號碼不正確導致送信失敗，請確認信箱是否正確。 的當地語系化字串。
+        /// </summary>
+        internal static string Log_Err_SendMailFail {
+            get {
+                return ResourceManager.GetString("Log_Err_SendMailFail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 庫存不足 的當地語系化字串。
         /// </summary>
         internal static string Log_Err_StockNotEnough {
@@ -750,6 +768,15 @@ namespace Resources {
         internal static string Log_Err_Stock_NotEnough {
             get {
                 return ResourceManager.GetString("Log_Err_Stock_NotEnough", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 Email已送出，我們會儘快與您聯絡! 的當地語系化字串。
+        /// </summary>
+        internal static string Log_Success_SendMail {
+            get {
+                return ResourceManager.GetString("Log_Success_SendMail", resourceCulture);
             }
         }
         
@@ -781,7 +808,7 @@ namespace Resources {
         }
         
         /// <summary>
-        ///   查詢類似 社區幸福阿珍 Happiness Agent 的當地語系化字串。
+        ///   查詢類似 台灣優靈客協會 的當地語系化字串。
         /// </summary>
         internal static string System_FrontName {
             get {
