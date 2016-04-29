@@ -672,7 +672,6 @@
     <Content Include="Scripts\src\jsx\m-Users.jsx" />
     <Content Include="Scripts\src\jsx\m-Roles.jsx" />
     <Content Include="Scripts\src\xformat.jsx" />
-    <Content Include="_Code\SysUpFiles\member_apply.docx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="favicon.ico" />
