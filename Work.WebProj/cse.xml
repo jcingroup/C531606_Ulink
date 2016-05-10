@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<CustomSearchEngine id="qz-ngu50exs" creator="015136155163926618093" language="zh-Hant" encoding="UTF-8" enable_suggest="true">
+  <Title>台灣優靈客協會</Title>
+  <Context>
+    <BackgroundLabels>
+      <Label name="_cse_qz-ngu50exs" mode="FILTER" />
+      <Label name="_cse_exclude_qz-ngu50exs" mode="ELIMINATE" />
+    </BackgroundLabels>
+  </Context>
+  <LookAndFeel nonprofit="true" element_layout="8" theme="7" text_font="Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif" url_length="full" element_branding="show" enable_cse_thumbnail="true" promotion_url_length="full">
+    <Logo />
+    
+    <Promotions  />
+    <SearchControls  />
+    <Results  />
+  </LookAndFeel>
+  <AdSense />
+  <EnterpriseAccount />
+  <ImageSearchSettings enable="false" />
+  <autocomplete_settings />
+  <sort_by_keys label="Relevance" key="" />
+  <sort_by_keys label="Date" key="date" />
+  <cse_advance_settings enable_speech="true" />
+</CustomSearchEngine>
