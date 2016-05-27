@@ -16,6 +16,18 @@ namespace DotWeb.Controllers
         {
             return View("News_content001");
         }
+        public ActionResult Content002()
+        {
+            return View("News_content002");
+        }
+        public ActionResult Content003()
+        {
+            return View("News_content003");
+        }
+        public ActionResult Content004()
+        {
+            return View("News_content004");
+        }
     }
 
 }

@@ -338,8 +338,15 @@
     <Content Include="Content\css\_admin\page.css" />
     <Content Include="Content\images\AboutUs\banner.jpg" />
     <Content Include="Content\images\AboutUs\banner2.jpg" />
+    <Content Include="Content\images\AboutUs\chart.gif" />
     <Content Include="Content\images\Articles\banner.jpg" />
     <Content Include="Content\images\Articles\data\001\banner.jpg" />
+    <Content Include="Content\images\Articles\data\001\cover.jpg" />
+    <Content Include="Content\images\Articles\data\001\cover_s.jpg" />
+    <Content Include="Content\images\Articles\data\001\pic1.jpg" />
+    <Content Include="Content\images\Articles\data\001\pic2.jpg" />
+    <Content Include="Content\images\Articles\data\001\pic3.jpg" />
+    <Content Include="Content\images\Articles\data\001\pic4.jpg" />
     <Content Include="Content\images\ContactUs\banner.jpg" />
     <Content Include="Content\images\Events\banner.jpg" />
     <Content Include="Content\images\Events\data\001\banner.jpg" />
@@ -649,6 +656,9 @@
     <Content Include="Content\sass\_web\_module.scss" />
     <Content Include="Content\sass\_web\_var.scss" />
     <Content Include="Views\Events\EventEmail.cshtml" />
+    <Content Include="Views\News\News_content002.cshtml" />
+    <Content Include="Views\News\News_content003.cshtml" />
+    <Content Include="Views\News\News_content004.cshtml" />
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

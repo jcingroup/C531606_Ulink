@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/Layout.cshtml";
 }
 
-@section Scripts {
+@* @section Scripts {
 	<script>
 		var memberH = $(".member").height();
 
@@ -23,7 +23,7 @@
 			
 		});
 	</script>
-}
+} *@
 
 <h2 class="sr-only">@ViewBag.Title</h2>
 
@@ -44,7 +44,12 @@
     		<li>團隊介紹</li>
     	</ul>
 
-    	<h3 class="h3">暫無資料</h3>
+    	<article class="article section">
+    		<h5 class="h4">組織架構</h5>
+    		<div class="editor main-text">
+    			<p><img src="~/Content/images/AboutUs/chart.gif" alt=""></p>
+    		</div>
+    	</article>
 
     	@* <div id="accordion" class="card-list member-list row m-t-2">
 			<article class="member card panel">

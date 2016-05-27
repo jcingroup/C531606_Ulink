@@ -3356,74 +3356,164 @@ a.text-danger:focus, a.text-danger:hover {
 
 .gutter-xs-up {
   margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+}
+
+.br-xs-up {
+  display: block;
 }
 
 @media (max-width: 575px) {
   .gutter-xs-down {
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  }
+
+  .br-xs-down {
+    display: block;
+  }
+}
+@media (max-width: 575px) {
+  .gutter-xs-only {
+    margin-top: 0.5rem;
+  }
+
+  .br-xs-only {
+    display: block;
   }
 }
 @media (min-width: 576px) {
   .gutter-sm-up {
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  }
+
+  .br-sm-up {
+    display: block;
   }
 }
 @media (max-width: 767px) {
   .gutter-sm-down {
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  }
+
+  .br-sm-down {
+    display: block;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .gutter-sm-only {
+    margin-top: 0.5rem;
+  }
+
+  .br-sm-only {
+    display: block;
   }
 }
 @media (min-width: 768px) {
   .gutter-md-up {
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  }
+
+  .br-md-up {
+    display: block;
   }
 }
 @media (max-width: 991px) {
   .gutter-md-down {
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  }
+
+  .br-md-down {
+    display: block;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .gutter-md-only {
+    margin-top: 0.5rem;
+  }
+
+  .br-md-only {
+    display: block;
   }
 }
 @media (min-width: 992px) {
   .gutter-lg-up {
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  }
+
+  .br-lg-up {
+    display: block;
   }
 }
 @media (max-width: 1259px) {
   .gutter-lg-down {
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  }
+
+  .br-lg-down {
+    display: block;
+  }
+}
+@media (min-width: 992px) and (max-width: 1259px) {
+  .gutter-lg-only {
+    margin-top: 0.5rem;
+  }
+
+  .br-lg-only {
+    display: block;
   }
 }
 @media (min-width: 1260px) {
   .gutter-xl-up {
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  }
+
+  .br-xl-up {
+    display: block;
   }
 }
 @media (max-width: 1439px) {
   .gutter-xl-down {
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  }
+
+  .br-xl-down {
+    display: block;
+  }
+}
+@media (min-width: 1260px) and (max-width: 1439px) {
+  .gutter-xl-only {
+    margin-top: 0.5rem;
+  }
+
+  .br-xl-only {
+    display: block;
   }
 }
 @media (min-width: 1440px) {
   .gutter-xxl-up {
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+  }
+
+  .br-xxl-up {
+    display: block;
   }
 }
 .gutter-xxl-down {
   margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
 }
 
+.br-xxl-down {
+  display: block;
+}
+
+@media (min-width: 1440px) {
+  .gutter-xxl-only {
+    margin-top: 0.5rem;
+  }
+
+  .br-xxl-only {
+    display: block;
+  }
+}
 .text-middle {
   vertical-align: middle !important;
 }
