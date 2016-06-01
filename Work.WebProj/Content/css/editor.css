@@ -840,6 +840,10 @@ mark,
   border: 1px solid #fff;
 }
 
+p {
+  margin-bottom: 0.5rem;
+}
+
 h1, .h1 {
   font-size: 2.2em;
   margin-bottom: 1rem;
