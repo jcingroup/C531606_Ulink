@@ -409,7 +409,7 @@ input.gsc-search-button {
         position: fixed;
         left: 0;
         top: 0;
-        background: hsla(48, 94%, 56%, 0.95);
+        background: hsla(0,0,0,0.9); //hsla(48, 94%, 56%, 0.95);
         display: none;
 
         .wrap {
@@ -423,15 +423,15 @@ input.gsc-search-button {
 
         .close {
             display: block;
-            width: 54px;
-            height: 54px;
+            width: 30px;
+            height: 30px;
             position: absolute;
             right: $spacer;
             top: $spacer;
             text-align: center;
-            font-size: em(36px);
+            font-size: em(16px);
             color: #fff;
-            background: darken($brand-primary, 15%);
+            background: none;
             border: 0;
             z-index: 1000;
         }
@@ -448,16 +448,16 @@ input.gsc-search-button {
             > li {
                 width: 100%;
                 float: none;
-                margin: 10px 0;
-                text-align: center;
 
                 > a {
                     display: block;
                     height: 100%;
-                    line-height: 1;
                     padding: $spacer*0.8 0;
+
+                    line-height: 1;
                     font-weight: normal;
-                    letter-spacing: 0.2em;
+                    letter-spacing: 0.1em;
+                    color: #999;
                 }
 
                 $selector: ();
@@ -466,8 +466,8 @@ input.gsc-search-button {
                     $selector: append($selector, unquote(".#{$item} &:nth-of-type(#{$i}) > a"), comma);
                 }
                 > a:hover, > a:active, #{$selector} {
-                    color: #fff;
-                    background: darken($brand-primary, 15%);
+                    color: $brand-primary;
+                    background: none;
                 }
             }
         }

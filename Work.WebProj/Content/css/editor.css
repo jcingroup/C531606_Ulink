@@ -990,11 +990,8 @@ hr.sm {
   transition: opacity 0.35s;
 }
 .editor a {
-  color: #e2b507;
+  font-weight: bold;
   transition: color 0.35s;
-}
-.editor a:hover {
-  color: #349CCF;
 }
 .editor a:hover img {
   opacity: 0.8;

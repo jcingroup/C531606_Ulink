@@ -274,7 +274,11 @@
 	}
 }
 
-.section {margin-bottom: $spacer*2.5;}
+.section {
+	margin-bottom: $spacer*2.5;
+
+	// .h5 {margin-left: $spacer;}
+}
 
 .main-text {
 	margin: $spacer*0.8 0 0 $spacer*0.8;
