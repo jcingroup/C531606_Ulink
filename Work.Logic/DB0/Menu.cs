@@ -12,9 +12,9 @@ namespace ProcCore.Business.DB0
     using System;
     using System.Collections.Generic;
     
-    public partial class Menu
+    using Newtonsoft.Json;
+    public partial class Menu : BaseEntityTable
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Menu()
         {
             this.AspNetRoles = new HashSet<AspNetRoles>();
@@ -34,7 +34,8 @@ namespace ProcCore.Business.DB0
         public bool is_on_tablet { get; set; }
         public bool is_only_tablet { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+    	[JsonIgnore]
         public virtual ICollection<AspNetRoles> AspNetRoles { get; set; }
     }
 }
+

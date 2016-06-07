@@ -12,7 +12,8 @@ namespace ProcCore.Business.DB0
     using System;
     using System.Collections.Generic;
     
-    public partial class i_Parm
+    using Newtonsoft.Json;
+    public partial class i_Parm : BaseEntityTable
     {
         public string ParmName { get; set; }
         public string ParmType { get; set; }

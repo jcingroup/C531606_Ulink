@@ -13,10 +13,10 @@ namespace ProcCore.Business.DB0
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class C51A0_BuyNowEntities : DbContext
+    public partial class C49A0_AlderEntities : DbContext
     {
-        public C51A0_BuyNowEntities()
-            : base("name=C51A0_BuyNowEntities")
+        public C49A0_AlderEntities()
+            : base("name=C49A0_AlderEntities")
         {
         }
     
@@ -25,7 +25,10 @@ namespace ProcCore.Business.DB0
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
         public virtual DbSet<AspNetRoles> AspNetRoles { get; set; }
+        public virtual DbSet<AspNetUserClaims> AspNetUserClaims { get; set; }
+        public virtual DbSet<AspNetUserLogins> AspNetUserLogins { get; set; }
         public virtual DbSet<AspNetUsers> AspNetUsers { get; set; }
         public virtual DbSet<Department> Department { get; set; }
         public virtual DbSet<i_Currency> i_Currency { get; set; }
@@ -33,9 +36,7 @@ namespace ProcCore.Business.DB0
         public virtual DbSet<i_Lang> i_Lang { get; set; }
         public virtual DbSet<i_Parm> i_Parm { get; set; }
         public virtual DbSet<i_SN> i_SN { get; set; }
+        public virtual DbSet<i_UserLoginLog> i_UserLoginLog { get; set; }
         public virtual DbSet<Menu> Menu { get; set; }
-        public virtual DbSet<News> News { get; set; }
-        public virtual DbSet<Community> Community { get; set; }
-        public virtual DbSet<Edit> Edit { get; set; }
     }
 }

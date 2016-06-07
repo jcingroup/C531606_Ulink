@@ -11,10 +11,9 @@ namespace ProcCore.Business.DB0
 {
     using System;
     using System.Collections.Generic;
-    
-    public partial class Community
-    {
-        public int community_id { get; set; }
-        public string name { get; set; }
+    public partial class m_Department :BaseEntityTable {
+    public int department_id { get; set; }
+    public string department_name { get; set; }
+    public bool i_Hide { get; set; }
     }
 }

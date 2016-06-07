@@ -12,11 +12,13 @@ namespace ProcCore.Business.DB0
     using System;
     using System.Collections.Generic;
     
-    public partial class AspNetUsers
+    using Newtonsoft.Json;
+    public partial class AspNetUsers : BaseEntityTable
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public AspNetUsers()
         {
+            this.AspNetUserClaims = new HashSet<AspNetUserClaims>();
+            this.AspNetUserLogins = new HashSet<AspNetUserLogins>();
             this.AspNetRoles = new HashSet<AspNetRoles>();
         }
     
@@ -36,7 +38,11 @@ namespace ProcCore.Business.DB0
         public string user_name_c { get; set; }
         public int sort { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+    	[JsonIgnore]
+        public virtual ICollection<AspNetUserClaims> AspNetUserClaims { get; set; }
+    	[JsonIgnore]
+        public virtual ICollection<AspNetUserLogins> AspNetUserLogins { get; set; }
+    	[JsonIgnore]
         public virtual ICollection<AspNetRoles> AspNetRoles { get; set; }
     }
 }

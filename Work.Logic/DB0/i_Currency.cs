@@ -12,7 +12,8 @@ namespace ProcCore.Business.DB0
     using System;
     using System.Collections.Generic;
     
-    public partial class i_Currency
+    using Newtonsoft.Json;
+    public partial class i_Currency : BaseEntityTable
     {
         public int id { get; set; }
         public string name_currency { get; set; }

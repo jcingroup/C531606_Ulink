@@ -12,7 +12,8 @@ namespace ProcCore.Business.DB0
     using System;
     using System.Collections.Generic;
     
-    public partial class Department
+    using Newtonsoft.Json;
+    public partial class Department : BaseEntityTable
     {
         public int department_id { get; set; }
         public string department_name { get; set; }

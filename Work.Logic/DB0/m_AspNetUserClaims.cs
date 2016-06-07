@@ -11,15 +11,10 @@ namespace ProcCore.Business.DB0
 {
     using System;
     using System.Collections.Generic;
-    
-    using Newtonsoft.Json;
-    public partial class i_SN : BaseEntityTable
-    {
-        public string sn_type { get; set; }
-        public int y { get; set; }
-        public int m { get; set; }
-        public int d { get; set; }
-        public int w { get; set; }
-        public int sn_max { get; set; }
+    public partial class m_AspNetUserClaims :BaseEntityTable {
+    public int Id { get; set; }
+    public string UserId { get; set; }
+    public string ClaimType { get; set; }
+    public string ClaimValue { get; set; }
     }
 }

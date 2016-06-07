@@ -12,7 +12,8 @@ namespace ProcCore.Business.DB0
     using System;
     using System.Collections.Generic;
     
-    public partial class i_Lang
+    using Newtonsoft.Json;
+    public partial class i_Lang : BaseEntityTable
     {
         public string lang { get; set; }
         public string area { get; set; }
