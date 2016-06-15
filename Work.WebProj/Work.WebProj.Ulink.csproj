@@ -337,6 +337,7 @@
     <Content Include="Content\images\AboutUs\banner.jpg" />
     <Content Include="Content\images\AboutUs\banner2.jpg" />
     <Content Include="Content\images\AboutUs\chart.gif" />
+    <Content Include="Content\images\AboutUs\signature.jpg" />
     <Content Include="Content\images\Articles\banner.jpg" />
     <Content Include="Content\images\Articles\data\001\banner.jpg" />
     <Content Include="Content\images\Articles\data\001\cover.jpg" />

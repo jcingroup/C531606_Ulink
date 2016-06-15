@@ -5765,6 +5765,11 @@ input.gsc-search-button {
   }
 }
 
+.sign {
+  height: 54px;
+  margin-left: 0.5rem;
+}
+
 .member-list {
   position: relative;
 }
