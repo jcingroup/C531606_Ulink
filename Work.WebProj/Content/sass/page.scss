@@ -246,6 +246,7 @@
 			height: 250px;
 			img.thumb {
 				opacity: 1;
+				-webkit-filter: none;
 				filter: none;
 			}
 		}
