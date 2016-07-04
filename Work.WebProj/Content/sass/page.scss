@@ -178,7 +178,7 @@
 		min-height: 100%;
 		top: 50%; left: 50%;
 		transform: translate(-50%, -50%);
-		opacity: 0.5;
+		opacity: 0.65;
 		-webkit-filter: blur(8px);
 		filter: blur(8px);
 
@@ -218,8 +218,8 @@
 	&.tall {
 		height: 300px;
 		img.thumb {
-			-webkit-filter: blur(15px);
-			filter: blur(15px);
+			-webkit-filter: blur(8px);
+			filter: blur(8px);
 		}
 	}
 	&.taller {height: 400px;}

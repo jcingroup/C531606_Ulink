@@ -352,6 +352,19 @@
     <Content Include="Content\images\Events\banner.jpg" />
     <Content Include="Content\images\Events\data\001\apply.jpg" />
     <Content Include="Content\images\Events\data\001\banner.jpg" />
+    <Content Include="Content\images\Events\data\002\banner.jpg" />
+    <Content Include="Content\images\Events\data\002\day1.jpg" />
+    <Content Include="Content\images\Events\data\002\day2.jpg" />
+    <Content Include="Content\images\Events\data\002\pic1.jpg" />
+    <Content Include="Content\images\Events\data\002\pic10.jpg" />
+    <Content Include="Content\images\Events\data\002\pic2.jpg" />
+    <Content Include="Content\images\Events\data\002\pic3.jpg" />
+    <Content Include="Content\images\Events\data\002\pic4.jpg" />
+    <Content Include="Content\images\Events\data\002\pic5.jpg" />
+    <Content Include="Content\images\Events\data\002\pic6.jpg" />
+    <Content Include="Content\images\Events\data\002\pic7.jpg" />
+    <Content Include="Content\images\Events\data\002\pic8.jpg" />
+    <Content Include="Content\images\Events\data\002\pic9.jpg" />
     <Content Include="Content\images\Index\banner.jpg" />
     <Content Include="Content\images\Index\speech.jpg" />
     <Content Include="Content\images\logo.png" />
@@ -402,6 +415,7 @@
     <Content Include="Content\font\fontAwesome\fontawesome-webfont.ttf" />
     <Content Include="Content\font\fontAwesome\fontawesome-webfont.woff" />
     <Content Include="Content\font\fontAwesome\FontAwesome.otf" />
+    <Content Include="Content\images\Events\data\002\agree_under18.doc" />
     <None Include="Content\publih.wpp.targets" />
     <Content Include="Content\sass\vendor\themify-icons.css" />
     <Content Include="Content\sass\_admin\vendors\bootstrap-datetimepicker-build.css" />
@@ -481,7 +495,7 @@
     <Content Include="Views\Articles\Article_list.cshtml" />
     <Content Include="Views\ContactUs\ContactUs.cshtml" />
     <Content Include="Views\Events\Events001.cshtml" />
-    <Content Include="Views\Events\Events2.cshtml" />
+    <Content Include="Views\Events\EventsJoin.cshtml" />
     <Content Include="Views\News\News_content001.cshtml" />
     <Content Include="Views\News\News_list.cshtml" />
     <Content Include="Views\Videos\Video_content001.cshtml" />
@@ -678,6 +692,7 @@
     <Content Include="Views\News\News_content003.cshtml" />
     <Content Include="Views\News\News_content004.cshtml" />
     <Content Include="Views\Articles\Article_content002.cshtml" />
+    <Content Include="Views\Events\Events002.cshtml" />
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

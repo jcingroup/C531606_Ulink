@@ -409,7 +409,7 @@ input.gsc-search-button {
         position: fixed;
         left: 0;
         top: 0;
-        background: hsla(0,0,0,0.9); //hsla(48, 94%, 56%, 0.95);
+        background: hsla(0,0,0,0.85);
         display: none;
 
         .wrap {
@@ -523,37 +523,43 @@ input.gsc-search-button {
     }
 
     @include media-breakpoint-down(md) {
-        width: 60%;
+        width: 6em;
         position: static;
-        margin: $spacer*0.5 auto $spacer auto;
+        margin: 0 auto $spacer*0.5 auto;
         padding: 0;
         background: none;
         border: 0;
-        border-left: 1px solid hsla(0,0,100%, 0.5);
 
         > li {
             display: block;
-            margin: 0;
-            padding: 5px 0;
+            margin: 0 0 $spacer*0.3 0;
+            padding: 0;
+
+            &:not(:last-child) {margin-right: 0;}
 
             &::after {
-                display: none;
+                @include size(0);
+                left: 1px; top: 50%;
+                transform: translateY(-50%);
+                background: none;
+                border: 4px solid transparent;
+                border-right-width: 0;
+                border-left: 4px solid $brand-primary;
+                opacity: 0;
             }
 
             > a {
                 padding: 0;
+                color: #fff;
                 font-size: em(16px);
                 letter-spacing: 0.05em;
-                opacity: 0.3;
+                opacity: 0.5;
             }
 
             &:hover,
             .p1 &:nth-of-type(1),
             .p2 &:nth-of-type(2) {
-                > a {
-                    color: $body-color;
-                    opacity: 1;
-                }
+                &::after, > a {opacity: 1;}
             }
         }
     }

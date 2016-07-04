@@ -13,7 +13,11 @@ namespace DotWeb.Controllers
     {
         public ActionResult Index()
         {
-            return Redirect("~/Events/Events001");
+            return Redirect("~/Events/Events002");
+        }
+        public ActionResult Events002()
+        {
+            return View("Events002");
         }
         public ActionResult Events001()
         {
@@ -22,7 +26,7 @@ namespace DotWeb.Controllers
 
         public ActionResult p2()
         {
-            return View("Events2");
+            return View("EventsJoin");
         }
         [HttpPost]
         public string sendMail(MailContent md)
