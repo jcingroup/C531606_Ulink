@@ -1,7 +1,9 @@
 ﻿@{
     ViewBag.Title = "協會簡介";
+    ViewBag.Title2 = "理念說明";
     ViewBag.BodyClass = "AboutUs p1";
     Layout = "~/Views/Shared/Layout.cshtml";
+    ViewBag.customShareInfo = false;
 }
 
 <h2 class="sr-only">@ViewBag.Title</h2>
@@ -10,7 +12,7 @@
 
 	<div id="banner">
 		<h3 class="h3 wrap">
-			<span class="title">理念說明</span>
+			<span class="title">@ViewBag.Title2</span>
 		</h3>
 		<img class="thumb" src="~/Content/images/AboutUs/banner.jpg" alt="">
 	</div>
@@ -20,7 +22,7 @@
     	<ul class="breadcrumb text-md-right">
     		<li><a href="~/Index">Home</a></li>
     		<li><a href="~/Events">@ViewBag.Title</a></li>
-    		<li>理念說明</li>
+    		<li>@ViewBag.Title2</li>
     	</ul>
 
     	<article class="article section">

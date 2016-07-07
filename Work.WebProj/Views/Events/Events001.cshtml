@@ -1,7 +1,9 @@
 ﻿@{
-    ViewBag.Title = "活動參與";
+    ViewBag.Title = "活動預告 | 活動參與";
+    ViewBag.Title2 = "「我們的那時．此刻」電影欣賞活動";
     ViewBag.BodyClass = "Events p1";
     Layout = "~/Views/Shared/Layout.cshtml";
+    ViewBag.customShareInfo = false;
 }
 
 <h2 class="sr-only">@ViewBag.Title</h2>
@@ -16,7 +18,7 @@
 				<span class="name">楊力州導演</span>
 				<span class="date"><i class="ti-calendar"></i>2016-06-15</span>
 			</small>
-			<span class="title">「我們的那時．此刻」電影欣賞活動</span>
+			<span class="title">@ViewBag.Title2</span>
 		</h4>
 		<img class="thumb" src="~/Content/images/Events/data/001/banner.jpg" alt="">
 	</div>
@@ -34,7 +36,7 @@
                 <span class="name">楊力州導演</span>
                 <span class="date"><i class="ti-calendar"></i>2016-06-15</span>
             </small>
-            <span class="title">「我們的那時．此刻」電影欣賞活動</span>
+            <span class="title">@ViewBag.Title2</span>
         </h4>
 
     	<article class="article section">

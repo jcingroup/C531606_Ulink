@@ -331,6 +331,15 @@ namespace Resources {
         }
         
         /// <summary>
+        ///   查詢類似 優靈客是由一群摯愛台灣的熱情份子所組成，發起人來自各專業領域。本協會藉由連結國內外青年，以推展文化藝術、全民體育、觀光旅遊、創新創業及健康促進為主要目標，並建立青年積極正向、樂觀進取的人生觀與價值觀，培養新生代青年菁英。 的當地語系化字串。
+        /// </summary>
+        internal static string Description {
+            get {
+                return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查詢類似 1111 的當地語系化字串。
         /// </summary>
         internal static string ePassword {
@@ -498,6 +507,15 @@ namespace Resources {
         internal static string js_Err_System_Failure {
             get {
                 return ResourceManager.GetString("js_Err_System_Failure", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查詢類似 台灣優靈客協會, 優靈客, 優靈客協會 的當地語系化字串。
+        /// </summary>
+        internal static string Keywords {
+            get {
+                return ResourceManager.GetString("Keywords", resourceCulture);
             }
         }
         

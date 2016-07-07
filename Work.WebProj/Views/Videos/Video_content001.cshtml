@@ -1,7 +1,9 @@
 ﻿@{
     ViewBag.Title = "觀看演講";
+    ViewBag.Title2 = "壯遊客 - 遇見塔曼";
     ViewBag.BodyClass = "Videos";
     Layout = "~/Views/Shared/Layout.cshtml";
+    ViewBag.customShareInfo = false;
 }
 
 @section Scripts {
@@ -27,7 +29,7 @@
 				@* <span class="name">余浩瑋</span> *@
 				<span class="date"><i class="ti-calendar"></i>2016-05-28</span>
 			</small>
-			<span class="title">壯遊客 - 遇見塔曼</span>
+			<span class="title">@ViewBag.Title2</span>
 		</h3>
 		<i class="icon play"></i>
 		<i class="thumb">
@@ -54,7 +56,7 @@
                 @* <span class="name">余浩瑋</span> *@
                 <span class="date"><i class="ti-calendar"></i>2016-05-28</span>
             </small>
-            <span class="title">壯遊客 - 遇見塔曼</span>
+            <span class="title">@ViewBag.Title2</span>
         </h4>
 
     	<article class="article section">

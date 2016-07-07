@@ -1,7 +1,9 @@
 ﻿@{
     ViewBag.Title = "活動參與";
+    ViewBag.Title2 = "加入我們";
     ViewBag.BodyClass = "Events p2";
     Layout = "~/Views/Shared/Layout.cshtml";
+    ViewBag.customShareInfo = false;
 }
 @section css {
     <link href="~/Content/css/vendor/jquery.loadmask.css" rel="stylesheet" />
@@ -16,7 +18,7 @@
 
     <div id="banner">
         <h3 class="h3 wrap">
-            <span class="title">加入我們</span>
+            <span class="title">@ViewBag.Title2</span>
         </h3>
         <img class="thumb" src="~/Content/images/AboutUs/banner2.jpg" alt="">
     </div>
@@ -26,7 +28,7 @@
         <ul class="breadcrumb text-md-right">
             <li><a href="~/Index">Home</a></li>
             <li><a href="~/Events">@ViewBag.Title</a></li>
-            <li>加入我們</li>
+            <li>@ViewBag.Title2</li>
         </ul>
 
         <p>請填妥以下基本資料，我們將會盡快與您聯繫！</p>

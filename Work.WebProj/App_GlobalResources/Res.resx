@@ -382,4 +382,10 @@
   <data name="Log_Success_SendMail" xml:space="preserve">
     <value>Email已送出，我們會儘快與您聯絡!</value>
   </data>
+  <data name="Description" xml:space="preserve">
+    <value>優靈客是由一群摯愛台灣的熱情份子所組成，發起人來自各專業領域。本協會藉由連結國內外青年，以推展文化藝術、全民體育、觀光旅遊、創新創業及健康促進為主要目標，並建立青年積極正向、樂觀進取的人生觀與價值觀，培養新生代青年菁英。</value>
+  </data>
+  <data name="Keywords" xml:space="preserve">
+    <value>台灣優靈客協會, 優靈客, 優靈客協會</value>
+  </data>
 </root>

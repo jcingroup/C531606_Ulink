@@ -1,7 +1,9 @@
 ﻿@{
     ViewBag.Title = "精選文章";
+    ViewBag.Title2 = "巨星造船股份有限公司:陶君亮董事長";
     ViewBag.BodyClass = "Articles";
     Layout = "~/Views/Shared/Layout.cshtml";
+    ViewBag.customShareInfo = false;
 }
 
 <h2 class="sr-only">@ViewBag.Title</h2>
@@ -15,7 +17,7 @@
 				<span class="name">陶君亮</span>
 				<span class="date"><i class="ti-calendar"></i>2016-05-27</span>
 			</small>
-			<span class="title">巨星造船股份有限公司:陶君亮董事長</span>
+			<span class="title">@ViewBag.Title2</span>
 		</h3>
 		<img class="thumb" src="~/Content/images/Articles/data/001/banner.jpg" alt="">
 	</div>
@@ -34,7 +36,7 @@
                 <span class="name">陶君亮</span>
                 <span class="date"><i class="ti-calendar"></i>2016-05-27</span>
             </small>
-            <span class="title">巨星造船股份有限公司:陶君亮董事長</span>
+            <span class="title">@ViewBag.Title2</span>
         </h4>
 
     	<article class="article section">

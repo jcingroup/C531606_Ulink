@@ -355,6 +355,7 @@
     <Content Include="Content\images\Events\data\002\banner.jpg" />
     <Content Include="Content\images\Events\data\002\day1.jpg" />
     <Content Include="Content\images\Events\data\002\day2.jpg" />
+    <Content Include="Content\images\Events\data\002\ogImg.jpg" />
     <Content Include="Content\images\Events\data\002\pic1.jpg" />
     <Content Include="Content\images\Events\data\002\pic10.jpg" />
     <Content Include="Content\images\Events\data\002\pic2.jpg" />

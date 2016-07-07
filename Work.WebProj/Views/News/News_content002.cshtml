@@ -1,7 +1,9 @@
 ﻿@{
     ViewBag.Title = "最新消息";
+    ViewBag.Title2 = "第二次籌備會議";
     ViewBag.BodyClass = "News";
     Layout = "~/Views/Shared/Layout.cshtml";
+    ViewBag.customShareInfo = false;
 }
 
 <h2 class="sr-only">@ViewBag.Title</h2>
@@ -24,7 +26,7 @@
     	</ul>
 
     	<article class="article section">
-    		<h4 class="h4">第二次籌備會議</h4>
+    		<h4 class="h4">@ViewBag.Title2</h4>
     		<h5 class="h5"><small><i class="ti-calendar"></i> 2015-08-27</small></h5>
     		<div class="editor main-text">
     			<p>台灣優靈客協會於 8/27 召開第二次籌備會議。</p>

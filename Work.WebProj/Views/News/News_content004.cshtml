@@ -1,7 +1,9 @@
 ﻿@{
     ViewBag.Title = "最新消息";
+    ViewBag.Title2 = "「我們的那時．此刻」電影欣賞活動";
     ViewBag.BodyClass = "News";
     Layout = "~/Views/Shared/Layout.cshtml";
+    ViewBag.customShareInfo = false;
 }
 
 <h2 class="sr-only">@ViewBag.Title</h2>
@@ -24,7 +26,7 @@
         </ul>
 
         <article class="article section">
-            <h4 class="h4">「我們的那時．此刻」電影欣賞活動</h4>
+            <h4 class="h4">@ViewBag.Title2</h4>
             <h5 class="h5"><small><i class="ti-calendar"></i> 2016-04-19</small></h5>
             <div class="editor main-text">
                 <p>台灣優靈客協會的理事、監事以及會員們大家好：</p>
