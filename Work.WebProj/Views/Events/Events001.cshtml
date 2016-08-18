@@ -1,7 +1,7 @@
 ﻿@{
-    ViewBag.Title = "活動預告 | 活動參與";
+    ViewBag.Title = "活動參與";
     ViewBag.Title2 = "「我們的那時．此刻」電影欣賞活動";
-    ViewBag.BodyClass = "Events p1";
+    ViewBag.BodyClass = "Events p2";
     Layout = "~/Views/Shared/Layout.cshtml";
     ViewBag.customShareInfo = false;
 }
@@ -10,9 +10,9 @@
 
 <section id="content">
 
-	<h3 class="sr-only">活動預告</h3>
+	<h3 class="sr-only">過往活動回顧</h3>
 
-	<div id="banner" class="tall">
+	<div id="banner" class="article">
 		<h4 class="h3 wrap hidden-md-down">
 			<small>
 				<span class="name">楊力州導演</span>
@@ -28,7 +28,7 @@
     	<ul class="breadcrumb text-md-right">
     		<li><a href="~/Index">Home</a></li>
     		<li><a href="~/Events">@ViewBag.Title</a></li>
-    		<li>活動預告</li>
+    		<li>活動回顧</li>
     	</ul>
 
         <h4 class="h3 hidden-lg-up">
@@ -38,6 +38,8 @@
             </small>
             <span class="title">@ViewBag.Title2</span>
         </h4>
+
+        <div class="alert alert-info">本活動已圓滿結束，感謝您的共襄盛舉！</div>
 
     	<article class="article section">
     		<h5 class="h4">關於本活動</h5>

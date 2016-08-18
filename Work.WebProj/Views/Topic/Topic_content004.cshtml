@@ -1,0 +1,133 @@
+﻿@{
+    ViewBag.Title = "主題活動";
+    ViewBag.Title2 = "原生文化體驗營：壯遊野營";
+    ViewBag.BodyClass = "Topic";
+    Layout = "~/Views/Shared/Layout.cshtml";
+    ViewBag.customShareInfo = true;
+    ViewBag.ogUrl = "http://www.ulink.org.tw/Topic/Content004";
+    ViewBag.ogTitle = ViewBag.Title2;
+    ViewBag.ogDescription = "泰雅成年禮、野營、攀樹、木作挑戰自我：台灣優靈客協會以服務青年為主軸，暑期推出全台首創新型態「探索台灣我是壯遊客」活動，規劃內容以泰雅成年禮、野營、攀樹、木作為主題，歡迎大專青年挑戰自我體能，體驗台灣生態。";
+    ViewBag.ogImgUrl = "http://www.ulink.org.tw/Content/images/Topic/data/004/ogImg.jpg";
+}
+@section CSS {
+    <link href='https://fonts.googleapis.com/css?family=Lobster+Two:700,700italic,400,400italic' rel='stylesheet' type='text/css'>
+}
+
+@section Scripts {
+    <script src="~/Content/js/jquery.lazyload.js"></script>
+    <script src="~/Content/js/waterfall/isotope.pkgd.min.js"></script>
+    <script>
+        $(".gallery img").lazyload();
+        $("html, body").animate({scrollTop: 1}); //同時使用瀑布流和lazyload時，圖片不會立刻出現，需向下捲動才會出現
+        $(".gallery img").load(function() { //等圖片全部載入再動作
+            $('.gallery').isotope({
+                itemSelector: 'li',
+                masonry: {
+                    columnWidth: '.gallery li'
+                }
+            }); //瀑布流
+        });
+    </script>
+}
+
+<h2 class="sr-only">@ViewBag.Title</h2>
+
+<section id="content">
+
+	<div id="banner">
+		<h3 class="h3 wrap hidden-md-down">
+            <small><span class="name">探索台灣．我是壯遊客</span></small>
+			<span class="title">@ViewBag.Title2</span>
+		</h3>
+        <img class="thumb" src="~/Content/images/Topic/data/004/banner.jpg" alt="">
+	</div>
+
+    <div class="wrap">
+
+    	<ul class="breadcrumb text-md-right">
+    		<li><a href="~/Index"><i class="ti-home"></i> Home</a></li>
+    		<li><a href="~/Topic/List">@ViewBag.Title</a></li>
+    		<li>活動內容</li>
+    	</ul>
+
+        <h4 class="h3 hidden-lg-up">
+            <small><span class="name">探索台灣．我是壯遊客</span></small>
+            <span class="title">@ViewBag.Title2</span>
+        </h4>
+
+        <div class="hidden-xs-up">
+            <p>為發揮在地精神，台灣優靈客協會特別規劃「探索台灣．我是壯遊客」系列活動，串連全台灣北、中、南、東，找出台灣特有的環境旅遊方式，啟發自身的優質靈感，提供不一樣的台灣新壯遊精神！</p>
+            <p>首波壯遊點就以國門之都－桃園市的復興區揭開序幕！位於復興區的塔曼山，標高2100公尺，夏季涼爽宜人，清晨可以遠眺絢麗斑斕的日出。登上塔曼山也是當地泰雅族的成年禮之一，相信經過塔曼山的洗禮，壯遊學員們能夠在自己的人生寫下精彩的一頁！</p>
+            <p>本次壯遊行還有精彩刺激的攀樹體驗活動，讓你挑戰自我，訓練自己的膽量！此外，戶外野營與木作 DIY 活動可以讓學員了解到，保護與尊重大自然的重要性，讓大自然環境可以永續下去，並且靠著自己的雙手來製作吃飯的工具，尋找樹木最初的起點。</p>
+            <h5>活動四大主軸</h5>
+            <ul>
+                <li><strong>壯遊塔曼</strong>泰雅族的成年禮</li>
+                <li><strong>壯遊野營</strong>對大自然的負責</li>
+                <li><strong>壯遊攀樹</strong>挑戰自己的膽量</li>
+                <li><strong>壯遊木作</strong>尋找神木的起點</li>
+            </ul>
+        </div>
+
+    	<ol class="gallery list-unstyled">
+            <li>
+                <a href="~/Content/images/Topic/data/004/pic8.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/004/pic8.jpg")" alt=""></a>
+            </li>
+            <li class="text">
+                <blockquote><em class="m-r-1">2nd</em>二部曲：<strong>壯遊野營</strong></blockquote>
+            </li>
+            <li class="col-sm-wide col-sm-tall col-md-wide col-md-tall col-xl-wide col-xl-tall">
+                <a href="~/Content/images/Topic/data/004/pic3.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/004/pic3.jpg")" alt=""></a>
+            </li>
+            <li class="text">
+                <blockquote>同心協力來搭帳<em class="br-xs-up">Go Camping</em></blockquote>
+            </li>
+            <li class="col-lg-wide col-lg-tall">
+                <a href="~/Content/images/Topic/data/004/pic7.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/004/pic7.jpg")" alt=""></a>
+            </li>
+            <li class="col-sm-tall col-md-tall col-lg-tall thin">
+                <a href="~/Content/images/Topic/data/004/pic6.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/004/pic6.jpg")" alt=""></a>
+            </li>
+            <li class="col-lg-wide col-lg-tall col-xl-wide col-xl-tall">
+                <a href="~/Content/images/Topic/data/004/pic10.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/004/pic10.jpg")" alt=""></a>
+            </li>
+            <li class="text">
+                <blockquote><em class="br-xs-up">BBQ Time!</em>野炊吃飯啦！</blockquote>
+            </li>
+            <li>
+                <a href="~/Content/images/Topic/data/004/pic1.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/004/pic1.jpg")" alt=""></a>
+            </li>
+            <li class="col-sm-tall col-md-tall col-lg-tall col-xl-tall">
+                <a href="~/Content/images/Topic/data/004/pic11.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/004/pic11.jpg")" alt=""></a>
+            </li>
+            <li class="col-xl-tall short">
+                <a href="~/Content/images/Topic/data/004/pic2.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/004/pic2.jpg")" alt=""></a>
+            </li>
+            <li>
+                <a href="~/Content/images/Topic/data/004/pic13.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/004/pic13.jpg")" alt=""></a>
+            </li>
+            <li class="col-sm-tall col-md-tall col-lg-tall col-xl-tall">
+                <a href="~/Content/images/Topic/data/004/pic5.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/004/pic5.jpg")" alt=""></a>
+            </li>
+            <li>
+                <a href="~/Content/images/Topic/data/004/pic9.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/004/pic9.jpg")" alt=""></a>
+            </li>
+            <li class="text">
+                <blockquote>雨過天青的彩虹<em class="br-xs-up">It's a Rainbow</em></blockquote>
+            </li>
+            <li class="col-lg-tall col-xl-wide col-xl-tall thin">
+                <a href="~/Content/images/Topic/data/004/pic12.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/004/pic12.jpg")" alt=""></a>
+            </li>
+            <li class="col-sm-wide col-sm-tall col-md-wide col-md-tall col-lg-wide col-lg-tall col-xl-wide col-xl-tall">
+                <a href="~/Content/images/Topic/data/004/pic4.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/004/pic4.jpg")" alt=""></a>
+            </li>
+            
+        </ol>
+
+    	<p class="text-xs-center clearfix">
+    		<a href="~/Topic/List" class="btn btn-primary">回列表</a>
+    	</p>
+        
+    </div>
+
+</section>
+

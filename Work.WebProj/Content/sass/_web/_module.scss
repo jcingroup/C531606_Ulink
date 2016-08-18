@@ -5,30 +5,22 @@
 // ----------------------------------------------------------------------
 .card-list {
     @extend .list-unstyled;
+    margin-bottom: $spacer*2.5;
 
     .card {
-        @extend .col-xl-3;
-        @extend .col-lg-4;
-        @extend .col-sm-6;
-        @extend .col-xs-12;
+        @include clearfix;
         margin-bottom: $grid-gutter-width;
+        position: relative;
     }
 
     .card-img-top {
         display: block;
-        height: 184px;
+        width: 60%;
+        height: 300px;
         position: relative;
         overflow: hidden;
 
-        img, small, .icon, &::after {
-            position: absolute;
-        }
-
-        small, &::after {
-            display: block;
-            width: 100%;
-            left: 0;
-        }
+        img, .icon, &::after {position: absolute;}
 
         img {
             min-width: 100%;
@@ -37,19 +29,6 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
-        }
-
-        small {
-            bottom: $spacer*0.5;
-            padding: 0 $spacer;
-            color: #fff;
-            font-size: em(14px);
-            z-index: 10;
-
-            .date{
-                margin-left: $spacer;
-                i {margin-right: 5px;}
-            }
         }
 
         .icon {
@@ -67,10 +46,13 @@
         }
 
         &::after {
-            bottom: 0;
             content: " ";
-            height: 65px;
-            background: linear-gradient(hsla(0,0,0,0), hsla(0,0,0,1) 95%);
+            display: block;
+            width: 100%;
+            height: 80px;
+            left: 0;
+            bottom: 0;
+            background: linear-gradient(hsla(0,0,0,0), hsla(0,0,0,0.8) 95%);
             transition: height 0.35s;
         }
 
@@ -80,15 +62,47 @@
         }
     }
 
-    .card-block {
-        margin-top: $spacer*0.8;
+    .info {
+        width: 100%;
+        margin: 0;
+        padding: $spacer*0.5 $spacer;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 10;
+
+        li {
+            vertical-align: middle;
+            font-size: em(17px);
+            color: #fff;
+
+            &.date {
+                margin-left: $spacer*0.5;
+                font-size: em(12px);
+            }
+        }
+
+        [class*="ti-"] {
+            margin-right: $spacer*0.5;
+            font-size: em(14px);
+        }
     }
 
-    .card-title, .card-subtitle {@include text-truncate;}
+    .card-block {
+        width: 50%;
+        padding: $spacer;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        background: hsla(0,0,100%,0.9);
+    }
 
     .card-title {
-        font-weight: bold;
-        font-size: em(16px);
+        margin-bottom: $spacer*0.8;
+        padding-bottom: $spacer*0.8;
+        line-height: 1.3;
+        border-bottom: 3px solid $brand-primary;
     }
 
     .card-subtitle {
@@ -96,20 +110,54 @@
     }
 
     .card-text {
-        height: 4.5em;
-        margin-bottom: $spacer*0.3;
-        text-align: justify;
-        font-size: em(14px);
+        margin-bottom: $spacer*0.8;
         color: #333;
-        overflow: hidden;
     }
 
-    .more {
-        display: block;
-        font-size: em(14px);
-        font-weight: bold;
-        color: #1B4D9E;
-        &:hover {color: $link-hover-color;}
+    .card:nth-child(even) {
+        .card-img-top {float: right;}
+        .info {text-align: right;}
+        .card-block { right: auto; left: 0;}
+        .btn {float: right;}
+    }
+
+    @include media-breakpoint-down(lg) {
+        .card-img-top {width: 65%;}
+        .card-block {width: 60%;}
+    }
+
+    @include media-breakpoint-down(md) {
+        margin-bottom: $spacer*1.5;
+
+        .card {margin-bottom: $spacer;}
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+        }
+        .card-block {
+            width: 100%;
+            margin-top: $spacer;
+            padding: $spacer;
+            position: static;
+            transform: none;
+            background: #f7f7f7;
+        }
+        .card-title {
+            padding-bottom: $spacer*0.3;
+            font-size: em(23px);
+        }
+        .card:nth-child(even) {
+            .card-img-top {float: none;}
+            .info {text-align: left;}
+            .btn {float: none;}
+        }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .card-img-top {height: 180px;}
+        .info {font-size: em(14px);}
+        .card-block {margin-top: $spacer*0.5; padding: $spacer*0.8;}
+        .card-title {font-size: em(22px);}
     }
 }
 

@@ -1,7 +1,7 @@
 ﻿@{
-    ViewBag.Title = "觀看演講";
-    ViewBag.Title2 = "壯遊客 - 遇見塔曼";
-    ViewBag.BodyClass = "Videos";
+    ViewBag.Title = "主題活動";
+    ViewBag.Title2 = "壯遊客 - 原生文化體驗營";
+    ViewBag.BodyClass = "Topic";
     Layout = "~/Views/Shared/Layout.cshtml";
     ViewBag.customShareInfo = false;
 }
@@ -22,18 +22,18 @@
 
 <section id="content">
 
-	<div id="banner" class="dark taller">
+	<div id="banner" class="video">
 		<h3 class="h3 wrap hidden-md-down">
 			@* <span class="label label-primary">主題XX</span> *@
 			<small>
-				@* <span class="name">余浩瑋</span> *@
-				<span class="date"><i class="ti-calendar"></i>2016-05-28</span>
+				<span class="name">探索台灣．我是壯遊客 系列活動</span>
+				@* <span class="date"><i class="ti-calendar"></i>2016-05-28</span> *@
 			</small>
 			<span class="title">@ViewBag.Title2</span>
 		</h3>
-		<i class="icon play"></i>
+		<i class="play"></i>
 		<i class="thumb">
-			<img src="~/Content/images/Videos/data/001/banner.jpg?v=@CommWebSetup.CacheVer" alt="">
+			<img src="~/Content/images/Topic/data/001/banner.jpg?v=@CommWebSetup.CacheVer" alt="">
 		</i>
 		<div class="youtube"><div class="wrap">
             <div class="embed-responsive embed-responsive-16by9">
@@ -46,8 +46,8 @@
 
     	<ul class="breadcrumb text-md-right">
     		<li><a href="~/Index">Home</a></li>
-    		<li><a href="~/Videos/List">@ViewBag.Title</a></li>
-    		<li>演講內容</li>
+    		<li><a href="~/Topic/List">@ViewBag.Title</a></li>
+    		<li>活動內容</li>
     	</ul>
 
         <h4 class="h3 hidden-lg-up">
@@ -64,6 +64,7 @@
     		<div class="editor main-text">
     			<p>考驗，是為了探尋不一樣的生活姿態</p>
                 <p>追尋木的根源，挑戰塔曼的勇士之路</p>
+                <p><a href="~/Events/Events002" class="btn btn-success">活動內容詳情 <i class="ti-arrow-right"></i></a></p>
     		</div>
     	</article>
 
@@ -76,7 +77,7 @@
     	</aside> *@
 
     	<p class="text-xs-center">
-    		<a href="~/Videos/List" class="btn btn-primary">回列表</a>
+    		<a href="~/Topic/List" class="btn btn-primary">回列表</a>
     	</p>
         
     </div>

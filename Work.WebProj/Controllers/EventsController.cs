@@ -15,6 +15,10 @@ namespace DotWeb.Controllers
         {
             return Redirect("~/Events/Events002");
         }
+        public ActionResult Events003()
+        {
+            return View("Events003");
+        }
         public ActionResult Events002()
         {
             return View("Events002");
@@ -25,6 +29,11 @@ namespace DotWeb.Controllers
         }
 
         public ActionResult p2()
+        {
+            return View("Events_list");
+        }
+
+        public ActionResult p3()
         {
             return View("EventsJoin");
         }

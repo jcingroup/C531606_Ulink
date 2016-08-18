@@ -1,10 +1,11 @@
 ﻿@{
-    ViewBag.Title = "活動預告 | 活動參與";
+    ViewBag.Title = "活動參與";
     ViewBag.Title2 = "探索台灣．我是壯遊客－原生文化體驗營";
-    ViewBag.BodyClass = "Events p1";
+    ViewBag.BodyClass = "Events p2";
     Layout = "~/Views/Shared/Layout.cshtml";
     ViewBag.customShareInfo = true;
-    ViewBag.ogTitle = "我是壯遊客 原生文化體驗營";
+    ViewBag.ogUrl = "http://www.ulink.org.tw/Events/Events002";
+    ViewBag.ogTitle = ViewBag.Title2;
     ViewBag.ogDescription = "泰雅成年禮、野營、攀樹、木作挑戰自我：台灣優靈客協會以服務青年為主軸，暑期推出全台首創新型態「探索台灣我是壯遊客」活動，規劃內容以泰雅成年禮、野營、攀樹、木作為主題，7月21日至22日、7月27日至28日兩梯次，名額40名，歡迎大專青年挑戰自我體能，體驗台灣生態。";
     ViewBag.ogImgUrl = "http://www.ulink.org.tw/Content/images/Events/data/002/ogImg.jpg";
 }
@@ -13,13 +14,13 @@
 
 <section id="content">
 
-	<h3 class="sr-only">活動預告</h3>
+	<h3 class="sr-only">過往活動回顧</h3>
 
-	<div id="banner" class="tall">
+	<div id="banner" class="article">
 		<h4 class="h3 wrap hidden-md-down">
 			<small>
-				<span class="name">壯遊行系列活動</span>
-				<span class="date"><i class="ti-calendar"></i>2016-07-20</span>
+				<span class="name">探索台灣．我是壯遊客</span>
+				@* <span class="date"><i class="ti-calendar"></i>2016-07-20</span> *@
 			</small>
 			<span class="title">@ViewBag.Title2</span>
 		</h4>
@@ -31,16 +32,25 @@
     	<ul class="breadcrumb text-md-right">
     		<li><a href="~/Index">Home</a></li>
     		<li><a href="~/Events">@ViewBag.Title</a></li>
-    		<li>活動預告</li>
+    		<li>活動回顧</li>
     	</ul>
 
         <h4 class="h3 hidden-lg-up">
             <small>
-                <span class="name">壯遊行系列活動</span>
-                <span class="date"><i class="ti-calendar"></i>2016-07-20</span>
+                <span class="name">探索台灣．我是壯遊客</span>
+                @* <span class="date"><i class="ti-calendar"></i>2016-07-20</span> *@
             </small>
             <span class="title">@ViewBag.Title2</span>
         </h4>
+
+        <div class="alert alert-info">
+            本活動已圓滿結束，感謝您的共襄盛舉！<br>
+            活動花絮：
+            <a href="~/Topic/Content003"><strong class="text-success">壯遊木作</strong></a>、
+            <a href="~/Topic/Content004"><strong class="text-success">壯遊野營</strong></a>、
+            <a href="~/Topic/Content002"><strong class="text-success">壯遊塔曼</strong></a>、
+            <a href="~/Topic/Content005"><strong class="text-success">壯遊攀樹</strong></a>
+        </div>
 
     	<article class="article section">
     		<h5 class="h4">關於本活動</h5>

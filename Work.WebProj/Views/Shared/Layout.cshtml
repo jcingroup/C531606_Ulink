@@ -11,11 +11,12 @@
     <meta property="og:site_name" content="@Resources.Res.System_FrontName" />
     @if (ViewBag.customShareInfo)
     {
+        <meta property="og:url" content="@ViewBag.ogUrl"/>
         <meta property="og:title" content="@ViewBag.ogTitle" />
         <meta property="og:description" content="@ViewBag.ogDescription" />
-        <meta property="og:image" content="@ViewBag.ogImgUrl" />
+        @* <meta property="og:image" content="@ViewBag.ogImgUrl" />
         <meta property="og:image:width" content="600" />
-        <meta property="og:image:height" content="315" />
+        <meta property="og:image:height" content="315" /> *@
     }
     else
     {
@@ -62,9 +63,10 @@
                 <h2 class="slogan">聚集優質靈感的人，向社會傳達正向的能量與聲音</h2>
 
                 <ul class="topNav list-inline">
-                    <li><a href="" target="new"><i class="ti-facebook"></i><span class="sr-only">Facebook</span></a></li>
-                    <li><a href="" target="new"><i class="ti-twitter-alt"></i><span class="sr-only">Twitter</span></a></li>
-                    <li><a href="" target="new"><i class="ti-google"></i><span class="sr-only">Google+</span></a></li>
+                    <li><a href="~/Index"><i class="ti-home"></i><span class="sr-only">回首頁</span></a></li>
+                    <li><a href="https://www.facebook.com/1738917516328579/" target="new"><i class="ti-facebook"></i><span class="sr-only">台灣優靈客協會 官方 Facebook 專頁</span></a></li>
+                    @* <li><a href="" target="new"><i class="ti-twitter-alt"></i><span class="sr-only">Twitter</span></a></li>
+                    <li><a href="" target="new"><i class="ti-google"></i><span class="sr-only">Google+</span></a></li> *@
                 </ul>
 
                 @* <button class="search-toggler btn btn-link hidden-md-up collapsed" data-toggle="collapse" data-target="#search">
@@ -101,20 +103,17 @@
                     <h2 class="sr-only">主選單</h2>
                     <button class="close hidden-lg-up"><i class="ti-close"></i></button>
                     <ul class="nav navbar-nav">
-                        <li><a href="~/Videos/List">觀看演講</a></li>
+                        <li><a href="~/Topic/List">主題活動</a></li>
                         <li><a href="~/Articles/List">精選文章</a></li>
                         <li>
-                            @* <span class="sidebar-toggler hidden-lg-up">活動參與</span>
-                                <small class="sidebar-toggler hidden-lg-up">Back 回上層</small> *@
                             <a href="~/Events">活動參與</a>
                             <ul class="sidebar list-inline text-xs-center">
                                 <li><a href="~/Events">活動預告</a></li>
-                                <li><a href="~/Events/p2">加入我們</a></li>
+                                <li><a href="~/Events/p2">活動回顧</a></li>
+                                <li><a href="~/Events/p3">加入我們</a></li>
                             </ul>
                         </li>
                         <li>
-                            @* <span class="sidebar-toggler hidden-lg-up">協會簡介</span>
-                                <small class="sidebar-toggler hidden-lg-up">Back 回上層</small> *@
                             <a href="~/AboutUs">協會簡介</a>
                             <ul class="sidebar list-inline text-xs-center">
                                 <li><a href="~/ABoutUs">理念說明</a></li>
@@ -146,36 +145,38 @@
             </article>
 
             <ul class="menu list-unstyled">
-                <li><a href="~/Videos/List">觀看演講</a></li>
+                <li><a href="~/Topic/List">主題活動</a></li>
                 <li><a href="~/Articles/List">精選文章</a></li>
-                <li class="has-submenu">
+                <li>
                     <a href="~/Events">活動參與</a>
-                    <ul class="submenu list-inline">
+                    @* <ul class="submenu list-inline">
                         <li><a href="~/Events">活動預告</a></li>
-                        <li><a href="~/Events/p2">加入我們</a></li>
-                    </ul>
+                        <li><a href="~/Events/p2">活動回顧</a></li>
+                        <li><a href="~/Events/p3">加入我們</a></li>
+                    </ul> *@
                 </li>
-                <li class="has-submenu">
+                <li>
                     <a href="~/AboutUs">協會簡介</a>
-                    <ul class="submenu list-inline">
+                    @* <ul class="submenu list-inline">
                         <li><a href="~/AboutUs">理念說明</a></li>
                         <li><a href="~/AboutUs/p2">團隊介紹</a></li>
-                    </ul>
+                    </ul> *@
                 </li>
                 <li><a href="~/ContactUs">聯絡我們</a></li>
                 <li><a href="~/News/List">最新消息</a></li>
             </ul>
 
-            <ul class="social list-inline">
+            <ul class="social list-inline text-xs-center">
                 <li class="qr"><img src="~/Content/images/qr.png" alt=""></li>
-                <li><a href="" target="new"><i class="ti-facebook"></i><span class="sr-only">Facebook</span></a></li>
-                <li><a href="" target="new"><i class="ti-twitter-alt"></i><span class="sr-only">Twitter</span></a></li>
-                <li><a href="" target="new"><i class="ti-google"></i><span class="sr-only">Google+</span></a></li>
+                <li><a href="~/Index"><i class="ti-home"></i><span class="sr-only">回首頁</span></a></li>
+                <li><a href="https://www.facebook.com/1738917516328579/" target="new"><i class="ti-facebook"></i><span class="sr-only">台灣優靈客協會 官方 Facebook 專頁</span></a></li>
+                @* <li><a href="" target="new"><i class="ti-twitter-alt"></i><span class="sr-only">Twitter</span></a></li>
+                <li><a href="" target="new"><i class="ti-google"></i><span class="sr-only">Google+</span></a></li> *@
             </ul>
 
             <div class="copyright">Taiwan U-Link Association &copy; 2016</div>
 
-            @*<a href="#header" class="goTop scroll"><i class="icon-angle-up"></i></a>*@
+            <a href="#header" class="goTop scroll"><i class="ti-angle-up"></i></a>
         </div>
     </footer><!-- footer -->
 
@@ -208,7 +209,7 @@
 
     </script>
     <script src="~/Content/js/bootstrap/util.js"></script>
-    <script src="~/Content/js/bootstrap/collapse.js"></script>
+    @* <script src="~/Content/js/bootstrap/collapse.js"></script> *@
     @RenderSection("Scripts", required: false)
 
 </body>

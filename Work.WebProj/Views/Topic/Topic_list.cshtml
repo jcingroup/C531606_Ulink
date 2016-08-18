@@ -1,0 +1,126 @@
+﻿@{
+    ViewBag.Title = "主題活動";
+    ViewBag.BodyClass = "Topic";
+    Layout = "~/Views/Shared/Layout.cshtml";
+    ViewBag.customShareInfo = false;
+}
+
+<h2 class="sr-only">@ViewBag.Title</h2>
+
+<section id="content">
+	
+	<div id="banner">
+		<h3 class="h3 wrap">
+			<span class="title">@ViewBag.Title</span>
+		</h3>
+		<img class="thumb" src="~/Content/images/Topic/banner.jpg" alt="">
+	</div>
+
+    <div class="wrap">
+
+    	<ul class="breadcrumb text-md-right">
+    		<li><a href="~/Index"><i class="ti-home"></i> Home</a></li>
+    		<li>@ViewBag.Title</li>
+    	</ul>
+
+    	@* <ul class="filter list-inline">
+    		<li>所有主題</li>
+    		<li>主題1</li>
+    		<li>主題2</li>
+    	</ul> *@
+
+    	@* <hr> *@
+
+    	<div class="card-list">
+
+    		<article class="article card">
+				<a href="~/Topic/Content003" class="card-img-top">
+					<img src="~/Content/images/Topic/data/003/cover.jpg" alt="">
+					<i class="icon ti-search"></i>
+					<ul class="info list-inline">
+						<li class="name">探索台灣．我是壯遊客 系列活動</li>
+					</ul>
+				</a>
+				<div class="card-block">
+					<h3 class="card-title">原生文化體驗營：壯遊木作</h3>
+					<p class="card-text">
+						追尋大溪老街的歷史，靠著自己的雙手來製作吃飯的工具，尋找樹木最初的起點。
+					</p>
+					<a href="~/Topic/Content003" class="btn btn-primary">繼續閱讀 <i class="ti-arrow-right"></i></a>
+				</div>
+			</article>
+
+			<article class="article card">
+				<a href="~/Topic/Content004" class="card-img-top">
+					<img src="~/Content/images/Topic/data/004/cover.jpg" alt="">
+					<i class="icon ti-search"></i>
+					<ul class="info list-inline">
+						<li class="name">探索台灣．我是壯遊客 系列活動</li>
+					</ul>
+				</a>
+				<div class="card-block">
+					<h3 class="card-title">原生文化體驗營：壯遊野營</h3>
+					<p class="card-text">
+						和夥伴們同心協力搭帳篷、野炊，共同學習如何保護與尊重大自然。
+					</p>
+					<a href="~/Topic/Content004" class="btn btn-primary">繼續閱讀 <i class="ti-arrow-right"></i></a>
+				</div>
+			</article>
+
+			<article class="article card">
+				<a href="~/Topic/Content002" class="card-img-top">
+					<img src="~/Content/images/Topic/data/002/cover.jpg" alt="">
+					<i class="icon ti-search"></i>
+					<ul class="info list-inline">
+						<li class="name">探索台灣．我是壯遊客 系列活動</li>
+					</ul>
+				</a>
+				<div class="card-block">
+					<h3 class="card-title">原生文化體驗營：壯遊塔曼</h3>
+					<p class="card-text">
+						泰雅族的成年禮，挑戰塔曼的勇士之路，遠眺絢麗斑斕的日出。
+					</p>
+					<a href="~/Topic/Content002" class="btn btn-primary">繼續閱讀 <i class="ti-arrow-right"></i></a>
+				</div>
+			</article>
+
+			<article class="article card">
+				<a href="~/Topic/Content005" class="card-img-top">
+					<img src="~/Content/images/Topic/data/005/cover.jpg" alt="">
+					<i class="icon ti-search"></i>
+					<ul class="info list-inline">
+						<li class="name">探索台灣．我是壯遊客 系列活動</li>
+					</ul>
+				</a>
+				<div class="card-block">
+					<h3 class="card-title">原生文化體驗營：壯遊攀樹</h3>
+					<p class="card-text">
+						精彩刺激的攀樹體驗，挑戰自我，訓練自己的膽量！
+					</p>
+					<a href="~/Topic/Content005" class="btn btn-primary">繼續閱讀 <i class="ti-arrow-right"></i></a>
+				</div>
+			</article>
+
+			@* <article class="article card">
+				<a href="~/Topic/Content001" class="card-img-top">
+					<img src="~/Content/images/Topic/data/001/cover.jpg" alt="">
+					<i class="icon ti-search"></i>
+					<small>
+						<span class="name">探索台灣．我是壯遊客 系列活動</span>
+					</small>
+				</a>
+				<div class="card-block">
+					<h3 class="card-title">壯遊客 - 原生文化體驗營</h3>
+					<p class="card-text">
+						考驗，是為了探尋不一樣的生活姿態。追尋木的根源，挑戰塔曼的勇士之路。
+					</p>
+					<a href="~/Topic/Content001" class="btn btn-primary">繼續閱讀 <i class="ti-arrow-right"></i></a>
+				</div>
+			</article> *@
+
+		</div>
+        
+    </div>
+
+</section>
+

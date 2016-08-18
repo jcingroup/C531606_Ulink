@@ -168,9 +168,9 @@ $content-spacing:       0;
 
 .grid-intro {background: #F0F0F0;}
 
-.video {
+.feature {
 	@extend .col-xs-4;
-	width: 42.5%;
+	width: 42.5%; 
 
 	.thumb {
 		display: block;
@@ -195,14 +195,6 @@ $content-spacing:       0;
 			background: $brand-primary;
 			box-shadow: 0 0 15px hsla(0,0,0,0.5);
 			transition: background 0.35s;
-		}
-
-		&::after {
-			@include size(0);
-			border: 25px solid transparent;
-			border-left: 35px solid #fff;
-			border-right-width: 0;
-			margin-left: 5px;
 		}
 
 		&:hover {
@@ -242,12 +234,40 @@ $content-spacing:       0;
 		}
 	}
 
+	&.video {
+		.thumb {
+			&::after {
+				@include size(0);
+				border: 25px solid transparent;
+				border-left: 35px solid #fff;
+				border-right-width: 0;
+				margin-left: 5px;
+			}
+		}
+	}
+
+	&.article {
+		.thumb {
+			&::after {
+				content: "\e611";
+				font-family: 'themify';
+				font-size: em(50px);
+				color: #fff;
+			}
+		}
+	}
+
 	@include media-breakpoint-down(lg) {
 		width:45%;
 		.thumb {
 			height: 275px;
 			&::before {@include size(80px);}
+		}
+		&.video .thumb {
 			&::after {border-width: 20px 0 20px 30px;}
+		}
+		&.article .thumb {
+			&::after {font-size: em(40px);}
 		}
 	}
 
@@ -267,10 +287,6 @@ $content-spacing:       0;
 
 			&::before, &::after {top: 40%;}
 			&::before {@include size(50px);}
-			&::after {
-				margin-left: 2px;
-				border-width: 10px 0 10px 15px;
-			}
 
 			.h2 {
 				height: auto;
@@ -278,6 +294,16 @@ $content-spacing:       0;
 				font-size: em(18px);
 				.title {height: 1.2em;}
 			}
+		}
+
+		&.video .thumb {
+			&::after {
+				margin-left: 2px;
+				border-width: 10px 0 10px 15px;
+			}
+		}
+		&.article .thumb {
+			&::after {font-size: em(24px);}
 		}
 	}
 }
@@ -340,6 +366,11 @@ $content-spacing:       0;
 			float: none;
 			&:first-of-type {margin: 0 0 $spacer 0;}
 			&:last-of-type {margin: 0 0 $spacer*1.5 0;}
+			.h3 a, p {
+				height: auto;
+				white-space: normal;
+				overflow: visible;
+			}
 		}
 	}
 }
