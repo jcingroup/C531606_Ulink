@@ -14,10 +14,8 @@
 }
 
 @section Scripts {
-    <script src="~/Content/js/jquery.lazyload.js"></script>
     <script src="~/Content/js/waterfall/isotope.pkgd.min.js"></script>
     <script>
-        $(".gallery img").lazyload();
         $("html, body").animate({scrollTop: 1}); //同時使用瀑布流和lazyload時，圖片不會立刻出現，需向下捲動才會出現
         $(".gallery img").load(function() { //等圖片全部載入再動作
             $('.gallery').isotope({
@@ -73,14 +71,14 @@
                 <blockquote><em class="m-r-1">1st</em>首部曲：<strong>壯遊木作</strong></blockquote>
             </li>
             <li class="col-lg-wide col-lg-tall col-xl-wide col-xl-tall">
-                <a href="~/Content/images/Topic/data/003/pic1.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/003/pic1.jpg")" alt=""></a>
+                <a href="~/Content/images/Topic/data/003/pic1.jpg" target="new"><img src="~/Content/images/Topic/data/003/pic1.jpg" alt=""></a>
             </li>
             <li class="col-sm-wide col-md-wide short">
-                <a href="~/Content/images/Topic/data/003/pic2.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/003/pic2.jpg")" alt=""></a>
+                <a href="~/Content/images/Topic/data/003/pic2.jpg" target="new"><img src="~/Content/images/Topic/data/003/pic2.jpg" alt=""></a>
             </li>
             
             <li class="video short">
-                @* <a href="~/Content/images/Topic/data/003/pic11.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/003/pic11.jpg" alt=""></a> *@
+                @* <a href="~/Content/images/Topic/data/003/pic11.jpg" target="new"><img src="~/Content/images/Topic/data/003/pic11.jpg" alt=""></a> *@
                 <video class="video-bg" autoplay="true" loop="true" onclick="this.paused ? this.play() : this.pause();" poster="@Url.Content("~/Content/images/Topic/data/003/pic11.jpg")">
                     <source src="~/Content/images/Topic/data/003/video.mp4" type="video/mp4">
                 </video>
@@ -89,43 +87,43 @@
                 <blockquote>認識大溪老街<em class="br-xs-up">History of Dasi</em></blockquote>
             </li>
             <li class="col-sm-tall col-md-tall col-lg-tall col-xl-tall">
-                <a href="~/Content/images/Topic/data/003/pic3.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/003/pic3.jpg")" alt=""></a>
+                <a href="~/Content/images/Topic/data/003/pic3.jpg" target="new"><img src="~/Content/images/Topic/data/003/pic3.jpg" alt=""></a>
             </li>
             <li class="col-sm-tall col-md-tall col-lg-tall col-xl-tall">
-                <a href="~/Content/images/Topic/data/003/pic7.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/003/pic7.jpg")" alt=""></a>
+                <a href="~/Content/images/Topic/data/003/pic7.jpg" target="new"><img src="~/Content/images/Topic/data/003/pic7.jpg" alt=""></a>
             </li>
             <li class="col-sm-wide col-sm-tall col-md-wide col-md-tall col-xl-wide col-xl-tall">
-                <a href="~/Content/images/Topic/data/003/pic10.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/003/pic10.jpg")" alt=""></a>
+                <a href="~/Content/images/Topic/data/003/pic10.jpg" target="new"><img src="~/Content/images/Topic/data/003/pic10.jpg" alt=""></a>
             </li>
             <li class="text">
                 <blockquote><em class="br-xs-up">DIY Chopsticks</em>自己動手做木筷</blockquote>
             </li>
             <li class="col-xl-wide col-xl-tall">
-                <a href="~/Content/images/Topic/data/003/pic14.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/003/pic14.jpg")" alt=""></a>
+                <a href="~/Content/images/Topic/data/003/pic14.jpg" target="new"><img src="~/Content/images/Topic/data/003/pic14.jpg" alt=""></a>
             </li>
             <li class="col-sm-tall col-md-tall col-lg-tall col-xl-tall">
-                <a href="~/Content/images/Topic/data/003/pic13.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/003/pic13.jpg")" alt=""></a>
+                <a href="~/Content/images/Topic/data/003/pic13.jpg" target="new"><img src="~/Content/images/Topic/data/003/pic13.jpg" alt=""></a>
             </li>
             <li>
-                <a href="~/Content/images/Topic/data/003/pic5.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/003/pic5.jpg")" alt=""></a>
+                <a href="~/Content/images/Topic/data/003/pic5.jpg" target="new"><img src="~/Content/images/Topic/data/003/pic5.jpg" alt=""></a>
             </li>
             <li>
-                <a href="~/Content/images/Topic/data/003/pic4.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/003/pic4.jpg")" alt=""></a>
+                <a href="~/Content/images/Topic/data/003/pic4.jpg" target="new"><img src="~/Content/images/Topic/data/003/pic4.jpg" alt=""></a>
             </li>
             <li>
-                <a href="~/Content/images/Topic/data/003/pic6.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/003/pic6.jpg")" alt=""></a>
+                <a href="~/Content/images/Topic/data/003/pic6.jpg" target="new"><img src="~/Content/images/Topic/data/003/pic6.jpg" alt=""></a>
             </li>
             <li class="text">
                 <blockquote>用自製筷子吃飯<em class="br-xs-up">Use My Chopsticks</em></blockquote>
             </li>
             <li>
-                <a href="~/Content/images/Topic/data/003/pic12.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/003/pic12.jpg")" alt=""></a>
+                <a href="~/Content/images/Topic/data/003/pic12.jpg" target="new"><img src="~/Content/images/Topic/data/003/pic12.jpg" alt=""></a>
             </li>
             <li class="col-xl-wide col-xl-tall">
-                <a href="~/Content/images/Topic/data/003/pic9.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/003/pic9.jpg")" alt=""></a>
+                <a href="~/Content/images/Topic/data/003/pic9.jpg" target="new"><img src="~/Content/images/Topic/data/003/pic9.jpg" alt=""></a>
             </li>
             <li class="col-sm-wide col-sm-tall col-md-wide col-md-tall col-xl-wide col-xl-tall">
-                <a href="~/Content/images/Topic/data/003/pic8.jpg" target="new"><img data-original="@Url.Content("~/Content/images/Topic/data/003/pic8.jpg")" alt=""></a>
+                <a href="~/Content/images/Topic/data/003/pic8.jpg" target="new"><img src="~/Content/images/Topic/data/003/pic8.jpg" alt=""></a>
             </li>
         </ol>
 
