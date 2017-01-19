@@ -10,7 +10,39 @@ $subpages-max:                  2;
 
 
 // Colors
-$brand-secondary:               #349CCF !default;
+$brand-primary-light:             lighten($brand-primary,47%);
+$brand-primary-dark:              darken($brand-primary,10%);
+$brand-secondary:                 #349CCF !default;
+$red:                             #F44336 !default;
+$pink:                            #E91E63 !default;
+$purple:                          #9D83BC !default;
+$deep-purple:                     #673AB7 !default;
+$indigo:                          #3F51B5 !default;
+$blue:                            #2196F3 !default;
+$light-blue:                      #87CEEB !default;
+$cyan:                            #00BCD4 !default;
+$aqua:                            #67EAEA !default;
+$teal:                            #009688 !default;
+$green:                           #4CAF50 !default;
+$light-green:                     #8BC34A !default;
+$lime:                            #CDDC39 !default;
+$sand:                            #FDF5E6 !default;
+$khaki:                           #F0E68C !default;
+$yellow:                          #FFEB3B !default;
+$amber:                           #FFC107 !default;
+$orange:                          #FF9800 !default;
+$deep-orange:                     #FF5722 !default;
+$blue-grey:                       #607D8B !default;
+$brown:                           #795548 !default;
+$light-grey:                      #F1F1F1 !default;
+$grey:                            #9E9E9E !default;
+$dark-grey:                       #616161 !default;
+$black:                           #000    !default;
+$white:                           #fff    !default;
+$pale-red:                        #FFE7E7 !default;
+$pale-yellow:                     #FFFFD7 !default;
+$pale-green:                      #E7FFE7 !default;
+$pale-blue:                       #E7FFFF !default;
 
 $link-color:                    #F98D13;
 $link-hover-color:              $brand-secondary;

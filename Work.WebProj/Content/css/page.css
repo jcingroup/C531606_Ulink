@@ -3923,6 +3923,30 @@ a.text-danger:focus, a.text-danger:hover {
   font-size: 1.25rem;
 }
 
+.text-secondary {
+  color: #349CCF !important;
+}
+
+a.text-secondary:focus, a.text-secondary:hover {
+  color: #287ea8;
+}
+
+.text-purple {
+  color: #9D83BC !important;
+}
+
+a.text-purple:focus, a.text-purple:hover {
+  color: #8362aa;
+}
+
+.text-orange {
+  color: #FF9800 !important;
+}
+
+a.text-orange:focus, a.text-orange:hover {
+  color: #cc7a00;
+}
+
 .text-middle {
   vertical-align: middle !important;
 }

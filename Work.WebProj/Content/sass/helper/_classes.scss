@@ -47,6 +47,11 @@
 .text-sm {font-size: $font-size-sm;}
 .text-lg {font-size: $font-size-lg;}
 
+@include text-emphasis-variant('.text-secondary', $brand-secondary);
+@include text-emphasis-variant('.text-purple', $purple);
+@include text-emphasis-variant('.text-orange', $orange);
+
+
 // Alignment
 
 .text-middle { vertical-align:middle !important; }
