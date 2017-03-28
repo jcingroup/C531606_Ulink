@@ -425,6 +425,7 @@
     <Content Include="Content\images\News\004\pic1.jpg" />
     <Content Include="Content\images\News\004\pic2.jpg" />
     <Content Include="Content\images\News\005\pic.jpg" />
+    <Content Include="Content\images\News\005\pic2.jpg" />
     <Content Include="Content\images\News\banner.jpg" />
     <Content Include="Content\images\no-pic.gif" />
     <Content Include="Areas\Base\Views\Menu\Main.cshtml" />
@@ -813,8 +814,8 @@
     <Content Include="Views\Topic\Topic_content005.cshtml" />
     <Content Include="Views\Events\Events003.cshtml" />
     <Content Include="Views\Events\Events_list.cshtml" />
-    <Content Include="Views\News\News_content005.cshtml" />
     <Content Include="Views\Events\Events004.cshtml" />
+    <Content Include="Views\News\News_content005.cshtml" />
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

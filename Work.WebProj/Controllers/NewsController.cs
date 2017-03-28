@@ -28,10 +28,10 @@ namespace DotWeb.Controllers
         {
             return View("News_content004");
         }
-        // public ActionResult Content005()
-        // {
-        //     return View("News_content005");
-        // }
+        public ActionResult Content005()
+        {
+            return View("News_content005");
+        }
     }
 
 }
