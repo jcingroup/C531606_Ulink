@@ -10,7 +10,7 @@ $subpages-max:                  2;
 
 
 // Colors
-$brand-primary-light:             lighten($brand-primary,47%);
+$brand-primary-light:             lighten($brand-primary,20%);
 $brand-primary-dark:              darken($brand-primary,10%);
 $brand-secondary:                 #349CCF !default;
 $red:                             #F44336 !default;
@@ -56,7 +56,7 @@ $font-family-en:                "Open Sans", "Helvetica Neue", Helvetica, Arial,
 $table-cell-padding:            .35rem .75rem;
 $table-bg:                      #fff;
 $table-bg-accent:               #F5F5F5;
-$thead-bg:                      #ccc;
+$thead-bg:                      $brand-primary-light;
 $table-border-color:            $table-bg;
 
 
