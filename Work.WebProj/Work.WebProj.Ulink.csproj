@@ -817,6 +817,7 @@
     <Content Include="Views\Events\Events004.cshtml" />
     <Content Include="Views\News\News_content005.cshtml" />
     <Content Include="Views\News\News_content006.cshtml" />
+    <Content Include="Views\Events\Events005.cshtml" />
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
