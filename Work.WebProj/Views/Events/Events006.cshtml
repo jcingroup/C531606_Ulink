@@ -1,0 +1,228 @@
+﻿@{
+    ViewBag.Title = "活動參與";
+    ViewBag.Title2 = "2017 運動新視野 論壇";
+    ViewBag.BodyClass = "Events p1";
+    Layout = "~/Views/Shared/Layout.cshtml";
+    ViewBag.customShareInfo = true;
+    ViewBag.ogUrl = "http://www.ulink.org.tw/Events/Events006";
+    ViewBag.ogTitle = ViewBag.Title2;
+    ViewBag.ogDescription = "";
+}
+
+@section CSS {
+    <style>
+        .table td {border-color: #eee;}
+    </style>
+}
+
+<h2 class="sr-only">@ViewBag.Title</h2>
+
+<section id="content">
+
+    <h3 class="sr-only">活動預告</h3>
+
+    <div id="banner" class="article">
+        <h4 class="h3 wrap hidden-md-down">
+            <small>
+                <span class="name">社團法人台灣優靈客協會</span>
+                <span class="date"><i class="ti-calendar"></i>2017-11-24</span>
+            </small>
+            <span class="title">@ViewBag.Title2</span>
+        </h4>
+        <img class="thumb" src="~/Content/images/Events/data/006/banner.jpg" alt="">
+    </div>
+
+    <div class="wrap">
+
+        <ul class="breadcrumb text-md-right">
+            <li><a href="~/Index">Home</a></li>
+            <li><a href="~/Events">@ViewBag.Title</a></li>
+            <li>活動預告</li>
+        </ul>
+
+        <h4 class="h3 hidden-lg-up">
+            <small>
+                <span class="name">社團法人台灣優靈客協會</span>
+                <span class="date"><i class="ti-calendar"></i>2017-11-24</span>
+            </small>
+            <span class="title">@ViewBag.Title2</span>
+        </h4>
+
+        <!-- <div class="alert alert-info">
+            本活動已圓滿結束，感謝您的共襄盛舉！
+        </div> -->
+
+        <article class="article section">
+            <h5 class="h4">關於本活動</h5>
+            <div class="editor main-text">
+                <p>本會成立主旨為「藉由連結國內外青年，以推展 <strong class="text-purple">文化藝術</strong>、<strong class="text-success">全民體育</strong>、<strong class="text-orange">觀光旅遊</strong>、<strong class="text-danger">創新創業</strong>及<strong class="text-info">健康促進</strong>為主要目標，並建立青年積極正向、樂觀進取的人生觀與價值觀，全方位培養新生代青年菁英。」，於近年媒體的報導中可發現，青年學子的自我意識抬頭，不論是 <strong class="text-success">振奮人心的運動賽事</strong>，還是 <strong class="text-purple">創業、創新、藝術文化</strong> 等各類型的論壇講座都積極參與，展現對社會發展及自己未來的關心，對於新時代的來臨及社會多元的發展，青年學子也有自己獨特的一套見解與想法，故開拓年輕人熟悉的公共參與方式以及管道，建立有效的社會理性對話機制，是現今十分重要的課題之一。</p>
+            </div>
+        </article>
+        <article class="article section">
+            <h5 class="h4">舉辦日期、地點</h5>
+            <div class="editor main-text">
+                <ul class="list-icon list-underline">
+                    <li>
+                        <strong>舉辦日期：</strong>
+                        106年11月24日(星期五)
+                    </li>
+                    <li>
+                        <strong>舉辦地點：</strong>
+                        國立體育大學(桃園市龜山區文化一路250號)
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="article section">
+            <h5 class="h4">舉辦方式</h5>
+            <div class="editor main-text">
+                <ul class="list-icon list-underline">
+                    <li>
+                        <strong>專題演講：</strong>
+                        邀請中華職棒大聯盟－吳志揚會長 <small>(台灣優靈客協會理事長)</small>演講。
+                    </li>
+                    <li>
+                        <strong>分組論壇：</strong>
+                        分為旅遊組、創業組及健康組進行各組論壇。
+                    </li>
+                    <li>
+                        <strong>綜合討論：</strong>
+                        由各分組主講人參與綜合討論，藉由論述該組共識，彙整成為論壇貢獻。
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="article section">
+            <h5 class="h4">參加對象、人數及報名方式</h5>
+            <div class="editor main-text">
+                <p><strong>參加對象：</strong></p>
+                <ul class="list-icon list-underline">
+                    <li>國立體育大學全校師生</li>
+                    <li>從事體育運動、觀光旅遊、創新創業及醫學健康促進產業之各級人士</li>
+                    <li>對青年發展有興趣之各界人士</li>
+                </ul>
+                <p><strong>參加人數：</strong>150人</p>
+                <p>
+                    <a class="btn btn-lg btn-success" href="https://goo.gl/NuzwBF" target="new">請按此線上報名</a>
+                </p>
+            </div>
+        </article>
+        <article class="article section">
+            <h5 class="h4">活動內容、流程</h5>
+            <div class="editor main-text">
+                <p><strong>活動內容：</strong>專題演講、分組論壇、綜合討論</p>
+                <p><strong>大會議程：</strong></p>
+                <table class="table table-hover table-responsive text-xs-center">
+                    <thead>
+                        <tr>
+                            <th>時間</th>
+                            <th>活動說明</th>
+                            <th>地點</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0900-0930</td>
+                            <td>報到</td>
+                            <td class="text-middle" rowspan="3">國立體育大學<br>綜合科技大樓<br>國際會議廳</td>
+                        </tr>
+                        <tr>
+                            <td class="text-middle">0930-0940</td>
+                            <td>活動開始<br>來賓致詞</td>
+                        </tr>
+                        <tr>
+                            <td class="text-middle">0940-1020</td>
+                            <td>專題演講<br>運動新視野-中華職棒大聯盟－吳志揚會長</td>
+                        </tr>
+                        <tr class="bg-info">
+                            <td>1020-1030</td>
+                            <td colspan="2">中場休息-前往分組論壇場地</td>
+                        </tr>
+                        <tr>
+                            <td class="text-middle" rowspan="3">1030-1150</td>
+                            <td class="text-xs-left">
+                                <p><strong>【論壇主題：打造運動旅遊新趨勢】</strong></p>
+                                <p><strong>主講人：</strong>雄獅旅行社 黃信川總經理</p>
+                                <p><strong>與談人：</strong></p>
+                                <ul class="list-icon list-underline">
+                                    <li>1. ISA國際攀樹師 翁恒斌教練</li>
+                                    <li>2. 台灣青旅股份有限公司 魏秋富執行長</li>
+                                    <li>3. Accupass活動通亞太區 黃柏翰總經理</li>
+                                </ul>
+                            </td>
+                            <td class="text-middle">A組<br>國立體育大學<br>綜合科技大樓<br>國際會議廳</td>
+                        </tr>
+                        <tr>
+                            <td class="text-xs-left">
+                                <p>
+                                    <strong>【論壇主題：大數據與物聯網時代下的遊憩產業再造】</strong>
+                                </p>
+                                <p>
+                                    <strong>主講人：</strong>浪斯邦尼有限公司負責人 詹鈞智先生</p>
+                                <p>
+                                    <strong>與談人：</strong>
+                                </p>
+                                <ul class="list-icon list-underline">
+                                    <li>1. 國立體育大學管理學院 陳成業院長</li>
+                                    <li>2. 威達運動有限公司 陳鴻傑董事長</li>
+                                    <li>3. 智林體育台 施宣麟董事長</li>
+                                </ul>
+                            </td>
+                            <td class="text-middle">B組
+                                <br>國立體育大學
+                                <br>教學研究大樓
+                                <br>B09教室
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-xs-left">
+                                <p>
+                                    <strong>【論壇主題：運動健康，你的觀念對了嗎？】</strong>
+                                </p>
+                                <p>
+                                    <strong>主講人：</strong>台大醫院竹東分院復健科 蔡怡萱主任</p>
+                                <p>
+                                    <strong>與談人：</strong>
+                                </p>
+                                <ul class="list-icon list-underline">
+                                    <li>1. 國立體育大學管理學院 黃啟煌副校長</li>
+                                    <li>2. 國立體育大學柔道選手 蔡明諺同學</li>
+                                    <li>3. 敏盛醫院經國院區營養部 劉香蘭主任</li>
+                                </ul>
+                            </td>
+                            <td class="text-middle">C組
+                                <br>國立體育大學
+                                <br>教學研究大樓
+                                <br>B10教室
+                            </td>
+                        </tr>
+                        <tr class="bg-info">
+                            <td>1150-1200</td>
+                            <td colspan="2">中場休息-前往綜合討論場地(國際會議廳)</td>
+                        </tr>
+                        <tr>
+                            <td class="text-middle">1200-1230</td>
+                            <td class="text-middle">綜合討論</td>
+                            <td>
+                                國立體育大學<br>
+                                綜合科技大樓<br>
+                                國際會議廳<br>
+                            </td>
+                        </tr>
+                        <tr class="bg-info">
+                            <td>1230</td>
+                            <td colspan="2">賦歸</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <article class="article section">
+            <h5 class="h4">預期成效</h5>
+            <div class="editor main-text">
+                <p>以「運動」為主題，研討相關觀光旅遊、創業及健康促進議題，建立與青年的雙向溝通平台，透過與新時代青年的對話與討論，讓他們的意見及想法能夠有效地傳達，期能滙集完整訊息，提供民間社團對青年事務展之方向及政府制定相關政策之參考意見。</p>
+            </div>
+        </article>
+    </div>
+
+</section>

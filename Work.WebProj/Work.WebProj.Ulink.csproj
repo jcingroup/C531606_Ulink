@@ -406,6 +406,10 @@
     <Content Include="Content\images\Events\data\004\pic6-5.jpg" />
     <Content Include="Content\images\Events\data\004\pic6-6.jpg" />
     <Content Include="Content\images\Events\data\004\pic6.jpg" />
+    <Content Include="Content\images\Events\data\005\banner.jpg" />
+    <Content Include="Content\images\Events\data\005\pic1.jpg" />
+    <Content Include="Content\images\Events\data\005\pic2.jpg" />
+    <Content Include="Content\images\Events\data\006\banner.jpg" />
     <Content Include="Content\images\Index\banner.jpg" />
     <Content Include="Content\images\Index\speech.jpg" />
     <Content Include="Content\images\line.png" />
@@ -818,6 +822,7 @@
     <Content Include="Views\News\News_content005.cshtml" />
     <Content Include="Views\News\News_content006.cshtml" />
     <Content Include="Views\Events\Events005.cshtml" />
+    <Content Include="Views\Events\Events006.cshtml" />
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

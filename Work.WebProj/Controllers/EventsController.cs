@@ -13,7 +13,11 @@ namespace DotWeb.Controllers
     {
         public ActionResult Index()
         {
-            return Redirect("~/Events/Events005");
+            return Redirect("~/Events/Events006");
+        }
+        public ActionResult Events006()
+        {
+            return View("Events006");
         }
         public ActionResult Events005()
         {
