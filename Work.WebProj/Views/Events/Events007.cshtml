@@ -1,0 +1,223 @@
+﻿@{
+    ViewBag.Title = "活動參與";
+    ViewBag.Title2 = "2018 遊騎花蓮壯遊行";
+    ViewBag.BodyClass = "Events p1";
+    Layout = "~/Views/Shared/Layout.cshtml";
+    ViewBag.customShareInfo = true;
+    ViewBag.ogUrl = "http://www.ulink.org.tw/Events/Events007";
+    ViewBag.ogTitle = ViewBag.Title2;
+    ViewBag.ogDescription = "";
+}
+
+@section CSS {
+    <style>
+        .table td {border-color: #eee;}
+        .text-left { text-align: left; }
+    </style>
+}
+
+<h2 class="sr-only">@ViewBag.Title</h2>
+
+<section id="content">
+
+    <h3 class="sr-only">活動預告</h3>
+
+    <div id="banner" class="article">
+        <h4 class="h3 wrap hidden-md-down">
+            <small>
+                <span class="name">社團法人台灣優靈客協會</span>
+                <span class="date"><i class="ti-calendar"></i>2018-09-20</span>
+            </small>
+            <span class="title">@ViewBag.Title2</span>
+        </h4>
+        <img class="thumb" src="~/Content/images/Events/data/007/banner.jpg" alt="">
+    </div>
+
+    <div class="wrap">
+
+        <ul class="breadcrumb text-md-right">
+            <li><a href="~/Index">Home</a></li>
+            <li><a href="~/Events">@ViewBag.Title</a></li>
+            <li>活動預告</li>
+        </ul>
+
+        <h4 class="h3 hidden-lg-up">
+            <small>
+                <span class="name">社團法人台灣優靈客協會</span>
+                <span class="date"><i class="ti-calendar"></i>2017-11-24</span>
+            </small>
+            <span class="title">@ViewBag.Title2</span>
+        </h4>
+
+        <!-- <div class="alert alert-info">
+            本活動已圓滿結束，感謝您的共襄盛舉！
+        </div> -->
+
+        <article class="article section">
+            <h5 class="h4">關於本活動</h5>
+            <div class="editor main-text">
+                <p>「遊騎花蓮壯遊行」，跟著在地達人探索 <strong class="text-purple">古樸與繁華兼具的老街</strong>，享用花蓮的<strong class="text-success">特殊風味餐</strong>，不僅如此，還要挑戰自己，靠著腳力騎完全國首創的<strong class="text-danger">兩潭自行車道</strong>！並於兩天行程中完成<strong class="text-orange">指定任務</strong>。這次讓我們一起深入體驗洄瀾，壯遊花蓮！成為實實在在的「壯遊客」！</p>
+            </div>
+        </article>
+        <article class="article section">
+            <h5 class="h4">亮點</h5>
+            <div class="editor main-text">
+                <ul class="list-icon list-underline">
+                    <li>
+                        <strong class="text-danger">兩潭自行車道－</strong>
+                        全國首創連接山海兩潭的車道，並為最美的單車路線
+                    </li>
+                    <li>
+                        <strong class="text-success">老街新味之旅－</strong>
+                        在地達人親自帶領，深入體驗花蓮古樸老街獨有的新味道
+                    </li>
+                    <li>
+                        <strong  class="text-purple">百年吉安慶修院－</strong>
+                        三級古蹟，同時也是台灣東部地區保持最完整的日據時期神社
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <article class="article section">
+            <h5 class="h4">活動日期</h5>
+            <div class="editor main-text">
+                <ul class="list-icon list-underline">
+                    <li>107年10月13日~14日(第一梯)</li>
+                    <li>107年10月20日~21日(第二梯)</li>
+                    <li>107年11月03日~04日(第三梯)</li>
+                </ul>
+            </div>
+        </article>
+        <article class="article section">
+            <h5 class="h4">適合對象、活動費用及報名方式</h5>
+            <div class="editor main-text">
+                <ul class="list-icon list-underline">
+                    <li>
+                        <strong>適合對象：</strong>
+                        各大專院校國際交換生
+                    </li>
+                    <li>
+                        <strong>活動費用：</strong>
+                        你分享，我帶路！
+                    </li>
+                </ul>
+                <p>
+                    <a class="btn btn-lg btn-success" href="https://goo.gl/QapkkQ" target="new">請按此線上報名</a>
+                </p>
+            </div>
+        </article>
+        <article class="article section">
+            <h5 class="h4">活動流程</h5>
+            <div class="editor main-text">
+                <table class="table table-hover table-responsive text-xs-center">
+                    <tbody>
+                        <thead>
+                            <tr>
+                                <th colspan="3"><strong>DAY.1－市區體驗</strong></th>
+                            </tr>
+                        </thead>
+                        <tr class="bg-info">
+                            <td></td>
+                            <td>內容</td>
+                            <td>備註</td>
+                        </tr>
+                        <tr>
+                            <td class="text-middle" rowspan="2">早上</td>
+                            <td>台北火車站集合</td>
+                            <td class="text-left">08:20a.m集合</td>
+                        </tr>
+                        <tr>
+                            <td>快樂出發</td>
+                            <td>搭乘412車次08:50a.m出發前往花蓮，預計11:01a.m抵達</td>
+                        </tr>
+                        <tr>
+                            <td class="text-middle" rowspan="2">中午</td>
+                            <td>整裝出發</td>
+                            <td  class="text-left">熱身操、試騎單車、領騎解說單車遊程</td>
+                        </tr>
+                        <tr>
+                            <td>午餐－當地風味餐</td>
+                            <td  class="text-left">騎乘單車至午餐餐廳</td>
+                        </tr>
+                        <tr>
+                            <td class="text-middle" rowspan="2">下午</td>
+                            <td>新味醬油－豆腐乳DIY</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>探訪老街新味道</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="text-middle"  rowspan="3">晚上</td>
+                            <td>晚餐－原住民風味餐</td>
+                            <td  class="text-left">騎乘單車至晚餐餐廳</td>
+                        </tr>
+                        <tr>
+                            <td>東大門夜市</td>
+                            <td  class="text-left">騎乘單車至東大門夜市</td>
+                        </tr>
+                        <tr>
+                            <td>途中國際青年旅舍</td>
+                            <td  class="text-left">騎乘單車至旅舍</td>
+                        </tr>
+
+                        <thead>
+                            <tr>
+                                <th colspan="3"><strong>DAY.2－挑戰腳力</strong></th>
+                            </tr>
+                        </thead>
+                        <tr class="bg-info">
+                            <td></td>
+                            <td>內容</td>
+                            <td>備註</td>
+                        </tr>
+
+                        <tr>
+                            <td class="text-middle" rowspan="2">早上</td>
+                            <td>晨喚－早餐</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>整裝出發</td>
+                            <td  class="text-left">單車路線：飯店－慶修院－鯉魚潭<br>騎乘公里數約18KM</td>
+                        </tr>
+                        <tr>
+                            <td>中午</td>
+                            <td>午餐－當地風味餐</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="text-middle">下午</td>
+                            <td>繼續出發</td>
+                            <td  class="text-left">單車路線：餐廳－七星柴魚博物館－七星潭－花蓮市區<br>騎乘公里數約32KM</td>
+                        </tr>
+                        <tr>
+                            <td class="text-middle">傍晚</td>
+                            <td>快樂回程</td>
+                            <td  class="text-left">搭乘285車次18:18p.m出發前往台北，預計20:32p.m抵達</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+        <article class="article section">
+            <h5 class="h4">行程注意事項</h5>
+            <div class="editor main-text">
+
+                <ul class="list-icon list-underline">
+                    <li>
+                        為響應環保請自行攜帶毛巾、牙刷及牙膏。
+                    </li>
+                    <li>
+                        本活動需足夠之體能方能順利完成，建議提前自我訓練，以利有足夠之時間調整體能。
+                    </li>
+                    <li>
+                        本活動騎乘難度高，報名前請慎重考量自我身體狀況。
+                    </li>
+                </ul>
+            </div>
+        </article>
+    </div>
+
+</section>
