@@ -517,6 +517,7 @@
     <Content Include="Content\images\Topic\data\005\pic8.jpg" />
     <Content Include="Content\images\Topic\data\005\pic9.jpg" />
     <Content Include="Content\images\Topic\data\005\video.mp4" />
+    <Content Include="Content\images\Topic\data\007\cover.jpg" />
     <Content Include="Content\js\bootstrap\alert.js" />
     <Content Include="Content\js\bootstrap\button.js" />
     <Content Include="Content\js\bootstrap\carousel.js" />
