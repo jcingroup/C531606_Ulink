@@ -19,6 +19,10 @@ namespace DotWeb.Controllers
         {
             return View("Events007");
         }
+        public ActionResult Events007e()
+        {
+            return View("Events007e");
+        }
         public ActionResult Events006()
         {
             return View("Events006");
