@@ -38,8 +38,8 @@ export class ReactTypeahead extends React.Component<Typeahead.ReactTypeaheadProp
                 keyword: v
             });
 
-            var _this = this;
-            var f = function () { _this.getData(v) };
+            var _thisObj = this;
+            var f = function () { _thisObj.getData(v) };
 
             clearTimeout(this.tid);
             this.tid = setTimeout(f, 500);
