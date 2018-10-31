@@ -517,6 +517,7 @@
     <Content Include="Content\images\Topic\data\005\pic8.jpg" />
     <Content Include="Content\images\Topic\data\005\pic9.jpg" />
     <Content Include="Content\images\Topic\data\005\video.mp4" />
+    <Content Include="Content\images\Topic\data\007\banner.jpg" />
     <Content Include="Content\images\Topic\data\007\cover.jpg" />
     <Content Include="Content\images\Topic\data\007\pic1.jpg" />
     <Content Include="Content\images\Topic\data\007\pic10.jpg" />
@@ -530,6 +531,8 @@
     <Content Include="Content\images\Topic\data\007\pic18.jpg" />
     <Content Include="Content\images\Topic\data\007\pic19.jpg" />
     <Content Include="Content\images\Topic\data\007\pic2.jpg" />
+    <Content Include="Content\images\Topic\data\007\pic20.jpg" />
+    <Content Include="Content\images\Topic\data\007\pic21.jpg" />
     <Content Include="Content\images\Topic\data\007\pic3.jpg" />
     <Content Include="Content\images\Topic\data\007\pic4.jpg" />
     <Content Include="Content\images\Topic\data\007\pic5.jpg" />

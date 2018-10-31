@@ -1,13 +1,12 @@
 ﻿@{
     ViewBag.Title = "主題活動";
-    ViewBag.Title2 = "2018 遊騎花蓮壯遊行 Grand Tour Hualien．Biking Challenge";
-    ViewBag.BodyClass = "Events p2";
+    ViewBag.Title2 = "2018 遊騎花蓮壯遊行";
+    ViewBag.BodyClass = "Topic";
     Layout = "~/Views/Shared/Layout.cshtml";
     ViewBag.customShareInfo = true;
-    ViewBag.ogUrl = "http://www.ulink.org.tw/Events/Events002";
+    ViewBag.ogUrl = "http://www.ulink.org.tw/Events/Events007";
     ViewBag.ogTitle = ViewBag.Title2;
-    ViewBag.ogDescription = "泰雅成年禮、野營、攀樹、木作挑戰自我：台灣優靈客協會以服務青年為主軸，暑期推出全台首創新型態「探索台灣我是壯遊客」活動，規劃內容以泰雅成年禮、野營、攀樹、木作為主題，7月21日至22日、7月27日至28日兩梯次，名額40名，歡迎大專青年挑戰自我體能，體驗台灣生態。";
-    ViewBag.ogImgUrl = "http://www.ulink.org.tw/Content/images/Events/data/002/ogImg.jpg";
+    ViewBag.ogDescription = "遊騎花蓮壯遊行、自行車、花蓮、豆腐乳DIY、慶修院：台灣優靈客協會以服務青年為主軸，此次兩天一夜的行程中包含特別的手作豆腐乳DIY，參觀日式廟祠縣定古蹟－慶修院，並挑戰自己，靠著腳力騎完全國首創的兩潭自行車道！透過專業導覽解說，讓國際學生能夠深入了解台灣在地文化，10月13日至14日、10月27日至28日、11月3日至4日共三梯次，歡迎國際學生挑戰自我體能，體驗台灣之美。";
 }
 
 @section CSS {
@@ -46,32 +45,30 @@
 
 <section id="content">
 
-    <h3 class="sr-only">過往活動回顧</h3>
-
-    <div id="banner" class="article">
-        <h4 class="h3 wrap hidden-md-down">
+    <div id="banner">
+        <h3 class="h3 wrap hidden-md-down">
             <small>
                 <span class="name">社團法人台灣優靈客協會</span>
-                <span class="date"><i class="ti-calendar"></i>2018-10-21</span>
+                <span class="date"><i class="ti-calendar"></i>2018-10-22</span>
             </small>
             <span class="title">
                 @ViewBag.Title2
             </span>
-        </h4>
-        <img class="thumb" src="~/Content/images/Events/data/007/banner.jpg" alt="">
+        </h3>
+        <img class="thumb" src="~/Content/images/Topic/data/007/banner.jpg" alt="">
     </div>
 
     <div class="wrap">
 
         <ul class="breadcrumb text-md-right">
-            <li><a href="~/Index">Home</a></li>
-            <li><a href="~/Events">@ViewBag.Title</a></li>
+            <li><a href="~/Index"><i class="ti-home"></i> Home</a></li>
+            <li><a href="~/Topic/List">@ViewBag.Title</a></li>
             <li>活動內容</li>
         </ul>
 
         <h4 class="h3 hidden-lg-up"><small>
                 <span class="name">社團法人台灣優靈客協會</span>
-                <span class="date"><i class="ti-calendar"></i>2018-10-21</span>
+                <span class="date"><i class="ti-calendar"></i>2018-10-22</span>
             </small>
             <span class="title">
                 @ViewBag.Title2
@@ -79,12 +76,21 @@
         </h4>
 
         <article class="article section">
-            <h5 class="h4">首度壯遊</h5>
+            <h5 class="h4">關於本活動</h5>
             <div class="editor main-text">
-                <p>本次遊騎花蓮壯遊行，以<strong class="text-purple">自行車</strong>為主要交通工具，並串聯花蓮景點，目前已進行到第二梯次，活動共吸引來自9所學校10個國家的60位國際學生分三梯次參與，兩天一夜的行程中包含特別的<strong class="text-success">手作豆腐乳DIY</strong>，再跟著在地達人探索古樸與繁華兼具的老街，參觀全台灣唯一保持完整的日式廟祠縣定古蹟－<strong class="text-danger">慶修院</strong>，不僅如此，還要挑戰自己，靠著腳力騎完全國首創的兩潭自行車道！活動不僅挑戰體力，也能充分體驗<strong class="text-orange">東部山海之美</strong>，更可以透過專業導覽解說，深入了解台灣在地文化。</p>
-                <p>第一梯次(10/13-14)首團出發，協會吳志揚理事長也前往花蓮與花蓮市市長魏嘉賢一同迎接國際學生，理事長領騎帶著學生們出發，也與大家一起體驗手作DIY的樂趣，晚餐部分魏市長更用心安排原住民風味餐給國際學生品嘗，理事長表示，這次藉由壯遊活動，讓國際生來台念書之餘，也能好好的認識一下花蓮，了解當地的人文產業、在地風貌，並與他校及他國學生進行交流，一起深入體驗洄瀾，壯遊花蓮！</p>
-                <p>而兩天一夜的活動，學生們也拍攝記錄了整個壯遊活動體驗過程，除分享於自己的<strong class="text-success">「FB」、「IG」</strong>等社群媒體外，並將其剪輯成影片放上自己的<strong class="text-danger">YouTube</strong>，也供協會未來使用藉此宣傳以不一樣的方式體驗花蓮外，同時也提高協會的知名度。以下附上兩位同學的影片：
-                </p>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>本次遊騎花蓮壯遊行，以<strong class="text-purple">自行車</strong>為主要交通工具，並串聯花蓮景點，目前已進行到第二梯次，活動共吸引來自9所學校10個國家的60位國際學生分三梯次參與，兩天一夜的行程中包含特別的<strong class="text-success">手作豆腐乳DIY</strong>，再跟著在地達人探索古樸與繁華兼具的老街，參觀全台灣唯一保持完整的日式廟祠縣定古蹟－<strong class="text-danger">慶修院</strong>，不僅如此，還要挑戰自己，靠著腳力騎完全國首創的兩潭自行車道！活動不僅挑戰體力，也能充分體驗<strong class="text-orange">東部山海之美</strong>，更可以透過專業導覽解說，深入了解台灣在地文化。</p>
+                        <p>第一梯次(10/13-14)首團出發，協會吳志揚理事長也前往花蓮與花蓮市市長魏嘉賢一同迎接國際學生，理事長領騎帶著學生們出發，也與大家一起體驗手作DIY的樂趣，晚餐部分魏市長更用心安排原住民風味餐給國際學生品嘗，理事長表示，這次藉由壯遊活動，讓國際生來台念書之餘，也能好好的認識一下花蓮，了解當地的人文產業、在地風貌，並與他校及他國學生進行交流，一起深入體驗洄瀾，壯遊花蓮！</p>
+                        <p>而兩天一夜的活動，學生們也拍攝記錄了整個壯遊活動體驗過程，除分享於自己的<strong class="text-success">「FB」、「IG」</strong>等社群媒體外，並將其剪輯成影片放上自己的<strong class="text-danger">YouTube</strong>，也供協會未來使用藉此宣傳以不一樣的方式體驗花蓮外，同時也提高協會的知名度。                      </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-8">
+                    <hr class="sm">
+                    </div>
+                    <div class="col-xs-12 col-md-4"></div>
+                </div>
                 <div class="row">
                     <div class="col-xs-12 col-md-6 col-lg-4">
                         <div class="embed-responsive embed-responsive-16by9 m-b-1">
@@ -95,6 +101,12 @@
                         <div class="embed-responsive embed-responsive-16by9 m-b-1">
                             <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/38wuij8e2CQ" frameborder="0" allowfullscreen></iframe>
                         </div>
+                    </div>
+                    <div class="col-xs-12 col-lg-4"></div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div><p>以上附上兩位同學的影片</p></div>
                     </div>
                 </div>
             </div>
@@ -141,64 +153,77 @@
             <li class="col-xl-wide col-xl-tall">
                 <a href="~/Content/images/Topic/data/007/pic1.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic1.jpg" alt=""></a>
             </li>
-            <li class="col-xl-tall short">
-                <a href="~/Content/images/Topic/data/007/pic4.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic4.jpg" alt=""></a>
+            <li class="col-sm-wide col-md-wide short">
+                <a href="~/Content/images/Topic/data/007/pic6.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic6.jpg" alt=""></a>
             </li>
             <li class="col-sm-tall col-md-tall col-lg-tall col-xl-tall thin">
                 <a href="~/Content/images/Topic/data/007/pic2.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic2.jpg" alt=""></a>
             </li>
-            <li class="text">
-                <blockquote>新味醬油<em class="br-xs-up">DIY</em></blockquote>
-            </li>
-            <li>
-                <a href="~/Content/images/Topic/data/007/pic3.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic3.jpg" alt=""></a>
-            </li>
-            <li class="col-lg-wide col-xl-wide col-xl-tall short" data-column="3">
-                <a href="~/Content/images/Topic/data/007/pic8.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic8.jpg" alt=""></a>
-            </li>
-            <li class="col-sm-wide col-md-wide short">
-                <a href="~/Content/images/Topic/data/007/pic6.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic6.jpg" alt=""></a>
-            </li>
-            <li class="col-sm-wide col-md-wide short">
-                <a href="~/Content/images/Topic/data/007/pic12.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic12.jpg" alt=""></a>
-            </li>
-            <li class="text">
-                <blockquote>夜市，我來了!<em class="br-xs-up">Night Market Time</em></blockquote>
-            </li>
-            <li class="col-lg-wide col-xl-wide col-xl-tall short" data-column="3">
-                <a href="~/Content/images/Topic/data/007/pic11.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic11.jpg" alt=""></a>
-            </li>
-            <li class="col-sm-tall col-md-tall col-lg-tall col-xl-tall">
-                <a href="~/Content/images/Topic/data/007/pic10.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic10.jpg" alt=""></a>
+            <li class="col-xl-tall short">
+                <a href="~/Content/images/Topic/data/007/pic4.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic4.jpg" alt=""></a>
             </li>
             <li>
                 <a href="~/Content/images/Topic/data/007/pic5.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic5.jpg" alt=""></a>
             </li>
-            <li class="col-xl-wide col-xl-tall">
-                <a href="~/Content/images/Topic/data/007/pic9.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic9.jpg" alt=""></a>
+            <li class="col-sm-wide col-md-wide short">
+                <a href="~/Content/images/Topic/data/007/pic3.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic3.jpg" alt=""></a>
             </li>
             <li class="col-sm-wide col-md-wide short">
                 <a href="~/Content/images/Topic/data/007/pic14.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic14.jpg" alt=""></a>
             </li>
-            <li class="text">
-                <blockquote>早安，鯉魚潭<em class="br-xs-up">Good Morning</em></blockquote>
+            <li class="col-lg-wide col-xl-wide col-xl-tall short" data-column="3">
+                <a href="~/Content/images/Topic/data/007/pic8.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic8.jpg" alt=""></a>
             </li>
-            <li class="col-sm-wide col-md-wide col-lg-wide col-xl-wide short">
-                <a href="~/Content/images/Topic/data/007/pic17.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic17.jpg" alt=""></a>
+            <li class="col-sm-tall col-md-tall col-lg-tall col-xl-tall">
+                <a href="~/Content/images/Topic/data/007/pic10.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic10.jpg" alt=""></a>
+            </li>
+            <li class="col-sm-wide col-md-wide short">
+                <a href="~/Content/images/Topic/data/007/pic21.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic21.jpg" alt=""></a>
+            </li>
+            <li class="text">
+                <blockquote>夜市，我來了!<em class="br-xs-up">Night Market Time</em></blockquote>
+            </li>
+            <li class="col-sm-wide col-md-wide short">
+                <a href="~/Content/images/Topic/data/007/pic12.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic12.jpg" alt=""></a>
+            </li>
+            <li class="col-xl-wide col-xl-tall">
+                <a href="~/Content/images/Topic/data/007/pic9.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic9.jpg" alt=""></a>
+            </li>
+            <li class="col-lg-wide col-xl-wide col-xl-tall short" data-column="3">
+                <a href="~/Content/images/Topic/data/007/pic11.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic11.jpg" alt=""></a>
             </li>
             <li class="col-sm-wide col-md-wide short">
                 <a href="~/Content/images/Topic/data/007/pic16.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic16.jpg" alt=""></a>
+            </li>
+            <li class="text">
+                <blockquote>早安，鯉魚潭<em class="br-xs-up">Good Morning</em></blockquote>
             </li>
             <li class="col-xl-wide col-xl-tall">
                 <a href="~/Content/images/Topic/data/007/pic15.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic15.jpg" alt=""></a>
             </li>
             <li class="col-sm-wide col-md-wide short">
-                <a href="~/Content/images/Topic/data/007/pic18.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic18.jpg" alt=""></a>
+                <a href="~/Content/images/Topic/data/007/pic17.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic17.jpg" alt=""></a>
             </li>
             <li class="col-sm-wide col-md-wide short">
+                <a href="~/Content/images/Topic/data/007/pic18.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic18.jpg" alt=""></a>
+            </li>
+            <li class="col-sm-wide col-md-wide col-lg-wide col-xl-wide short">
                 <a href="~/Content/images/Topic/data/007/pic19.jpg" target="new"><img src="~/Content/images/Topic/data/007/pic19.jpg" alt=""></a>
             </li>
         </ol>
+
+
+        <article class="article section">
+            <h5 class="h4">第二梯次</h5>
+            <div class="editor main-text">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p>本會舉辦的花蓮壯遊行活動第二梯次，於昨日(10/21)下午準備回程時，因普悠瑪列車翻覆意外，回程列車班次停駛，協會理事長立即啟動緊急應變措施，同時花蓮魏嘉賢市長也即時關心並協助，配合的雄獅旅行社並於第一時間調派接駁車協助所有參加活動的學生返回台北，於凌晨12點多抵達台北火車站，協會也安排車輛直接將學員安全送回居住地。</p>
+                        <p>參與的學生們隔日一早也來訊息，感謝理事長及大家的安排與協助；許多國際學生都表示本次壯遊活動讓他們可以親臨體驗花蓮的美，也願意擔任協會的壯遊志工，協助幫忙台灣宣傳不一樣的旅行方式。 </p>
+                    </div>
+                </div>
+            </div>
+        </article>
     </div>
 
 </section>
